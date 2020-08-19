@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head></head>
+<body>
+<script>
+//检测平台，如果是手机访问，就跳转到手机站
+	//<![CDATA[
+	/*
+	 * 智能机浏览器版本信息:
+	 *
+	 */
+	var browser = {
+		versions : function() {
+			var u = navigator.userAgent, app = navigator.appVersion;
+			return {//移动终端浏览器版本信息 
+				trident : u.indexOf('Trident') > -1, //IE内核
+				presto : u.indexOf('Presto') > -1, //opera内核
+				webKit : u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+				gecko : u.indexOf('Gecko') > -1
+						&& u.indexOf('KHTML') == -1, //火狐内核
+				mobile : !!u.match(/Mobile/), //是否为移动终端
+				ios : !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+				android : u.indexOf('Android') > -1
+						|| u.indexOf('Linux') > -1, //android终端或者uc浏览器
+				iPhone : u.indexOf('iPhone') > -1
+						|| u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+				iPad : u.indexOf('iPad') > -1, //是否iPad
+			};
+		}(),
+		language : (navigator.browserLanguage || navigator.language)
+				.toLowerCase()
+	};
+	var head = document.getElementsByTagName('head')[0],
+    cssURL = 'https://www.jinrongboshi.com/new/www/index/mobile/assets/css/reset.css',
+    linkTag = document.createElement('link');
+    linkTag.id = 'dynamic-style';
+	 linkTag.href = cssURL;
+	 linkTag.setAttribute('rel','stylesheet');
+	 linkTag.setAttribute('media','all');
+	 linkTag.setAttribute('type','text/css');
+	 
+	
+	if (browser.versions.mobile) {
+		head.appendChild(linkTag);
+		//window.location.href = "https://www.jinrongboshi.com/new/";
+	}
+</script>
+</body>
+</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>搜索</title>
+<link rel="stylesheet" type="text/css" href="https://www.jinrongboshi.com/new/www/college/app/css/media.css">
+<link rel="stylesheet" href="../static/css/reset.css">
+<link rel="stylesheet" href="../static/css/page.css?t=1582615270036">
+<script src="../static/js/page.js?149682"></script>
+</head>
+<body>
+	<header id="bar" class="bar">
+        <a class="home" onclick="window.history.back()">
+            <img src="../static/imgs/back_icon.png" alt="">
+        </a>
+        <div class="topBtn">
+            <div id="topMenu" class="topMenu">
+                <b class="icon menuIco"><img src="../static/imgs/list_more_icon.png"></b>
+                <div class="menuItem">
+                <ul>
+                    <li>
+                    <a href="../index.html">首页</a>
+                    </li>
+                    <!-- <li>
+                    <a href="/activities/cnaf2016/activity">活动详情</a>
+                    </li>
+                    <li>
+                    <a href="/activities/cnaf2016/guize">投票规则</a>
+                    </li> -->
+                    <!-- <li>
+                        <a href="/activities/cnaf2016/works">作品</a>
+                    </li> -->
+                    <!-- <li>
+                    <a href="/activities/cnaf2016/news">新闻汇总</a>
+                    </li> -->
+                </ul>
+                </div>
+            </div>
+        </div>
+        <h1>搜索</h1>
+    </header>
+	<header class="colle-header  colle-headertop0">
+		<div class="top searchbox" style="">
+			<form class="search">
+				<input id="hiddenText" type="text" style="display:none" />
+				<i>&nbsp;</i> <input id="searchInput" type="text" />
+			</form>
+			<a href="#" id="searchBtn">搜索</a>
+		</div>
+	</header>
+	<div class="zhanwei"></div>
+	<div id="container">
+		<div class="noResults" style="display:none">
+			<dl>
+				<dt>
+					<img src="https://www.jinrongboshi.com/new/www/college/app/images/results.png" />
+				</dt>
+				<dd>暂无结果</dd>
+			</dl>
+		</div>
+		<div id="content"></div>
+	</div>
+	<script type="text/javascript" src="https://www.jinrongboshi.com/new/www/college/app/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		var index=1;
+		//window.onload=sharePage;
+		//页面加载时优先执行 判断是否APP端 来判断是否展示分享按钮   0 不是app 1是app
+		function func_search(){
+			index=1;
+			var title = $("#searchInput").val();
+			if(title==""){
+				$("#content").hide();
+				$(".noResults").show();
+				return;
+			}
+			
+			var url = "https://www.jinrongboshi.com/new/collegeMobile/searchArticle.htm";
+			var args = {"search_title" : title};
+			
+			$.post(url, args, function(data){
+				if(data == null || data == ""){
+					var list_box = $("#content");
+					list_box.empty();
+					$("#content").hide();
+					$(".noResults").show();
+				}else{
+					$("#content").show();
+					$(".noResults").hide();
+					var list_box = $("#content");
+					list_box.empty();
+					for(var i=0; i<data.length; i++){
+						var dataly = data[i];
+						var id = dataly.id;
+						var type = dataly.type;
+						var title = dataly.title.substring(0, 20);
+						if(dataly.title.length>20){
+							title=title+"...";
+						}
+						var mobileCoverPicture = "https://www.jinrongboshi.com/article-images/"+dataly.mobileCoverPicture;
+						var synopsis = dataly.synopsis.substring(0, 28);
+						if(dataly.synopsis.length>28){
+							synopsis=synopsis+"...";
+						}
+						var readNum = dataly.addReadNum + dataly.readNum;
+						var publishTime = dataly.publishTime;
+						if(publishTime!=""){
+	         				publishTime = getFormat(new Date(publishTime));
+	         			}
+						var text = "<div class='doctor doctorlist'>" + 
+										"<div class='item clearfix' onclick=func_item('"+id+"','"+type+"')>" + 
+											"<div class='item-img'>" + 
+												"<img src=" + mobileCoverPicture + " />" + 
+											"</div>" + 
+											"<a class='item-word' href='javascript:void(0)'>" +
+												"<p>" + title + "</p> <span>" + synopsis + "</span>" +
+											"</a>" + 
+										"</div>" + 
+										"<div class='line'></div>" + 
+										"<div class='number clearfix'>" + 
+											"<span>阅读数：" + readNum + "</span>" + 
+											"<p>" + publishTime + "</p>" + 
+										"</div>" + 
+									"</div>";
+										
+						list_box.append(text);
+					}
+				}
+			}, "json");
+		}
+		$(function(){
+			$(document).keydown(function (event) {
+				if(event.keyCode == "13"){
+				   var title = $("#searchInput").val();
+					if(title==""){
+						$("#content").hide();
+						$(".noResults").show();
+						return;
+					}
+					func_search();
+				}
+			});
+			$("#searchBtn").click(function(){
+				func_search();
+			});
+		});
+		$(window).scroll(function(){
+			 showPage();
+   		 });
+		
+		function showPage(){
+		    var dh = $(document).height();
+		    var st = document.documentElement.scrollTop + document.body.scrollTop;
+		    var wh = $(window).height();
+		   	 if(parseInt(dh)-parseInt(st)-parseInt(wh)<=0) {
+				index+=1;
+				var curPage=index;
+				var title = $("#searchInput").val();
+		   		 $.ajax({
+			 		   async: true, 
+			         type: 'POST',  
+			         data:{
+			        	 curPage:curPage,
+			        	 search_title:title
+			         },
+			         dataType:"json",
+			         url: "https://www.jinrongboshi.com/new/collegeMobile/searchArticle.htm",//请求的action路径  
+			         success:function(data){ //请求成功后处理函数。
+			         	if(data.length==0){
+			         		//$('.slide-foot').show();
+			         	}else{
+			         		for(var i=0;i<data.length;i++){
+			         			var mobileCoverPicture=data[i].mobileCoverPicture;
+			         			var id = data[i].id;
+			         			var type = data[i].type;
+			         			var title = data[i].title.substr(0,20);
+			         			var synopsis = data[i].synopsis.substr(0,28);
+			         			if(data[i].title.length>20){
+			         				title=title+"...";
+								}
+			         			if(data[i].synopsis.length>28){
+			         				synopsis=synopsis+"...";
+								}
+			         			var addReadNum = data[i].addReadNum;
+			         			var readNum = data[i].readNum+addReadNum;
+			         			var publishTime = data[i].publishTime;
+			         			if(publishTime!=""){
+			         				publishTime = getFormat(new Date(publishTime));
+			         			}
+			         			
+			         			$("#content").append(
+									"<div class='doctor doctorlist'>"
+									+" <div class='item clearfix' onclick=func_item('"+id+"','"+type+"')>"
+									+	"<div class='item-img'>"
+									+		"<img src='https://www.jinrongboshi.com/article-images/"+mobileCoverPicture+"' />"
+									+	"</div>"
+									+	"<a class='item-word' href='javascript:void(0)'>"
+									+		"<p>"+title+"</p> <span>"+synopsis+"</span>"
+									+	"</a>"
+									+"</div>"
+									+"<div class='line'></div>"
+									+"<div class='number clearfix'>"
+									+	"<span>阅读数："+readNum+"</span>"
+									+	"<p>"+publishTime+"</p>"
+									+"</div>"
+									+"</div>"
+									);
+							}
+			         	}
+			         }
+			  	});
+		   	 }
+		}
+		function getFormat(now){
+			var month =now.getMonth()+1;
+			var strDate = now.getDate();
+			var hours = now.getHours();
+			var seconds = now.getSeconds();
+			var minutes = now.getMinutes();
+			if (month >= 1 && month <= 9) {
+		        month = "0" + month;
+		    }
+		    if (strDate >= 0 && strDate <= 9) {
+		        strDate = "0" + strDate;
+		    }
+		    if (hours >= 0 && hours <= 9) {
+		    	hours = "0" + hours;
+		    }
+		    if (minutes >= 0 && minutes <= 9) {
+		    	minutes = "0" + minutes;
+		    }
+		    if (seconds >= 0 && seconds <= 9) {
+		    	seconds = "0" + seconds;
+		    }
+			return now.getFullYear()+"-"+month+"-"+strDate+
+			" "+hours+":"+minutes+":"+seconds;
+		}
+		
+		function func_item(id,type){
+			window.location.href="https://www.jinrongboshi.com/new/token/collegeMobile/articleDetailApp.htm?articleId="+id+"&type="+type;
+		}
+	</script>
+</body>
+
+</html>

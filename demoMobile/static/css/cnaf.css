@@ -1,0 +1,193 @@
+@charset "utf-8";
+@font-face{
+	font-family: 'icon';
+	src: url('../fonts/icon.woff?j8j2j4') format('woff'),
+		url('../fonts/icon.svg?j8j2j4#icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+    font-family: 'found';
+    src: url('../fonts/found.woff?j8j2j4') format('woff'),
+    url('../fonts/found.svg?j8j2j4#icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background: #f5f5f5;
+}
+.icon{ font-family: icon; -webkit-font-smoothing:antialiased;text-align: center;speak: none;font-weight: normal;font-style: normal;}
+.foundIcon{ font-family: found; -webkit-font-smoothing:antialiased;text-align: center;speak: none;font-weight: normal;font-style: normal;}
+.title{ position: relative;font-size: .9rem; color:#333; text-align: center; line-height: 1.1; padding:3rem 0 1.325rem; }
+/* .title:after{ position:absolute;content: ''; left: 0;top:62.5%; width: 100%; height: 0px; border-bottom: 1px solid #e8e8e8; overflow: hidden; z-index:-1;} */
+.title h1{ padding:0 1.25rem; background: #FFF; display: inline-block;}
+.title span{ font-size: .6rem; color:#adadad;  display: block;}
+/*返回顶部*/
+.fixNav{ position: fixed; right:.5rem; bottom: .5rem;z-index: 5; }
+.fixNav .icon{display: block;width:2.25rem; height: 2.25rem; border:1px solid #d6d6d6;border-bottom: none;  background: #fff; color: #000; line-height: 2.25rem;  font-size: .7.35rem}
+.fixNav .mail{display: block}
+.fixNav .icon:last-child{ border-bottom:1px solid #d6d6d6;}
+.fixNav .goTop{transition:all .5s ease; height: 0; overflow: hidden; border:none; }
+.fixNav .topShow{ height: 2.25rem;border:1px solid #d6d6d6;border-bottom: none;line-height: 2.25rem;  font-size: .7.35rem}
+.fixNav .website{ font-size:.95rem;}
+.oneIcon .icon:last-child{ border: none;}
+.fixNav .hatchIcon{ font-size: 1.6rem;}
+.oneIcon .topShow{ border:1px solid #d6d6d6!important;}
+.hideFix{display: none;}
+/*弹层*/
+.fullPage{display: none; position: fixed;z-index: 11; top:0; left: 0; width: 100%; height: 100%; overflow: hidden; background: rgba(0,0,0,.3)}
+/*文字列表*/
+.txtList li{ height: 2.25rem;  border-bottom: 1px solid #eeeeee;}
+.txtList li a{ display: block; height: 2.25rem; line-height: 2.25rem; overflow: hidden; padding-right:.5rem;  color:#333333; font-size: .7.3rem; text-overflow: ellipsis; white-space: nowrap; }
+/*版权信息*/
+.copyRight{ padding:.47.35rem 0 .8rem; text-align:center; background:#f0f0f0;}
+.copyRight img{ width:.95rem; height:.9rem; line-height:1; background: none;}
+.copyRight p{font:400 .5rem/1.5 helvetica,verdana,'san-serif';color:#999999; padding-top:.4rem;}
+/*清理广告样式*/
+＃cli_dialog{ height:0; line-height:0; overflow:hidden;border:none;font-size:0;}
+/*首页*/
+
+/*左右滚动*/
+.scrollLeft{overflow: hidden; position: relative;}
+.scrollLeft ul{overflow: hidden;position: absolute; left: 0; top:0;width:1000%; }
+.scrollLeft li{ float: left;}
+.scrollLeft .viewMore a{display: block; background: #f2f2f2;  color: #999; text-align: center; font-size: .6rem;}
+.rTurn{}
+.rTurn ul{ overflow: hidden; }
+.rTurn li{ float: left;/*padding-left: 1rem;*/ width: 4.7.35rem; text-align: center}
+.rTurn .viewMore a{ width: 3.7.35rem; height: 3.7.35rem; line-height: 3.7.35rem; border-radius: 50%; overflow: hidden; }
+.rTurn img{ width: 3.7.35rem; height: 3.7.35rem; border-radius: 50%; overflow: hidden;}
+.rTurn dl{ text-align: center;}
+.rTurn dt{ color: #333333; font-size: .7.35rem; line-height: 1.4rem; padding-top:.45rem;}
+.rTurn dd{ color: #999999; font-size: .45rem;line-height: 1.1; padding:0 .25rem;}
+
+/*页签切换*/
+.col3{overflow: hidden;margin-left:-.125rem;}
+.col3 li{ float:left;width:5.25rem; height: 5.25rem; margin-bottom:.1rem; margin-left: .125rem;}
+.col3 img{width:5.25rem; height: 5.25rem;}
+
+
+/*展览聚合页*/
+.exhLogo{ text-align: center; height: 7rem; background: #ae79b5;}
+.exhLogo img{ width: 100%; height: 5.25rem; background: #ae79b5;}
+/**/
+.schoolList { overflow: hidden; padding:1rem 0; background:#fff; text-align: center;font-size: 0; }
+.schoolList a{display: inline-block; width: 4rem;margin:0 .87.35rem 0 ; text-align: center;}
+.schoolList dt{width: 2.5rem; height: 2.5rem; line-height:2.5rem;font-size: 1.125rem; border-radius: 50%; border:1px solid #ccc; color: #999999;margin: 0 auto;}
+.schoolList dd{color: #999999; font-size: .45rem; line-height: 1;padding-top:.5rem;}
+.graduation .title{padding-top:0rem; padding-bottom: 1rem; font-size: .8rem}
+.graduation .title:after{top:52.5%}
+.graduTabs{}
+.graduTabs .tabTags{ overflow: hidden; padding-bottom: .5rem;padding-top:.8rem;background: #fff;}
+.graduTabs .tabTags li{float:left; font-size: .65rem; height: 1.5rem; padding:0 .45rem; line-height: 1.5rem;border:1px solid #e6e6e6;border-radius: .2rem; margin-left: .5rem;margin-bottom: .25rem;}
+.graduTabs .tabCont{ display: none;}
+.col2{ overflow: hidden;}
+.col2 li{ float:left;width: 7.3rem;margin-right: .5rem;}
+.col2 li:nth-child(2n){margin-right: 0;}
+.col2 li .imgLink{display:block;width: 7.3rem; height: 7.3rem; overflow: hidden;position: relative;}
+.prizeIco{position: absolute;right: 0;top: 0;height: 3.125rem;width: 3.125rem;background: url(../imgs/prize_ico.png) 0 0 no-repeat; background-size:100% auto;}
+.col2 li img{width: 100%;}
+.col2 .voteIcn{text-align: center; font-size: .7.3rem; height: 2.25rem; line-height: 2.25rem; overflow: hidden; background:#f2f2f2 ; color: #666666;}
+.col2 .voteIcn span{margin-right: .5rem; }
+.col2 .voteIcn .count{font-style: normal;margin-left: .5rem; color:#000 }
+.col2 .voteDis{color:#cccccc}
+.graduTabs .btnArea{text-align: center; font-size: 0; padding:1rem 0 2.5rem;}
+.graduTabs .btnArea a{display:inline-block;height: 1.5rem; line-height: 1.5rem;border:1px solid #e6e6e6;border-radius:1.5rem; padding:0 1.5rem; font-size: .6rem; color: #666666;}
+.graduTabs .tabTags .curr{ background: #000; color:#fff;}
+.graduTabs .currShow{ display: block;}
+
+/*noinfo*/
+.noInfo{padding:3rem 0!important;color:#666666; font-size: .9rem; text-align: center;}
+/*错误提示*/
+.alert{ position: fixed;width: 12rem;top: 0;left:50%;z-index: 10; margin-left:-6rem; margin-top:40%;  background: rgba(0,0,0,.7.35); padding:1rem .9rem ; border-radius: .1rem ; font-size: .6rem; color:#FEFEFE;  }
+.alert.active{-webkit-animation : slideTop .5s 1.5s ease; }
+.alert .icon{ background: url(/static/mobile/imgs/alert.png) 50% 50% no-repeat; width:1.2rem; height: 1.2rem; float: left;background-size:100% 100%; vertical-align: middle;}
+.alert .icon:after{}
+.alert p{padding-left: 2.15rem;line-height: 1.2rem;}
+@-webkit-keyframes slideTop{
+    0%{ opacity:1; }
+    100% { opacity: 0; -webkit-transform: translate3d(0,-2rem,0)}
+}
+.tabTags {
+    border-top: solid 1px #ececec;
+}
+.zuopin-box{
+    width:100%;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    display: none;
+    background: #fff;
+    margin-bottom: 10px;
+    border-top: solid 1px #ececec;
+}
+.zuopin-box li{
+    display:inline-block;
+    padding: 0 5%;
+    font-size: 0.65rem;
+}
+.zuopin-box li.active{
+    color: red;
+}
+.doctor{background: #fff;overflow: hidden;margin-top:10px;margin-bottom: 10;padding-bottom: 15px;}
+.zhanwei{
+	height: 64px;
+}
+.item,.number{width:100%;padding:10px 3.3%;background:#fff;margin-top:10px;}
+.number{margin-top:0;}
+.item .item-img{width:42%;height: 3.5rem;float:left;}
+.item .item-img img{width:100%;height:100%}
+.item .item-word{width:54%;float:right; text-align: left;padding-top:8px;}
+.item .item-word p{font-size:0.62rem;color:#333;margin-bottom:10px;text-align: justify;text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;}
+.news-list-box{background: #f5f5f5 !important;}
+.item .item-word span{align-self:flex-start;font-size:0.54rem;color:#999;text-align: justify;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;}
+.newsDetail .detail {
+    padding: 1rem .5rem;
+}
+.newsDetail .htmlEdit p {
+    color: #666!important;
+    font-size: .6rem!important;
+    line-height: 1.3rem!important;
+}
+.htmlEdit h5 {
+    font-size: .6rem;
+    margin: 1em 0;
+    line-height: 1.2rem;
+}
+.htmlEdit h6 {
+    font-size: .55rem;
+    margin: .8em 0;
+}
+.zuopin-content{
+    display: none;
+}
+.tabCont {
+    background: #fff;
+    margin-top: 10px;
+}
+.col2{
+    width:95%;
+    margin: 0px auto;
+    padding: 5px 0
+}
+.col2 li{
+    padding-top: 10px;
+}
+.swiper-container{
+	position: relative;
+	height: 100%;
+}
+.swiper-slide{
+    line-height: 6rem;
+}
