@@ -24,9 +24,9 @@
     <header class="exhLogo">
       <div class="swiper-container">
           <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide"><img src="static/imgs/banner1.jpg"></div>
+              <div class="swiper-slide"><img src="static/imgs/banner2.jpg"></div>
+              <div class="swiper-slide"><img src="static/imgs/banner3.jpg"></div>
           </div>
           <!-- 如果需要分页器 -->
           <div class="swiper-pagination"></div>
@@ -35,19 +35,25 @@
     <section class="schoolList">
       <a href="https://wxdc5079dd9cc75887.h5.xiaoe-tech.com/mp/eyJpZCI6ODc1NjExfQ">
         <dl>
-          <dt class="foundIcon">&#xe905;</dt>
+          <dt class="foundIcon"><img src="static/imgs/yunketang.png"></dt>
           <dd>云课堂</dd></dl>
       </a>
       <a href="view/list.html?type=1">
         <dl>
-          <dt class="foundIcon">&#xe906;</dt>
+          <dt class="foundIcon"><img src="static/imgs/yunpingxuan.png"></dt>
           <dd>云评选</dd></dl>
       </a>
       <a href="view/list.html?type=2">
         <dl>
-          <dt class="foundIcon">&#xe907;</dt>
+          <dt class="foundIcon"><img src="static/imgs/yunzhanlan.png"></dt>
           <dd>云展览</dd></dl>
       </a>
+    </section>
+    <section class="view-tip">
+      <p>
+        <span class="left">浏览：189098</span>
+        <span class="right">总票数：2098373</span>
+      </p>
     </section>
     <section class="graduation">
       <header class="title">
@@ -245,7 +251,7 @@
         <div class="tabCont">
           <article class="newsDetail actNote">
             <section class="detail htmlEdit">
-              <iframe name="myiframe" height="2400" src="view/rule.html" frameborder="0" scrolling="no"></iframe>
+              <iframe id="myiframe" name="myiframe" src="view/rule.html" frameborder="0" scrolling="no"></iframe>
               <!-- <h5 style="text-align: center; font-weight: bold;">北京市书画摄影作品评选活动评分细则</h5>
               <p style="text-indent: 1.5rem;">围绕北京市<b>“七有”</b><b>“五性”</b>民生保障工作，北京市2020年社退人员<b>“金辉杯”</b>社会化退休人员书法绘画摄影大赛主要围绕老有所乐，老有所为。老有所学，围绕社退人员在文化方面的公共产品与服务供给“多样性”需求，我单位拟向全市社会化退休人员开展首届2020年“金辉杯”书法绘画摄影大赛。</p>
               <p style="text-indent:1.5rem;">本次评选结合疫情常态化防控需要，通过开展云展览、云教学、云评选三种形式开展线上书法绘画摄影大赛，大赛评选出一等奖5名，二等奖10名，三等奖20名，优秀奖不超过200名。</p>
@@ -340,7 +346,7 @@
       <div id="tel" class="icon tel">
         <a href="tel:01080451143">&#xe609;</a></div>
     </div> -->
-    
+
     <input id="voteLinks" type="hidden" value="/activities/checkVote/index/1021">
     <script src="static/js/page.js?1496825509994"></script>
     <script src="static/js/jquery-1.11.0.min.js"></script>
@@ -372,13 +378,13 @@
         window.location.href = "http://www.91hesuan.com/yijiaDemoPc";
       }
     </script>
-    <script type="text/javascript" language="javascript">
+    <!-- <script type="text/javascript" language="javascript">
       $(window.parent.document).find("#myiframe").load(function(){
         var main = $(window.parent.document).find("#myiframe");
         var thisheight = $(document).height()+30;
         main.height(thisheight);
       });
-    </script>
+    </script> -->
     <script>(function() {
         window.addEventListener('DOMContentLoaded',
         function() {
@@ -386,7 +392,7 @@
 
           oFristGraduCont.length && AfedFn.lasyImg(oFristGraduCont[0].querySelectorAll('img'));
           AfedFn.tabsChage('.tabTags', function(index, tagCurr, oCurr) {
-            if (index == 3) {
+           if (index == 3) {
               $('.zuopin-box').show()
             } else {
               $('.zuopin-box').hide()
@@ -397,6 +403,28 @@
         false);
       })();
       $(function(){
+        var iframe1 = document.getElementById('myiframe');
+        iframe1.onload = function(){
+          setIframeHeight('myiframe')
+        };
+        function setIframeHeight(id){
+          try{
+            var iframe = document.getElementById(id);
+            if(iframe.attachEvent){
+              iframe.attachEvent("onload", function(){
+              iframe.height = iframe.contentWindow.document.documentElement.scrollHeight;
+            });
+            return;
+            }else{
+              iframe.onload = function(){
+              iframe.height = iframe.contentDocument.body.scrollHeight;
+            };
+            return;
+            }
+            }catch(e){
+            throw new Error('setIframeHeight Error');
+          }
+        }
         $('.zuopin-box li').click(function(e){
           console.log(e)
           var index = $(this).index()
