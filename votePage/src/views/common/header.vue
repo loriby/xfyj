@@ -2,19 +2,13 @@
     <div>
         <el-carousel height="400px">
             <el-carousel-item>
-                <h3 class="small">
                 <img src="~@/assets/img/banner1.jpg" alt/>
-                </h3>
             </el-carousel-item>
             <el-carousel-item>
-                <h3 class="small">
                 <img src="~@/assets/img/banner2.jpg" alt/>
-                </h3>
             </el-carousel-item>
             <el-carousel-item>
-                <h3 class="small">
                 <img src="~@/assets/img/banner3.jpg" alt/>
-                </h3>
             </el-carousel-item>
             </el-carousel>
             <el-row class="yun-box" :gutter="30">
@@ -54,5 +48,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+.el-carousel__item img{
+    width: 100%;
+    height:100%;
+}
 </style>
