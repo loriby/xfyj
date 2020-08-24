@@ -1,5 +1,6 @@
 <template>
   <div class="mod-home">
+    <!-- <headerHtml></headerHtml> -->
     <div class="top-box">
       <el-row>
         <el-col :span="24">
@@ -17,7 +18,7 @@
     <div class="nav-bar">
       <span @click="goBack">返回</span>
       >
-      <span v-if="$route.query.showFlag">云展览</span>
+      <span v-if="$route.query.showFlag == 2">云展览</span>
       <span v-else>云评选</span>
     </div>
     <!-- 内容panls区 -->
@@ -42,18 +43,16 @@
           <el-row :gutter="20">
             <el-col :span="8" v-for="(o, index) in 9" :key="index">
               <el-card :body-style="{ padding: '0px' }">
-                <img @click="goDetail()" class="image" src="~@/assets/img/zuopin.jpg" alt />
+                <img @click="goDetail($route.query.showFlag)" class="image" src="~@/assets/img/zuopin.jpg" alt />
                 <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">古人书论选</span>
-                  <span
-                    v-if="$route.query.showFlag"
-                    class="miaoshu"
-                  >油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</span>
+                  <span @click="goDetail($route.query.showFlag)" class="title">古人书论选{{$route.query.showFlag}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">海淀区-袁文甲</span>
                   <div class="bottom clearfix">
-                    <time class="time">袁文甲</time>
+                    <time class="time" v-if="$route.query.showFlag == 2">油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</time>
+                    <time class="time" else>海淀区-袁文甲</time>
                   </div>
 
-                  <div v-if="!$route.query.showFlag" class="ticket-opr">
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
                     <div class="ticket-opr-item">
                       <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
                       <span>42552 票</span>
@@ -70,28 +69,25 @@
 </template>
 
 <script>
+import headerHtml from '@/views/common/header.vue'
 export default {
   data () {
     return {
       input: '',
       opusArry: [
         { name: '全部', id: '' },
-        { name: '国画', id: '' },
         { name: '书法', id: '' },
-        { name: '工艺美术', id: '' },
-        { name: '漆画', id: '' },
-        { name: '油画', id: '' },
-        { name: '水彩水粉', id: '' },
-        { name: '版画', id: '' },
-        { name: '雕塑', id: '' },
+        { name: '绘画', id: '' },
         { name: '摄影', id: '' }
       ]
     }
   },
-
+  components: {
+    headerHtml
+  },
   methods: {
-    goDetail () {
-      this.$router.push({ name: 'detail', query: { path: 'allList' } })
+    goDetail (flag) {
+      this.$router.push({name: 'detail', query: {path: 'allList', showFlag: flag}})
     },
     goBack () {
       this.$router.push({ name: 'home' })
@@ -226,7 +222,7 @@ export default {
   width: 980px;
   margin: 0 auto;
   min-height: 147px;
-  padding-top: 82px;
+  padding-top: 50px;
 }
 
 .graTit {
@@ -381,6 +377,7 @@ export default {
 .miaoshu {
   font-size: 12px;
   color: #999;
+  float: right;
 }
 
 .nav-bar {
