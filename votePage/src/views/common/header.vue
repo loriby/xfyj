@@ -38,6 +38,7 @@
 <script>
 export default {
   data () {
+    return {}
   },
   methods: {
     // 作品展示及投票

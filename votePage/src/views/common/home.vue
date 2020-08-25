@@ -163,150 +163,7 @@
           </div>
         </div>
         <div class="item-content">
-          <div class="activity">
-            <p>
-              &nbsp; &nbsp; &nbsp;&nbsp; 国家艺术基金美术、书法、摄影创作人才滚动资助项目是对一般资助项目成果开展宣传推广。由国家艺术基金组织，在已获得资助并结项的美术、书法、摄影创作人才资助项目中，评审出优秀项目成果，组织出版和展览，进行传播交流推广。
-              <br />&nbsp; &nbsp; &nbsp; &nbsp;国家艺术基金2014年共立项资助了93个美术、书法、摄影创作人才项目。历经为期一年的组织实施，多数项目执行顺利，并参与了结项验收工作。为积极探索创新国家艺术基金资助项目评审和宣传推广方式，将专家评价与群众意见有机地统一起来，国家艺术基金管理中心在雅昌艺术网开展线上投票活动。
-              <br />&nbsp; &nbsp; &nbsp; &nbsp;管理中心将根据专家对结项验收项目成果的评定，参考网上投票情况，组织开展有关成果宣传推广工作。
-            </p>
-
-            <p>&nbsp;</p>
-
-            <p>
-              <strong>附件：</strong>
-            </p>
-
-            <p style="text-align: center;">
-              <strong>国家艺术基金美术、书法、摄影创作人才</strong>
-              <strong>滚动资助项目作品（2016年度）名单</strong>
-            </p>
-
-            <p>
-              <strong>一、中国画</strong>
-            </p>
-
-            <p>1．张 博 《再不封闭的山村》</p>
-
-            <p>2．籍洪达 《心印寂静—花鸟画组图创作》</p>
-
-            <p>3．翟书同 《特战神兵》</p>
-
-            <p>4．褚晓莉 《丝路使者—细君公主》</p>
-
-            <p>5．吕 印 《明代丽江木氏土司像复制》</p>
-
-            <p>6．刘同顺 《甲午战争120周年祭》</p>
-
-            <p>7．杨 军 《寄梦丹霞》系列组画</p>
-
-            <p>8．李德惠 《红楼梦》组画</p>
-
-            <p>9．彭震中 《汉口租界历史建筑之当代水墨》</p>
-
-            <p>10．秦 晖 《广西少数民族村寨山水画创作》</p>
-
-            <p>11．杨 柳 《都市系列》</p>
-
-            <p>12．陈 健 《大运河·我的家》</p>
-
-            <p>
-              <strong>二、书法</strong>
-            </p>
-
-            <p>1．张晓东 《中国梦（57方篆刻组印）》</p>
-
-            <p>2．胡朝霞 《楹联书法创作》</p>
-
-            <p>3．唐朝轶 《小楷书老子道德经长卷》</p>
-
-            <p>4．纪 松 《李白诗歌十幅》</p>
-
-            <p>5．袁文甲 《古人书论选》</p>
-
-            <p>6．李明桓 《传统文化名句组印》</p>
-
-            <p>
-              <strong>三、漆画</strong>
-            </p>
-
-            <p>1．简锦斯 《中国漆·本生故事》</p>
-
-            <p>
-              <strong>四、工艺美术</strong>
-            </p>
-
-            <p>1．宋海峰 《长白山纤维编织艺术创作》</p>
-
-            <p>2．李素芳 《山之意》</p>
-
-            <p>3．李明谦 《青韵系列》</p>
-
-            <p>4．楚 艳 《中国传统天然染缬艺术服饰》</p>
-
-            <p>5．韩纳黎 《家居生活艺术的再创作》</p>
-
-            <p>6．熊开波 《华夏器韵》</p>
-
-            <p>7．周 震 《茶则与勺子》</p>
-
-            <p>
-              <strong>五、油画</strong>
-            </p>
-
-            <p>1．刘玉龙 《中国梦—造船》</p>
-
-            <p>2．刘 刚 《云南文山》系列创作</p>
-
-            <p>3．边小强 《佤族文化》系列创作</p>
-
-            <p>4．孟新宇 《四季太行》</p>
-
-            <p>5．刘 悦 《手机围城》</p>
-
-            <p>6．程建利 《寂静的纳吾错》</p>
-
-            <p>7．周 亭 《记忆的味道》系列创作</p>
-
-            <p>8．郭仁海 《傣家》</p>
-
-            <p>9．蒯连会 《春水东流》</p>
-
-            <p>10．王裕亮 《陈宝琛》</p>
-
-            <p>11．孔庆雄 《布里亚特的冬日—思》</p>
-
-            <p>
-              <strong>六、水彩（粉）画</strong>
-            </p>
-
-            <p>1．焦立强 《工业备忘录》</p>
-
-            <p>2．吴 洁 《城》</p>
-
-            <p>
-              <strong>七、版画</strong>
-            </p>
-
-            <p>1．刘益春 《幼学杂字》</p>
-
-            <p>2．傅 洁 《时空事迹》</p>
-
-            <p>3．彭 伟 《盛世益州》</p>
-
-            <p>4．尹小勇 《回顾与展望》</p>
-
-            <p>5．吴娅妮 《红军东征》</p>
-
-            <p>
-              <strong>八、摄影</strong>
-            </p>
-
-            <p>1．胡群山 《血色—史迪威公路》</p>
-
-            <p>2．郭月霞 《河南传统手工技艺》</p>
-
-            <p>3．范南丹 《边地行走》</p>
-          </div>
+          <eventDetailsHtml></eventDetailsHtml>
         </div>
       </div>
 
@@ -321,28 +178,8 @@
         </div>
         <div class="item-content">
           <ruleHtml></ruleHtml>
-          <!-- <p style="text-align:center;font-size:16px;font-weight:bold;">国家艺术基金</p>
-          <p style="text-align:center;font-size:16px;font-weight:bold;">美术、书法、摄影创作人才资助项目作品</p>
-          <p style="text-align:center;font-size:16px;font-weight:bold;">网络投票规则</p>
-          <p>&nbsp;</p>
-          <p>资助项目作品网络投票由国家艺术基金管理中心与雅昌艺术网合作组织。</p>
-
-          <p>一、投票规则</p>
-          <p>1.投票时间：2016年1月23日至2016年2月20日。</p>
-          <p>2.投票时间间隔：24小时。</p>
-          <p></p>
-          <p>3.投票次数限制：每个ID用户每天可分别为每件作品投1次票。</p>
-          <p>二、投票流程</p>
-          <p>1.进入国家艺术基金官网通过链接进入雅昌艺术网首页，或直接登录雅昌艺术网，根据提示进行注册。</p>
-          <p>2.进入“国家艺术基金美术、书法、摄影创作人才资助项目作品”页面，进入作品列表（也可以通过输入关键字进行搜索)。</p>
-          <p>3.选择作品并投票。</p>
-          <p>三、声明</p>
-          <p>1.反对作弊、刷票、拉票、买票行为。</p>
-          <p>2.参与评选的图片内容，未经国家艺术基金许可，任何人或机构不得擅自转载或发表。</p>
-          <p>3.本次活动的最终解释权归国家艺术基金管理中心所有。</p> -->
         </div>
       </div>
-
       <div v-if="opusFlag" class="opus-content">
         <div class>
           <div class="graTit">
@@ -361,21 +198,120 @@
         </el-row>
         <div class="item-content">
           <el-row :gutter="20">
-            <el-col :span="8" v-for="(o, index) in 9" :key="index">
+            <el-col :span="8">
               <el-card :body-style="{ padding: '0px' }">
-                <img @click="goDetail()" class="image" src="~@/assets/img/zuopin.jpg" alt />
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img1.png" alt />
+                </a>
                 <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">古人书论选<i>海淀区-袁文甲</i></span>
+                  <span @click="goDetail()" class="title">绘画001<i>朝阳区-张三</i></span>
                   <div class="bottom clearfix">
                     <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
                   </div>
-
-                  <!-- <div class="ticket-opr">
-                    <div class="ticket-opr-item">
-                      <el-button :disabled="true" size="mini">投票结束</el-button>
-                      <span>42552 票</span>
-                    </div>
-                  </div> -->
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img2.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画002<i>昌平区-李斯</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img3.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画003<i>海淀区-王五</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img4.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画004<i>海淀区-赵三</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img5.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画005<i>门头沟区-著一名</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img6.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画006<i>海淀区-计划好</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img7.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画007<i>朝阳区-袁飞</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img8.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画008<i>海淀区-组爱民</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/shufa/img1.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">书法001<i>海淀区-王保保</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
                 </div>
               </el-card>
             </el-col>
@@ -388,6 +324,7 @@
 
 <script>
 import ruleHtml from './rule.vue'
+import eventDetailsHtml from './eventDetails.vue'
 import headerHtml from './header'
 export default {
   data () {
@@ -410,6 +347,7 @@ export default {
   },
   components: {
     ruleHtml,
+    eventDetailsHtml,
     headerHtml
   },
   methods: {
@@ -604,7 +542,7 @@ h3.small img {
 
 .rule-content .item-content,
 .activity-content .item-content {
-  padding: 60px 90px 90px;
+  padding: 20px 90px 90px;
   background: #fff;
 }
 .rule-content .item-content p,
