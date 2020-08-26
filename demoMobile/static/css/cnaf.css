@@ -68,13 +68,13 @@ body{
 
 
 /*展览聚合页*/
-.exhLogo{ text-align: center; height: 8rem; background: #ae79b5;}
-.exhLogo img{ width: 100%; height: 100%; background: #ae79b5;}
+.exhLogo{ text-align: center; height: 8rem;}
+.exhLogo img{ width: 100%; height: 100%;}
 /**/
 .schoolList { overflow: hidden; padding:.8rem 0; background:#fff; text-align: center;font-size: 0; }
 .schoolList a{display: inline-block; width: 4.5rem;margin:0 .87.35rem 0 ; text-align: center;}
-.schoolList dt{width: 2.5rem; height: 2.5rem; line-height:2.5rem;font-size: 1.125rem; border-radius: 50%; border:1px solid #ccc; color: #999999;margin: 0 auto;}
-.schoolList dd{color: #666666; font-size: .65rem; line-height: 1;padding-top:.5rem;}
+.schoolList dt{width: 2.5rem; height: 2.5rem; line-height:2rem;font-size: 1.125rem; border-radius: 50%; border:2px solid #d4237a; color: #999999;margin: 0 auto;}
+.schoolList dd{color: #666666; font-size: .5rem; line-height: 1;padding-top:.3rem;}
 .graduation .title{padding-top:0rem; padding-bottom: 1rem; font-size: .8rem}
 .graduation .title:after{top:52.5%}
 .graduTabs{}
@@ -86,14 +86,14 @@ body{
 .col2 li:nth-child(2n){margin-right: 0;}
 .col2 li .imgLink{display:block;width: 7.3rem; height: 7.3rem; overflow: hidden;position: relative;}
 .prizeIco{position: absolute;right: 0;top: 0;height: 3.125rem;width: 3.125rem;background: url(../imgs/prize_ico.png) 0 0 no-repeat; background-size:100% auto;}
-.col2 li img{width: 100%;height: 100%;}
+.col2 li img{max-width: 180%;margin-left:-25%;}
 .col2 .voteIcn{text-align: center; font-size: .7.3rem; height: 2.25rem; line-height: 2.25rem; overflow: hidden; background:#f2f2f2 ; color: #666666;}
 .col2 .voteIcn span{margin-right: .5rem; }
 .col2 .voteIcn .count{font-style: normal;margin-left: .5rem; color:#000 }
 .col2 .voteDis{color:#cccccc}
 .graduTabs .btnArea{text-align: center; font-size: 0; padding:1rem 0 .5rem;}
 .graduTabs .btnArea a{display:inline-block;height: 1.5rem; line-height: 1.5rem;border:1px solid #e6e6e6;border-radius:1.5rem; padding:0 1.5rem; font-size: .6rem; color: #666666;}
-.graduTabs .tabTags .curr{ background: #000; color:#fff;}
+.graduTabs .tabTags .curr{ background: #d4237a; color:#fff;}
 .graduTabs .currShow{ display: block;}
 
 /*noinfo*/
@@ -199,7 +199,9 @@ body{
     background:#fff;
     height: 1.5rem;
     line-height: 1.5rem;
-    border-top: solid 1px #ececec;
+    border-bottom: solid 1px #ececec;
+}
+.schoolList{
     border-bottom: solid 1px #ececec;
 }
 .view-tip p {
@@ -214,10 +216,12 @@ body{
 }
 .view-tip p .left{
     float:left;
+    padding-left: 30px;
 }
 .view-tip p .right{
     float:right;
+    padding-right: 30px
 }
 .foundIcon img {
-    width: 70%;
+    width: 76%;
 }

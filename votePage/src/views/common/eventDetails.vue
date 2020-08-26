@@ -1,2304 +1,625 @@
 <template>
 	<div class='Section0'>
-		<p class="MsoNormal title1" align=center style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;
-		
-		text-align:center;
-		'>
-		  <span>
-			<font>关于开展首届</font>&#8220;京颐杯&#8221;北京市社会化管理</span>
-		  <span style=''>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class="MsoNormal title1" align=center style='margin-left:0.0000pt;mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;text-align:center;'>
-		  <span >
-			<font>退休人员书法绘画摄影展的通知</font></span>
-		  <span style=''>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;'>
-		  <span style=''>
-			<font>各区劳动服务管理中心（社会化管理服务机构）：</font></span>
-		  <span style=''>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='margin-left:0.0000pt;mso-para-margin-left:0.0000gd;mso-char-indent-count:0.0000;'>
-		  <span style=''>
-			<font>为深入贯彻党的十九大和十九届二中、三中、四中全会精神，深入贯彻习近平总书记对北京重要讲话精神，落实国务院政府工作报告</font>&#8220;丰富群众精神文化生活，加强公共文化服务，使全社会充满活力、向上向善&#8221;的工作要求，我市将在全市范围开展首届&#8220;京颐杯&#8221;社会化管理退休人员书法绘画摄影展活动，现征集书法、绘画、摄影作品，并就有关事宜通知如下：</span>
-		  <span style=''>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify>
-		  <span>
-			<font>一、活动目的</font></span>
-		  <span>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify>
-		  <span>
-			<font>通过开展大型书法绘画摄影线上展览，用笔墨书写中华民族一往无前、自强不息、顽强拼搏的精神品格，用画笔绘制首都山水之美、人心之美、文化之美，用镜头记录北京人民砥砺奋斗、逐梦前行、众志成城的感动瞬间，讴歌党的领导、讴歌新时代，讴歌向上向善的社会活力，进一步强信心、暖人心、聚民心。</font></span>
-		  <span>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify>
-		  <span>
-			<font>二、工作方案</font></span>
-		  <span>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify>
-		  <span>
-			<font>（一）作品征集（</font>2020年8月20日&#8212;9月20日）</span>
-		  <span>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify>
-		  <span>
-			<font>各区可通过开展街道推荐、区域书画展等方式进行初评，并于</font>2020年9月20日前将最终推荐的书法、绘画、摄影作品的信息填写到《首届&#8220;京颐杯&#8221;北京市社会化管理退休人员书法绘画摄影展作品推荐表》（附件1）和《首届&#8220;京颐杯&#8221;北京市社会化管理退休人员书法绘画摄影展作品汇总表》（附件2），并将电子版表格上报至市劳动服务管理中心。</span>
-		  <span>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify>
-		  <span>1.作品数量</span>
-		  <span>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify>
-		  <span>
-			<font>东城区、西城区、朝阳区、海淀区、丰台区、石景山区每区可推荐</font>100件作品（其中书法类60件，绘画类20件，摄影类20件）；其他区每区可推荐50件作品（其中书法类30件，绘画类10件，摄影类10件）。同时欢迎各类国有企业推荐退休人员书法、绘画、摄影作品。</span>
-		  <span>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify>
-		  <span style='
-		  '>2.作品要求</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>&nbsp;&nbsp;&nbsp;&nbsp;
-			<font>作品格式应满足《首届</font>&#8220;京颐杯&#8221;北京市社会化管理退休人员书法绘画摄影展参赛要求》（附件3）中列明的条件。</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>（二）作品采集（</font>2020年9月21日&#8212; 10月15日）</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>报送的书法绘画作品，由市劳服中心初步筛选后到各区进行拍摄采集。</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>推荐的摄影类作品由各区汇总后统一发送至活动指定邮箱：</font></span>
-		  <span style='
-		  '>happyijia@happyijia.com</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>（三）作品展示（</font>2020年10月16日&#8212; 11月8日）</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>承办机构对拍摄的作品进行处理，作品图片与介绍文字上传服务器，在全市范围内开展线上展示。</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>在网站开放的时间范围内，各区可通过发通知、转发链接等方式组织社会化管理退休人员进行浏览。</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>（四）线上教学（</font>2020年10月1日&#8212; 10月31日）</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>承办机构通过网络开展线上教学、线上笔会、线上点评，书法、绘画、摄影每类课程由行业专家进行授课，具体时间和方式另行通知。</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		
-		'>
-		  <!-- <![if !supportLists]> -->
-			<span style='
-			'>
-			  <span style='mso-list:Ignore;'>（五）</span></span>
-		  <!-- <![endif]> -->
-		  <span style='
-		  '>
-			<font>作品评审</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-		  <span style='
-		  '>
-			<font>作品评审分为大众评审、专家评审两种形式：</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>1.大众评审（2020年10月16日&#8212;11月8日）</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>线上展览开放微信投票端口，浏览书画摄影作品的观众可对喜爱的作品进行投票（每人只能投票一次，可选择作品不超过</font>10个），投票结果可实时查看。</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>2.专家评审（2020年11月9日&#8212; 11月12日）</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>由专家对书法、绘画、摄影作品进行点评和评选，评审的过程通过网络直播的方式进行公开。评选结束后，优秀作品印制成册发放给参选人员。</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>三、工作要求</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>（一）</font></span>
-		  <span style='
-		  '>
-			<font>各区要高度重视、精心组织，统筹安排。按照</font>&#8220;通知&#8221;的统一要求，按时、按质、按量组织开展活动，确保工作落实、落地。</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>（二）</font></span>
-		  <span style='
-		  '>
-			<font>区级活动所需经费从本地区</font>2020年度社会化管理服务经费列支。同时加强对活动使用资金监管，确保活动经费安全高效使用。</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>（三）</font></span>
-		  <span style='
-		  '>
-			<font>各区要加强信息报送和重大事项请示报告制度。应安排专人负责活动的组织工作（工作人员信息按照</font>&#8220;附件4&#8221;内容填写，并将电子版反馈至市劳服中心社会化管理处），按照活动规定的时间组织开展活动，在活动开展过程中发生、发现的问题要及时上报市劳服中心沟通解决；同时多渠道、多方式做好活动的宣传工作，扩大活动的知晓度，提升宣传效果，提升社会化管理的影响力，提升社会化管理退休人员的认可度。</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify>
-		  <span>
-			<o:p>&nbsp;</o:p></span>
-		</p>
-		<p class=MsoNormal align=justify>
-		  <span style='
-		  '>
-			<font>附件：</font>1.首届&#8220;京颐杯&#8221;北京市社会化管理退休人员书法绘</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>画摄影展作品推荐表</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		
-		'>
-		  <span style='
-		  '>&nbsp;&nbsp;2.首届&#8220;京颐杯&#8221;北京市社会化管理退休人员书法绘画摄影展作品汇总表</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.首届&#8220;京颐杯&#8221;北京市社会化管理退休人员书法绘</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>画摄影展参赛要求</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.各区活动工作人员联络表</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>联系人：张蕾</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<font>联系电话：</font>84180837</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>邮</font>&nbsp;
-			<font>箱：</font></span>
-		  <span>
-			<a href='mailto:zhang_lei@rsj.beijing.gov.cn'>
-			  <u>
-				<span class='15' style='color:rgb(0,0,255);
-				text-decoration:underline;text-underline:single;'>zhang_lei@rsj.beijing.gov.cn</span>
-			  </u>
-			</a>
-		  </span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<o:p>&nbsp;</o:p></span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<font>北京市劳动服务管理中心</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020年8月17日</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=justify style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>附件</font>1</span>
-		  <b>
-			<span style='font-weight:bold;
-			'>&nbsp;</span>
-		  </b>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <o:p></o:p>
-			</span>
-		  </b>
-		</p>
-		<p class=MsoNormal align=center style='
-		
-		text-align:center;'>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <font>首届</font>&#8220;京颐杯&#8221;北京市社会化管理退休人员</span></b>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <o:p></o:p>
-			</span>
-		  </b>
-		</p>
-		<p class=MsoNormal align=center style='
-		
-		text-align:center;'>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <font>书法绘画摄影展作品推荐表</font></span>
-		  </b>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <o:p></o:p>
-			</span>
-		  </b>
-		</p>
-		<table class=MsoNormalTable border=1 cellspacing=0 style='border-collapse:collapse;width:100%;mso-table-layout-alt:fixed;
-		border:none;
-		
-		'>
-		  <tr>
-			<td width=20% valign=center style='width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>作品名称</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=50% valign=center colspan=5 style='width:30%;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-		  </tr>
-		  <tr>
-			<td width=20% valign=center style='width:10%width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>作品编号</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=50% valign=center colspan=5 style='width:30%;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-		  </tr>
-		  <tr>
-			<td width=20% valign=center style='width:10%width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>参赛类别</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=50% valign=center colspan=5 style='width:30%;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='font-family:Wingdings;mso-ascii-mso-fareast-
-				mso-hansi-mso-bidi-
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>&#168;</span>
-				<span class='16' style='background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>书法</span>
-				<span class='16' style='font-family:Wingdings;mso-ascii-mso-fareast-mso-hansi-mso-bidi-background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>o</span>
-				<span class='16' style='background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>绘画</span>
-				<span class='16' style='font-family:Wingdings;mso-ascii-mso-fareast-mso-hansi-mso-bidi-background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>o</span>
-				<span class='16' style='background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>摄影</span>
-				<span class='16' style='background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-		  </tr>
-		  <tr>
-			<td width=20% valign=center style='width:10%width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>参赛单位</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=50% valign=center colspan=5 style='width:30%;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=justify style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>（例：区</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>+街道）</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-		  </tr>
-		  <tr>
-			<td width=20% valign=center style='width:10%width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>作者姓名</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=132 valign=center style='width:79.2500pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-			<td width=75 valign=center style='width:45.0000pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>性别</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=67 valign=center style='width:40.3500pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-			<td width=81 valign=center style='width:48.7500pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>电话</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=20% valign=center style='width:106.2500pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-		  </tr>
-		  <tr>
-			<td width=20% valign=center style='width:10%width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>通讯地址</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=50% valign=center colspan=5 style='width:30%;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-		  </tr>
-		  <tr style='height:3rem'>
-			<td width=20% valign=center style='width:10%width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>个人简介</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=50% valign=center colspan=5 style='width:30%;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;text-align:center;'>
-				<span class='16' style='background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-		  </tr>
-		  <tr style='height:3rem'>
-			<td width=20% valign=center style='width:10%width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;'>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>作品描述</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=50% valign=center colspan=5 style='width:30%;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-		  </tr>
-		</table>
-	  <!-- </div> -->
-	  <span style='
-	  '>
-		<br clear=all style='page-break-before:always;mso-break-type:section-break'></span>
-	  <div class='Section1' style='layout-grid:15.6000pt;'>
-		<p class=MsoBodyTextFirstIndent align=justify style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>附件2</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoBodyTextFirstIndent align=center style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;
-		
-		text-align:center;
-		'>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <font>首届</font>&#8220;京颐杯&#8221;北京市社会化管理退休人员书法绘画摄影展</span></b>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <o:p></o:p>
-			</span>
-		  </b>
-		</p>
-		<p class=MsoBodyTextFirstIndent align=center style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;
-		
-		text-align:center;
-		'>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <font>作品汇总表</font></span>
-		  </b>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <o:p></o:p>
-			</span>
-		  </b>
-		</p>
-		<p class=p align=justify style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-		
-		
-		'>
-		  <b>
-			<span class='16' style='font-size:0.6rem;font-weight:bold;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-			  <font style="font-size:0.6rem;">填表单位</font></span>
-		  </b>
-		  <b>
-			<span class='16' style='font-weight:bold;
-			background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-			  <font>：</font></span>
-		  </b>
-		  <b>
-			<u>
-			  <span class='16' style='font-weight:bold;
-			  text-decoration:underline;text-underline:single;
-			  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			</u>
-		  </b>
-		  <b>
-			<u>
-			  <span class='16' style='font-weight:bold;
-			  text-decoration:underline;text-underline:single;
-			  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				<o:p></o:p>
-			  </span>
-			</u>
-		  </b>
-		</p>
-		<table class="MsoNormalTable table2" border=1 cellspacing=0 style='border-collapse:collapse;width:100% !important;'>
-		  <tr>
-			<td width=30 valign=top style='width:10%;border-left:1px solid windowtext;border-right:1px solid windowtext;border-top:1px solid windowtext;border-bottom:1px solid windowtext;'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>序号</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>作品名称</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>作品编号</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>参赛类别</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>姓名</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>性别</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>联系电话</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td valign=top style='width:20%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  
-			  text-align:center;
-			  '>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>备注</span>
-				<span class='16' style='
-				font-size:12.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>（注明街道）</span>
-				<span class='16' style='
-				background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-		  </tr>
-		  <tr style='height:33.9500pt;'>
-			<td valign=top style='width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style=';width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td style="width: 20%;">
-				<p>
-					<b>
-						<span><o:p>&nbsp;</o:p></span>
-					</b>
-				</p>
-			</td>
-			<!-- <td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td> -->
-		  </tr>
-		  <tr style='height:33.9500pt;'>
-			<td valign=top style='width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style=';width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td style="width: 20%;">
-				<p>
-					<b>
-						<span><o:p>&nbsp;</o:p></span>
-					</b>
-				</p>
-			</td>
-			<!-- <td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td> -->
-		  </tr>
-		  <tr style='height:33.9500pt;'>
-			<td valign=top style='width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style=';width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td style="width: 20%;">
-				<p>
-					<b>
-						<span><o:p>&nbsp;</o:p></span>
-					</b>
-				</p>
-			</td>
-			<!-- <td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td> -->
-		  </tr>
-		  <tr style='height:33.9500pt;'>
-			<td valign=top style='width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style=';width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td style="width: 20%;">
-				<p>
-					<b>
-						<span><o:p>&nbsp;</o:p></span>
-					</b>
-				</p>
-			</td>
-			<!-- <td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td> -->
-		  </tr>
-		  <tr style='height:33.9500pt;'>
-			<td valign=top style='width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style=';width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td>
-			<td style="width: 20%;">
-				<p>
-					<b>
-						<span><o:p>&nbsp;</o:p></span>
-					</b>
-				</p>
-			</td>
-			<!-- <td valign=top style='width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=p align=center style='margin-top:0.0000pt;margin-bottom:0.0000pt;
-			  text-indent:32.1500pt;
-			  
-			  text-align:center;
-			  '>
-				<b>
-				  <span class='16' style='font-weight:bold;
-				  background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-					<o:p>&nbsp;</o:p></span>
-				</b>
-			  </p>
-			</td> -->
-		  </tr>
-		</table>
-		<p class="p tip1" align=justify style='margin-top:0.0000pt;margin-bottom:0.0000pt;'>
-		  <span class='16' style='
-		  font-size:14.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-			<font>（注：参赛类别</font></span>
-		  <span class='16' style='
-		  font-size:14.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>1</span>
-		  <span class='16' style='
-		  font-size:14.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>.</span>
-		  <span class='16' style='
-		  font-size:14.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-			<font>书法</font></span>
-		  <span class='16' style='
-		  font-size:14.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>2</span>
-		  <span class='16' style='
-		  font-size:14.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>.</span>
-		  <span class='16' style='
-		  font-size:14.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-			<font>绘画</font></span>
-		  <span class='16' style='
-		  font-size:14.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>&nbsp;&nbsp;3.摄影</span>
-		  <span class='16' style='
-		  font-size:14.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-			<font>）</font></span>
-		  <span class='16' style='
-		  font-size:14.0000pt;background:rgb(255,255,255);mso-shading:rgb(255,255,255);'>
-			<o:p></o:p>
-		  </span>
-		</p>
-	  </div>
-	  <span style='color:rgb(0,0,0);font-weight:bold;'><br clear=all style='page-break-before:always;mso-break-type:section-break'></span>
-	  <span></span>
-	  <div class='Section2' style='layout-grid:15.6000pt;'>
-		<p class=MsoNormal align=justify style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;
-		
-		'>
-		  <b>
-			<span style='color:rgb(0,0,0);
-			font-weight:bold;'>
-			  <font>附件</font></span>
-		  </b>
-		  <span style='
-		  '>3</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=center style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;
-		text-align:center;
-		'>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <font>首届</font>&#8220;京颐杯&#8221;北京市社会化管理退休人员</span></b>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <o:p></o:p>
-			</span>
-		  </b>
-		</p>
-		<p class=MsoNormal align=center style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;
-		text-align:center;
-		'>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <font>书法绘画摄影展参赛要求</font></span>
-		  </b>
-		  <b>
-			<span style='font-weight:bold;
-			'>
-			  <o:p></o:p>
-			</span>
-		  </b>
-		</p>
-		<p class=MsoNormal style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;
-		
-		'>
-		  <span style='
-		  '>
-			<o:p>&nbsp;</o:p></span>
-		</p>
-		<p class=MsoNormal style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;
-		
-		
-		mso-list:l0 level1 lfo3;'>
-		  <!-- <![if !supportLists]> -->
-			<span style=''>
-			  <span style='mso-list:Ignore;'>1.</span></span>
-		  <!-- <![endif]> -->
-		  <span style='
-		  '>
-			<font>比赛设书法</font></span>
-		  <span style='
-		  '>
-			<font>、</font></span>
-		  <span style='
-		  '>
-			<font>绘画</font></span>
-		  <span style='
-		  '>
-			<font>、摄影三</font></span>
-		  <span style='
-		  '>
-			<font>类：</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>（</font></span>
-		  <span style='
-		  '>1）</span>
-		  <span style='
-		  '>
-			<font>书法参赛作品尺寸不超过</font></span>
-		  <span style='
-		  '>6</span>
-		  <span style='
-		  '>
-			<font>尺</font></span>
-		  <span style='
-		  '>
-			<font>，不小于</font></span>
-		  <span style='
-		  '>2尺</span>
-		  <span style='
-		  '>
-			<font>（</font></span>
-		  <span style='
-		  '>
-			<font>横版</font></span>
-		  <span style='
-		  '>/</span>
-		  <span style='
-		  '>
-			<font>竖版），书法作品只限毛笔书法，字体不限；</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>（</font></span>
-		  <span style='
-		  '>2）</span>
-		  <span style='
-		  '>
-			<font>绘画作品尺寸不超过</font></span>
-		  <span style='
-		  '>6</span>
-		  <span style='
-		  '>
-			<font>尺</font></span>
-		  <span style='
-		  '>
-			<font>，不小于</font></span>
-		  <span style='
-		  '>2尺</span>
-		  <span style='
-		  '>
-			<font>（</font></span>
-		  <span style='
-		  '>
-			<font>横版</font></span>
-		  <span style='
-		  '>/</span>
-		  <span style='
-		  '>
-			<font>竖版），类别只限国画</font></span>
-		  <span style='
-		  '>
-			<font>；</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal style='
-		
-		
-		'>
-		  <span style='
-		  '>
-			<font>（</font></span>
-		  <span style='
-		  '>3）</span>
-		  <span style='
-		  '>
-			<font>摄影作品原创黑白照片、彩色照片均可。要求提供照片原始电子文件（</font>JPG格式，每幅不低于5M）</span>
-		  <span style='
-		  '>
-			<font>，</font></span>
-		  <span style='
-		  '>
-			<font>不接受合成照片、用电脑技术作较大人工修改制作的照片。</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal style='
-		
-		
-		'>
-		  <span style='
-		  '>2.</span>
-		  <span style='
-		  '>
-			<font>作品装裱要求：</font></span>
-		  <span style='
-		  '>
-			<font>书法、绘画</font></span>
-		  <span style='
-		  '>
-			<font>参赛作品均需采取立轴装裱形式。</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal style='margin-left:0.0000pt;
-		mso-para-margin-left:0.0000gd;
-		
-		'>
-		  <span style='
-		  '>3.</span>
-		  <span style='
-		  '>
-			<font>每位</font></span>
-		  <span style='
-		  '>
-			<font>作者可同时参加书法、绘画比赛</font></span>
-		  <span style='
-		  '>
-			<font>，每个类别提交作品不能超过</font></span>
-		  <span style='
-		  '>2幅</span>
-		  <span style='
-		  '>
-			<font>。</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal style='
-		
-		
-		'>
-		  <span style='
-		  '>4.</span>
-		  <span style='
-		  '>
-			<font>参赛作品若涉及版权、肖像权、名誉权等问题，由作者自行解决并承担责任</font></span>
-		  <span style='
-		  '>
-			<font>。</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal style='
-		
-		
-		'>
-		  <span style='
-		  '>5.</span>
-		  <span style='
-		  '>
-			<font>入选作品将用于公益宣传展示，</font></span>
-		  <span style='
-		  '>
-			<font>处理方式会征求作者意见</font></span>
-		  <span style='
-		  '>
-			<font>。</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal style='
-		
-		'>
-		  <span style='
-		  '>
-			<o:p>&nbsp;</o:p></span>
-		</p>
-		<p class=MsoNormal style='
-		
-		'>
-		  <span style='
-		  '>
-			<o:p>&nbsp;</o:p></span>
-		</p>
-		<p class=MsoNormal style='
-		
-		'>
-		  <span style='
-		  '>
-			<o:p>&nbsp;</o:p></span>
-		</p>
-		<p class=MsoNormal style='
-		
-		'>
-		  <span style='
-		  '>
-			<font>附件</font></span>
-		  <span style='
-		  '>4</span>
-		  <span style='
-		  '>&nbsp;&nbsp;</span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<p class=MsoNormal align=center style='
-		
-		text-align:center;'>
-		  <span style='
-		  '>
-			<font>各区活动</font></span>
-		  <span style='
-		  '>
-			<font>工作人员联络表</font></span>
-		  <span style='
-		  '>
-			<o:p></o:p>
-		  </span>
-		</p>
-		<table class=MsoTableGrid border=1 cellspacing=0 style='border-collapse:collapse;width:100%;mso-table-layout-alt:fixed;
-		border:none;
-		
-		'>
-		  <tr>
-			<td width=143 valign=top style='width:86.0500pt;width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style='
-				'>区名称</span>
-				<span style=''>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=143 valign=top style='width:86.0500pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style='
-				'>姓名</span>
-				<span style=''>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=179 valign=top style='width:107.4000pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style='
-				'>职务</span>
-				<span style=''>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=179 valign=top style='width:107.4000pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style='
-				'>手机</span>
-				<span style=''>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-			<td width=107 valign=top style='width:64.7500pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:1px solid windowtext;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style='
-				'>备注</span>
-				<span style=''>
-				  <o:p></o:p>
-				</span>
-			  </p>
-			</td>
-		  </tr>
-		  <tr>
-			<td width=143 valign=top style='width:86.0500pt;width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style=''>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-			<td width=143 valign=top style='width:86.0500pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style=''>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-			<td width=179 valign=top style='width:107.4000pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style=''>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-			<td width=179 valign=top style='width:107.4000pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style=''>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-			<td width=107 valign=top style='width:64.7500pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style=''>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-		  </tr>
-		  <tr>
-			<td width=143 valign=top style='width:86.0500pt;width:10%;border-left:1px solid windowtext;
-			border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style=''>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-			<td width=143 valign=top style='width:86.0500pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style=''>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-			<td width=179 valign=top style='width:107.4000pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style=''>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-			<td width=179 valign=top style='width:107.4000pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style=''>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-			<td width=107 valign=top style='width:64.7500pt;width:10%;border-left:none;
-			mso-border-left-alt:none;border-right:1px solid windowtext;
-			border-top:none;border-bottom:1px solid windowtext;
-			2%'>
-			  <p class=MsoNormal align=center style='
-			  
-			  text-align:center;'>
-				<span style=''>
-				  <o:p>&nbsp;</o:p></span>
-			  </p>
-			</td>
-		  </tr>
-		</table>
-		<p class=MsoNormal align=center style='
-		
-		text-align:center;'>
-		  <span style='
-		  '>
-			<o:p>&nbsp;</o:p></span>
-		</p>
-	  </div>
+		<p style="line-height:115%; margin:0pt; text-align:justify; text-indent:21pt">
+			<span style="">为深入贯彻党的十九大和十九届二中、三中、四中全会精神，深入贯彻习近平总书记对北京重要讲话精神，落实国务院政府工作报告</span>
+			<span style="font-family:Calibri; ">“</span>
+			<span style="">丰富群众精神文化生活，加强公共文化服务，使全社会充满活力、向上向善</span>
+			<span style="font-family:Calibri; ">”</span>
+			<span style="">的工作要求，我市将在全市范围开展首届</span>
+			<span style="font-family:Calibri; ">“</span>
+			<span style="">京颐杯</span>
+			<span style="font-family:Calibri; ">”</span>
+			<span style="">社会化管理退休人员书法绘画摄影展活动</span>
+			<span style="">。</span></p>
+		  <p style="line-height:115%; margin:0pt; text-align:justify; text-indent:21pt">
+			<span style="">活动将</span>
+			<span style="">通过开展大型书法绘画摄影线上展览</span>
+			<span style="">——</span></p>
+		  <p style="line-height:115%; margin:0pt 0pt 0pt 21pt; text-align:justify; text-indent:-21pt">
+			<span style="font-family:Wingdings; "></span>
+			<span style="font:7.0pt 'Times New Roman'">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span>
+			<span style="">用笔墨书写中华民族一往无前、自强不息、顽强拼搏的精神品格</span>
+			<span style="">；</span></p>
+		  <p style="line-height:115%; margin:0pt 0pt 0pt 21pt; text-align:justify; text-indent:-21pt">
+			<span style="font-family:Wingdings; "></span>
+			<span style="font:7.0pt 'Times New Roman'">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span>
+			<span style="">用画笔绘制首都山水之美、人心之美、文化之美</span>
+			<span style="">；</span></p>
+		  <p style="line-height:115%; margin:0pt 0pt 0pt 21pt; text-align:justify; text-indent:-21pt">
+			<span style="font-family:Wingdings; "></span>
+			<span style="font:7.0pt 'Times New Roman'">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span>
+			<span style="">用镜头记录北京人民砥砺奋斗、逐梦前行、众志成城的感动瞬间</span>
+			<span style="">；</span></p>
+		  <p style="line-height:115%; margin:0pt 0pt 0pt 21pt; text-align:justify; text-indent:-21pt">
+			<span style="font-family:Wingdings; "></span>
+			<span style="font:7.0pt 'Times New Roman'">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span>
+			<span style="">讴歌党的领导、讴歌新时代，讴歌向上向善的社会活力，进一步强信心、暖人心、聚民心。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="font-weight:normal">（一）作品征集（2020年8月20日—9月20日）</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">各区可通过开展街道推荐、区域书画展等方式进行初评，并于2020年9月20日前将最终推荐的书法、绘画、摄影作品的信息填写到《首届“京颐杯”北京市社会化管理退休人员书法绘画摄影展作品推荐表》（附件1）和《首届“京颐杯”北京市社会化管理退休人员书法绘画摄影展作品汇总表》（附件2），并将电子版表格上报至市劳动服务管理中心。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">1.作品数量</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">东城区、西城区、朝阳区、海淀区、丰台区、石景山区每区可推荐100件作品（其中书法类60件，绘画类20件，摄影类20件）；其他区每区可推荐50件作品（其中书法类30件，绘画类10件，摄影类10件）。同时欢迎各类国有企业推荐退休人员书法、绘画、摄影作品。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">2.作品要求</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; widows:0">
+			<span style="">    作品格式应满足《首届“京颐杯”北京市社会化管理退休人员书法绘画摄影展参赛要求》（附件3）中列明的条件。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="font-weight:normal">（二）作品采集（2020年9月21日— 10月15日）</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">报送的书法绘画作品，由市劳服中心初步筛选后到各区进行拍摄采集。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">推荐的摄影类作品由各区汇总后统一发送至活动指定邮箱：</span>
+			<span style="">happyijia@happyijia.com</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="font-weight:normal">（三）作品展示（2020年10月16日— 11月8日）</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">承办机构对拍摄的作品进行处理，作品图片与介绍文字上传服务器，在全市范围内开展线上展示。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">在网站开放的时间范围内，各区可通过发通知、转发链接等方式组织社会化管理退休人员进行浏览。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="font-weight:normal">（四）线上教学（2020年10月1日— 10月31日）</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">承办机构通过网络直播的方式开展线上教学、线上笔会、线上点评，书法、绘画、摄影每类课程由行业专家进行授课，具体时间和方式另行通知。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">（5）</span>
+			<span style="font-weight:normal">作品评审</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; widows:0">
+			<span style="font-weight:normal"></span>
+			<span style="font-weight:normal">作品评审分为大众评审、专家评审两种形式：</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">1.大众评审（2020年10月16日—11月8日）</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">线上展览开放微信投票端口，浏览书画摄影作品的观众可对喜爱的作品进行投票（每人只能投票一次，可选择作品不超过10个），投票结果可实时查看。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">2.专家评审（2020年11月9日— 11月12日）</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">由专家对书法、绘画、摄影作品进行点评和评选，评审的过程通过网络直播的方式进行公开。评选结束后，优秀作品印制成册发放给参选人员。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">&#xa0;</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify;  widows:0">
+			<span style="">附件：1.首届“京颐杯”北京市社会化管理退休人员书法绘画摄影展作品推荐表</span></p>
+			<p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">2.首届“京颐杯”北京市社会化管理退休人员书法绘画摄影展作品汇总表</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">3.首届“京颐杯”北京市社会化管理退休人员书法绘</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:63.3pt; widows:0">
+			<span style="">画摄影展参赛要求</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="">&#xa0;</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; widows:0">
+			<span style="font-family:黑体; font-weight:normal">附件1</span>
+			<span style="font-weight:bold"></span>
+		  </p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:center; widows:0">
+			<span style="font-size:22pt; font-weight:bold">首届“京颐杯”北京市社会化管理退休人员</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:center; widows:0">
+			<span style="font-size:22pt; font-weight:bold">书法绘画摄影展作品推荐表</span></p>
+		  <table cellspacing="0" cellpadding="0" style="border-collapse:collapse; margin-left:0pt; width:100%">
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">作品名称</span></p>
+			  </td>
+			  <td colspan="3" style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:308.8pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">作品编号</span></p>
+			  </td>
+			  <td colspan="3" style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:308.8pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">参赛类别</span></p>
+			  </td>
+			  <td colspan="3" style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:308.8pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">¨</span>
+				  <span style="background-color:#ffffff; font-weight:normal"></span>
+				  <span style="background-color:#ffffff; font-weight:normal">书法</span>
+				  <span style="background-color:#ffffff; font-weight:normal"></span>
+				  <span style="background-color:#ffffff; font-family:Wingdings; font-weight:normal"></span>
+				  <span style="background-color:#ffffff; font-weight:normal"></span>
+				  <span style="background-color:#ffffff; font-weight:normal">绘画</span>
+				  <span style="background-color:#ffffff; font-weight:normal"></span>
+				  <span style="background-color:#ffffff; font-family:Wingdings; font-weight:normal"></span>
+				  <span style="background-color:#ffffff; font-weight:normal"></span>
+				  <span style="background-color:#ffffff; font-weight:normal">摄影</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">参赛单位</span></p>
+			  </td>
+			  <td colspan="3" style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:308.8pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">作者姓名</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.75pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">联系电话</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.75pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">通讯地址</span></p>
+			  </td>
+			  <td colspan="3" style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:308.8pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr style="height:131.55pt">
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">个人简介</span></p>
+			  </td>
+			  <td colspan="3" style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:308.8pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr style="height:239.1pt">
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:95.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">作品描述</span></p>
+			  </td>
+			  <td colspan="3" style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:middle; width:308.8pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr style="height:0pt">
+			  <td style="width:106.5pt; border:none"></td>
+			  <td style="width:106.5pt; border:none"></td>
+			  <td style="width:106.55pt; border:none"></td>
+			  <td style="width:106.55pt; border:none"></td>
+			</tr>
+		  </table>
+		<br style="clear:both; mso-break-type:section-break; page-break-before:always" />
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; widows:0">
+			<span style="font-family:黑体; font-weight:normal">附件2</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:center; widows:0">
+			<span style="font-size:22pt; font-weight:bold">首届“京颐杯”北京市社会化管理退休人员书法绘画摄影展</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:center; widows:0">
+			<span style="font-size:22pt; font-weight:bold">作品汇总表</span></p>
+		  <p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:31.5pt; widows:0">
+			<span style="background-color:#ffffff; font-weight:bold">（注：参赛类别1、书法</span>
+			<span style="background-color:#ffffff; font-weight:bold"></span>
+			<span style="background-color:#ffffff; font-weight:bold">2、绘画</span>
+			<span style="background-color:#ffffff; font-weight:bold">3、摄影</span>
+			<span style="background-color:#ffffff; font-weight:bold">）</span></p>
+		  <table cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%">
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">序号</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">参赛类别</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">作品编号</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">姓名</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">性别</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">联系电话</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">身份证号</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; widows:0">
+				  <span style="background-color:#ffffff; font-weight:normal">备注</span></p>
+			  </td>
+			</tr>
+			<tr style="height:33.95pt">
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top;">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top; width:94.95pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top; width:32.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top; width:76.95pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top; width:67.95pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top; width:57.45pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top; width:74.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top; width:99.45pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top; width:128.7pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt;  vertical-align:top; width:94.95pt">
+				<p style="line-height:28pt; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0">
+				  <span style="font-weight:bold">&#xa0;</span></p>
+			  </td>
+			</tr>
+		  </table>
+		  <p style="line-height:28pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal">（注：参赛类别</span>
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal"></span>
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal">1</span>
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal">.</span>
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal">书法</span>
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal"></span>
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal">2</span>
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal">.</span>
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal">绘画</span>
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal">  3.摄影</span>
+			<span style="background-color:#ffffff; font-size:14pt; font-weight:normal">）</span></p>
+		<br style="clear:both; mso-break-type:section-break; page-break-before:always" />
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; widows:0">
+			<span style="font-family:黑体; font-weight:bold">附件</span>
+			<span style="font-family:黑体; ">3</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:center; widows:0">
+			<span style="font-size:22pt; font-weight:bold">首届“京颐杯”北京市社会化管理退休人员</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:center; widows:0">
+			<span style="font-size:22pt; font-weight:bold">书法绘画摄影展参赛要求</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">&#xa0;</span></p>
+		  <ol type="1" style="margin:0pt; padding-left:0pt">
+			<li style="line-height:28pt; list-style-position:inside; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			  <span style="">比赛设书法</span>
+			  <span style="">、</span>
+			  <span style="">绘画</span>
+			  <span style="">、摄影三</span>
+			  <span style="">类：</span></li>
+		  </ol>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">（</span>
+			<span style="">1）</span>
+			<span style="">书法参赛作品尺寸不超过</span>
+			<span style="">6</span>
+			<span style="">尺</span>
+			<span style="">，不小于</span>
+			<span style="">2尺</span>
+			<span style="">（</span>
+			<span style="">横版</span>
+			<span style="">/</span>
+			<span style="">竖版），书法作品只限毛笔书法，字体不限；</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">（</span>
+			<span style="">2）</span>
+			<span style="">绘画作品尺寸不超过</span>
+			<span style="">6</span>
+			<span style="">尺</span>
+			<span style="">，不小于</span>
+			<span style="">2尺</span>
+			<span style="">（</span>
+			<span style="">横版</span>
+			<span style="">/</span>
+			<span style="">竖版），类别只限国画</span>
+			<span style="">；</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">（</span>
+			<span style="">3）</span>
+			<span style="">摄影作品原创黑白照片、彩色照片均可。要求提供照片原始电子文件（JPG格式，每幅不低于5M）</span>
+			<span style="">，</span>
+			<span style="">不接受合成照片、用电脑技术作较大人工修改制作的照片。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">2.</span>
+			<span style="">作品装裱要求：</span>
+			<span style="">书法、绘画</span>
+			<span style="">参赛作品均需采取立轴装裱形式。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">3.</span>
+			<span style="">每位</span>
+			<span style="">作者可同时参加书法、绘画比赛</span>
+			<span style="">，每个类别提交作品不能超过</span>
+			<span style="">2幅</span>
+			<span style="">。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">4.</span>
+			<span style="">参赛作品若涉及版权、肖像权、名誉权等问题，由作者自行解决并承担责任</span>
+			<span style="">。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
+			<span style="">5.</span>
+			<span style="">入选作品将用于公益宣传展示，</span>
+			<span style="">处理方式会征求作者意见</span>
+			<span style="">。</span></p>
 	</div>
 </template>
 <script>
@@ -2344,4 +665,11 @@
 		.tip1 font,.tip1 span{
 			font-size: 16px !important;
 		}
+	p{
+		line-height: 30px !important;
+	}
+	p span{
+		font-size: 16px !important;
+		color: #444444;
+	}
 </style>

@@ -1,14 +1,6 @@
 <template>
   <div class="mod-home">
     <headerHtml></headerHtml>
-    <el-row class="liulan-list">
-      <el-col :span="12">
-        <span class="left">浏览量：189098</span>
-      </el-col>
-      <el-col :span="12">
-        <span class="right">总票数：2098373</span>
-      </el-col>
-    </el-row>
     <div class="nav-box">
       <el-tabs class="tabs-body" v-model="activeName" @tab-click="handleClick">
         <el-tab-pane flag="newsFlag" label="新闻动态" name="first">新闻动态</el-tab-pane>
@@ -424,7 +416,7 @@ h3.small img {
   background: #99a9bf;
 }
 .bg-purple {
-  background: #d3dce6;
+  background: #f1dfef;
 }
 .bg-purple-light {
   background: #e5e9f2;
@@ -749,8 +741,8 @@ h3.small img {
   cursor: pointer;
 }
 .bg-purple img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
   margin-top: 20px;;
 }
@@ -767,7 +759,5 @@ h3.small img {
   margin-top: 20px;
   margin-bottom: 0px;
 }
-.liulan-list span{ color: #666666}
-.liulan-list .right{float: right;}
 </style>
 
