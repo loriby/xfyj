@@ -31,7 +31,7 @@
         <el-row class="yun-box" :gutter="30">
             <el-col :span="8">
                 <div class="grid-content bg-purple">
-                <a href="https://wxdc5079dd9cc75887.h5.xiaoe-tech.com/mp/eyJpZCI6ODc1NjExfQ">
+                <a href="https://wxdc5079dd9cc75887.h5.xiaoe-tech.com/v1/course/column/p_5f452a7ee4b0118787334afd?type=3">
                     <img src="~@/assets/img/yunketang1.png" alt="">
                     <span>云课堂</span>
                 </a>
@@ -66,9 +66,13 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.el-carousel__item{
+    display:flex;
+    align-items: center
+}
 .el-carousel__item img{
     width: 100%;
-    height:100%;
+    // height:100%;
 }
 .liulan-list span{ color: #666666}
 .liulan-list .right{float: right;}

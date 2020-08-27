@@ -34,8 +34,9 @@
 .picCon{
   width: 310px;
   height: 310px;
-  display: block;
+  display: flex;
   overflow: hidden;
+  align-items: center;
 }
 .picCon img{
   -webkit-transition: -webkit-transform 0.4s ease;

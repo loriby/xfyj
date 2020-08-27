@@ -81,17 +81,6 @@
           <div class="doctor doctorlist">
             <div class="item clearfix" onclick="location.href='view/newDetail.html'">
               <div class="item-img">
-                <img src="static/imgs/newsimg1.jpeg">
-              </div>
-              <a class="item-word" href="javascript:void(0)">
-                <p>国企退休人员年底纳入社会化管理后，退休福利待遇会变吗？</p> 
-                <span>近日，市人力社保局发布消息，今年年底前，本市要将尚未实行社会化管理的国有企业已退休人员移交街道和社区实行社会化管理，届时，社会化管理退休人员总量将从目前的114.1万人增加到210.4万人。</span>
-              </a>
-            </div>
-          </div>
-          <div class="doctor doctorlist">
-            <div class="item clearfix" onclick="location.href='view/newDetail.html'">
-              <div class="item-img">
                 <img src="static/imgs/news_img2.jpg">
               </div>
               <a class="item-word" href="javascript:void(0)">
@@ -119,6 +108,17 @@
               <a class="item-word" href="javascript:void(0)">
                 <p>今年底企退人员社会化管理总量将达210余万</p> 
                 <span>打破地域和户籍限制，家门口即可享受无差别服务供稿人北京市劳动服务管理中心2020年7月1日前半生奋斗在企业，后半生养老在社区，退休后离开了企业，退休待遇会不会降低、办事方不方便、生活有困难谁来管等等，类似这样的问题是</span>
+              </a>
+            </div>
+          </div>
+          <div class="doctor doctorlist">
+            <div class="item clearfix" onclick="location.href='view/newDetail.html'">
+              <div class="item-img">
+                <img src="static/imgs/newsimg1.jpeg">
+              </div>
+              <a class="item-word" href="javascript:void(0)">
+                <p>国企退休人员年底纳入社会化管理后，退休福利待遇会变吗？</p> 
+                <span>近日，市人力社保局发布消息，今年年底前，本市要将尚未实行社会化管理的国有企业已退休人员移交街道和社区实行社会化管理，届时，社会化管理退休人员总量将从目前的114.1万人增加到210.4万人。</span>
               </a>
             </div>
           </div>
@@ -321,9 +321,9 @@
           AfedFn.tabsChage('.tabTags', function(index, tagCurr, oCurr) {
             $('.zuopin-box').hide()
             if (index == 1) {
-              $('#eventDetails').height($('#eventDetails').contents().find(".Section0").height())
+              $('#eventDetails').height($('#eventDetails').contents().find(".Section0").height()+100)
             } else if (index == 2) {
-              $('#myiframe').height($('#myiframe').contents().find(".Section0").height())
+              $('#myiframe').height($('#myiframe').contents().find(".Section0").height()+100)
             } else if (index == 3) {
                 $('.zuopin-box').show()
             } else {

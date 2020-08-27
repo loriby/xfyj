@@ -69,17 +69,17 @@ body{
 
 /*展览聚合页*/
 .exhLogo{ text-align: center; height: 8rem;}
-.exhLogo img{ width: 100%; height: 100%;}
+.exhLogo img{ width: 100%;}
 /**/
 .schoolList { overflow: hidden; padding:.8rem 0; background:#fff; text-align: center;font-size: 0; }
-.schoolList a{display: inline-block; width: 4.5rem;margin:0 .87.35rem 0 ; text-align: center;}
+.schoolList a{display: inline-block; width: 30%;margin:0 .87.35rem 0 ; text-align: center;}
 .schoolList dt{width: 2.5rem; height: 2.5rem; line-height:2rem;font-size: 1.125rem; border-radius: 50%; border:2px solid #d4237a; color: #999999;margin: 0 auto;}
 .schoolList dd{color: #666666; font-size: .5rem; line-height: 1;padding-top:.3rem;}
 .graduation .title{padding-top:0rem; padding-bottom: 1rem; font-size: .8rem}
 .graduation .title:after{top:52.5%}
 .graduTabs{}
-.graduTabs .tabTags{ overflow: hidden; padding-bottom: .5rem;padding-top:.8rem;background: #fff;}
-.graduTabs .tabTags li{float:left; font-size: .65rem; height: 1.5rem; padding:0 .45rem; line-height: 1.5rem;border:1px solid #e6e6e6;border-radius: .2rem; margin-left: .5rem;margin-bottom: .25rem;}
+.graduTabs .tabTags{ overflow: hidden; padding-bottom: .5rem;padding-top:.8rem;background: #fff;text-align:center;display:inline-block;}
+.graduTabs .tabTags li{display:inline;font-size: .65rem; height: 1.5rem; width: 20%; line-height: 1.5rem;border:1px solid #e6e6e6;border-radius: .2rem; margin-left: .5rem;margin-bottom: .25rem;}
 .graduTabs .tabCont{ display: none;}
 .col2{ overflow: hidden;}
 .col2 li{ float:left;width: 7.3rem;margin-right: .5rem;}
@@ -93,8 +93,8 @@ body{
 .col2 .voteDis{color:#cccccc}
 .graduTabs .btnArea{text-align: center; font-size: 0; padding:1rem 0 .5rem;}
 .graduTabs .btnArea a{display:inline-block;height: 1.5rem; line-height: 1.5rem;border:1px solid #e6e6e6;border-radius:1.5rem; padding:0 1.5rem; font-size: .6rem; color: #666666;}
-.graduTabs .tabTags .curr{ background: #d4237a; color:#fff;}
-.graduTabs .currShow{ display: block;}
+.graduTabs .tabTags .curr{ background: #d4237a; color:#fff;border-color: #d4237a;}
+.graduTabs .currShow{ display: block;padding-bottom: 20px;}
 
 /*noinfo*/
 .noInfo{padding:3rem 0!important;color:#666666; font-size: .9rem; text-align: center;}
@@ -129,23 +129,25 @@ body{
 .zuopin-box li.active{
     color: red;
 }
-.doctor{background: #fff;overflow: hidden;margin-top:10px;margin-bottom: 10;padding-bottom: 15px;}
+.doctor{background: #fff;overflow: hidden;border-top: solid 1px #ececec;padding-bottom: 15px;}
 .zhanwei{
 	height: 64px;
 }
-.item,.number{width:100%;padding:10px 3.3%;background:#fff;margin-top:10px;}
+.item,.number{width:100%;padding:10px 3.5%;background:#fff;margin-top:10px;}
 .number{margin-top:0;}
-.item .item-img{width:42%;height: 3.5rem;float:left;}
-.item .item-img img{width:100%;height:100%}
-.item .item-word{width:54%;float:right; text-align: left;padding-top:8px;}
+.item .item-img{width:35%;height: 3.5rem;float:left;overflow: hidden;display:flex; align-items: center;}
+.item .item-img img{width:100%;}
+.item .item-word{width:62%;float:right; text-align: left;padding-top:8px;}
 .item .item-word p{font-size:0.62rem;color:#333;margin-bottom:10px;text-align: justify;text-overflow: -o-ellipsis-lastline;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;}
-.news-list-box{background: #f5f5f5 !important;}
-.item .item-word span{align-self:flex-start;font-size:0.54rem;color:#999;text-align: justify;
+/* .news-list-box{background: #f5f5f5 !important;} */
+.item .item-word span{
+    font-size:0.54rem;color:#999;
+    /* text-align: justify; */
     text-overflow: -o-ellipsis-lastline;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -178,7 +180,6 @@ body{
 }
 .tabCont {
     background: #fff;
-    margin-top: 10px;
 }
 .col2{
     width:95%;
@@ -194,15 +195,18 @@ body{
 }
 .swiper-slide{
     line-height: 6rem;
+    display: flex;
+    align-items: center;
 }
 .view-tip{
     background:#fff;
     height: 1.5rem;
     line-height: 1.5rem;
-    border-bottom: solid 1px #ececec;
+    margin-bottom: 10px;
 }
 .schoolList{
-    border-bottom: solid 1px #ececec;
+    /* border-bottom: solid 1px #ececec; */
+    margin-bottom: 10px;
 }
 .view-tip p {
     width: 95%;
@@ -211,8 +215,8 @@ body{
     overflow: hidden;
 }
 .view-tip p span{
-    font-size: .6rem;
-    color: #666666;
+    font-size: .5rem;
+    color: #444444;
 }
 .view-tip p .left{
     float:left;
@@ -224,4 +228,10 @@ body{
 }
 .foundIcon img {
     width: 76%;
+}
+.swiper-pagination-bullet-active{
+    --swiper-theme-color: #d4237a !important;
+}
+.swiper-pagination-bullets{
+    bottom: -5px !important;
 }
