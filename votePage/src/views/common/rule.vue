@@ -1,50 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,target-densitydpi=high-dpi,minimal-ui " />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
-    <script src="../static/js/rem.js"></script>
-    <link rel="stylesheet" href="../static/css/reset.css">
-    <link rel="stylesheet" href="../static/css/cnaf.css">
-    <script type="text/javascript" src="../static/js/bigData_wap.js"></script>
-	<style>
-		body{
-			background: #fff;
-			padding: 0 1% !important;
-		}
-		.MsoNormal,.MsoNormal font,.MsoNormal span{
-			font-size: 0.6rem!important;
-			color: #666;
-		}
-		.Section0 p{
-			line-height: .8rem!important;
-		}
-		.MsoNormal b{
-			font-size: 0.7!important;
-		}
-		.title1 font{
-			font-size: .8rem !important;
-		}
-		.title1{
-			padding-top: 5px!important;
-			padding-bottom: 5px!important;
-		}
-		.Section0 p span{
-			font-size: 0.55rem !important;
-		}
-	</style>
-</head>
-<body style="tab-interval:21pt;text-justify-trim:punctuation;">
-	<!--StartFragment-->
+<template>
 	<div class="Section0">
-		<p style="font-size:16pt; line-height:115%; margin:0pt; text-align:justify">
+	  <p style="font-size:16pt; line-height:115%; margin:0pt; text-align:justify">
 			<!-- <span style="font-family:仿宋; font-size:16pt; font-weight:bold">评分细则</span>
 			<span style="font-family:仿宋; font-size:12pt">——</span></p> -->
 		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
@@ -539,5 +495,31 @@
 		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
 			<span style="font-family:仿宋_GB2312; font-size:16pt; font-weight:bold">&#xa0;</span></p>
 	</div>
-	<!--EndFragment--></body>
-</html>
+</template>
+<script>
+	
+</script>
+<style lang="scss">
+	body{
+		background: #fff;
+		padding: 0 1%;
+	}
+	.MsoNormal,.MsoNormal font,.MsoNormal span{
+		font-size: 14px;
+		color: #666;
+	}
+	p{
+		line-height: 30px !important;
+	}
+	p span{
+		font-size: 16px !important;
+		color: #444444;
+	}
+	.title1 font{
+		font-size: 20px !important;
+	}
+	.title1{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+</style>

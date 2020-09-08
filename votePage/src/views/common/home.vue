@@ -1,23 +1,6 @@
 <template>
   <div class="mod-home">
-    <el-carousel height="188px">
-      <el-carousel-item v-for="item in 1" :key="item">
-        <h3 class="small">
-          <img src="~@/assets/img/banner.jpg" alt />
-        </h3>
-      </el-carousel-item>
-    </el-carousel>
-    <el-row class="yun-box" :gutter="30">
-      <el-col :span="8">
-        <div class="grid-content bg-purple">云课堂</div>
-      </el-col>
-      <el-col :span="8">
-        <div @click="goList(false)" class="grid-content bg-purple">云评选</div>
-      </el-col>
-      <el-col :span="8">
-        <div @click="goList(true)" class="grid-content bg-purple">云展览</div>
-      </el-col>
-    </el-row>
+    <headerHtml></headerHtml>
     <div class="nav-box">
       <el-tabs class="tabs-body" v-model="activeName" @tab-click="handleClick">
         <el-tab-pane flag="newsFlag" label="新闻动态" name="first">新闻动态</el-tab-pane>
@@ -25,7 +8,7 @@
         <el-tab-pane flag="ruleFlag" label="投票规则" name="third">投票规则</el-tab-pane>
         <el-tab-pane flag="opusFlag" label="作品" name="fourth">作品</el-tab-pane>
       </el-tabs>
-      <el-row>
+      <el-row v-if="activeName == 'fourth'">
         <el-col :span="24">
           <div style="text-align: center;" class="grid-content">
             <el-input
@@ -50,16 +33,55 @@
           </div>
         </div>
         <div class="item-content">
-          <el-row class="news-item" v-for="item in 20" :key="item" :gutter="20">
+          <el-row class="news-item" :gutter="20">
             <el-col :span="4">
               <div @click="newsDetail()" class="grid-content">
-                <img src="~@/assets/img/news.jpg" alt />
+                <img src="~@/assets/img/newsimg1.jpeg" alt />
               </div>
             </el-col>
             <el-col :span="20">
               <div @click="newsDetail()" class="grid-content">
-                近日，国家艺术基金2016年度资助项目初评开始，共有6491个申报主体，向艺术基金申报了7245个项目，比2015年度增加了2843项，同比增幅为64.6%。如此踊跃地申报，既表明今年的评审竞争势必更加激烈，也表明各地已适应了“艺术项目制管理”的新模式。
-                项目制管理”是个经济术语，上世纪八十年代以来广泛运用于经济领域，但大量引入到艺术领域还是一件新鲜事。“三年有成”，通过三年的摸索，国家艺术基金的“艺术项目制管理”已走入正轨，这是文化体制改革的新实践，是提升文化治理能力的新探索。大力支持艺术创作生产传播，推动舞台艺术和美术领域作品数量与质量齐进，国家艺术基金正努力成为艺术繁荣发展的“孵化器”和“发动机”。
+                <h5>国企退休人员年底纳入社会化管理后，退休福利待遇会变吗？</h5>
+                近日，市人力社保局发布消息，今年年底前，本市要将尚未实行社会化管理的国有企业已退休人员移交街道和社区实行社会化管理，届时，社会化管理退休人员总量将从目前的114
+              </div>
+            </el-col>
+          </el-row>
+          <el-row class="news-item" :gutter="20">
+            <el-col :span="4">
+              <div @click="newsDetail()" class="grid-content">
+                <img src="~@/assets/img/news_img2.jpg" alt />
+              </div>
+            </el-col>
+            <el-col :span="20">
+              <div @click="newsDetail()" class="grid-content">
+                <h5>210余万企退人员家门口享无差别服务</h5>
+                前半生奋斗在企业，后半生养老在社区，退休后离开了企业，退休待遇会不会降低、办事方不方便、生活有困难谁来管等等，类似这样的问题是很多企业退休人员关心的事儿。
+              </div>
+            </el-col>
+          </el-row>
+          <el-row class="news-item" :gutter="20">
+            <el-col :span="4">
+              <div @click="newsDetail()" class="grid-content">
+                <img src="~@/assets/img/news_img3.jpg" alt />
+              </div>
+            </el-col>
+            <el-col :span="20">
+              <div @click="newsDetail()" class="grid-content">
+                <h5>北京市劳动服务管理中心——致社会化管理退休人员的一封信</h5>
+                亲爱的“战疫”老年朋友们：您们辛苦啦！突如其来的新冠肺炎疫情，打破了新春的祥和与安宁，为打赢疫情防控的人民战争、总体战、阻击战，您们主动请缨、挺身而出，不顾个人安危，舍小家为大家，在志愿
+              </div>
+            </el-col>
+          </el-row>
+          <el-row class="news-item" :gutter="20">
+            <el-col :span="4">
+              <div @click="newsDetail()" class="grid-content">
+                <img src="~@/assets/img/news_img4.jpg" alt />
+              </div>
+            </el-col>
+            <el-col :span="20">
+              <div @click="newsDetail()" class="grid-content">
+                <h5>今年底企退人员社会化管理总量将达210余万</h5>
+                打破地域和户籍限制，家门口即可享受无差别服务供稿人北京市劳动服务管理中心2020年7月1日前半生奋斗在企业，后半生养老在社区，退休后离开了企业，退休待遇会不会降低、办事方不方便、生活有困难谁来管等等，类似这样的问题是
               </div>
             </el-col>
           </el-row>
@@ -81,66 +103,48 @@
           <span>正文</span>
         </div>
         <div class="item-content">
-          <h1 class>国家艺术基金：“艺术项目制管理”走入正轨</h1>
+          <h1 class>国企退休人员年底纳入社会化管理后，退休福利待遇会变吗？</h1>
           <div class="info">
             <div>
               <span class="time">2016-05-12 11:04:55</span>
-              <span>
-                <em>来源：光明网</em>
-              </span>
             </div>
           </div>
-
           <div class="detail" style="font-size: 18px;">
             <p style="text-align: center;">
-              <img alt src="https://wximg1.artimg.net/news/201605/2016050817341283498.jpg" />
+              <img alt src="~@/assets/img/newsimg1.jpeg" />
             </p>
 
-            <p>近日，国家艺术基金2016年度资助项目初评开始，共有6491个申报主体，向艺术基金申报了7245个项目，比2015年度增加了2843项，同比增幅为64.6%。如此踊跃地申报，既表明今年的评审竞争势必更加激烈，也表明各地已适应了“艺术项目制管理”的新模式。</p>
+            <p>　　近日，市人力社保局发布消息，今年年底前，本市要将尚未实行社会化管理的国有企业已退休人员移交街道和社区实行社会化管理，届时，社会化管理退休人员总量将从目前的114.1万人增加到210.4万人。</p>
+          <p>　　移交街道和社区管理，跟原来的企业管理有什么不一样？退休待遇会不会降低？办事方不方便？怎么参加活动？一些老年人对此一头雾水，甚至因为担心待遇降低、“没人管”而对社会化管理心生抵触。</p>
+          <p>　　
+            老人们的退休待遇会不会发生变化？市人力社保局相关人员对此明确表示：退休人员原享受的补充医疗保险、医疗互助帮困等相关待遇仍然继续由移交企业按照原时间、原渠道、原标准继续予以保障。企业须在移交承诺书上盖章确认。</p>
+            <h6>新闻词条：何为“企业退休人员社会化管理服务”？</h6>
+          <p>企业退休人员社会化管理服务是指职工办理退休手续后，其管理服务工作与原企业分离，养老金实行社会化发放，人员移交城市街道和社区实行属地管理，由社区服务组织提供相应管理服务。</p>
+          <p>这项制度是独立于企业事业单位之外的社会保障体系的重要内容，也是深化国企改革，解决企业办社会问题的重要措施。</p>
+          <p>退休人员实行社会化管理之后，退休人员的养老金实行社会化发放，人事档案由属地集中保管，如果涉及到医保的手工报销、领取社会保险（保障）待遇资格认证、死亡之后家属申领丧葬补助等事宜，都可由街道政务服务中心负责办理。</p>
+          <h6>报销医药费：不用跑单位 家门口就能办</h6>
+          <p>“谁来管理我们其实不重要，我只是担心，离开了厂子，我们的待遇就没保障了。我们的厂子有补充医保，过年过节都有慰问品，好多福利呢。现在把我们分出去，交给街道管理，这些福利是不是就没了？我不愿去街道，我就想一辈子待在厂子里。”杨大妈在一家炼油企业工作了30多年，从她入厂那天起，自己的生老病死就跟厂子捆绑在了一起。现在要进行社会化管理，跟企业“解绑”，杨大妈一时难以接受，害怕没了依靠。</p>
+          <p>　　
+            其实，退休人员大可不必担心，为确保退休人员的权益，本市推行企业“承诺制”，要求对退休人员原来享受的补充医疗保险、医疗互助帮困等相关待遇仍然继续由移交企业按照原时间、原渠道、原标准继续予以保障，并在移交承诺书上盖章确认。</p>
+          <p>李大妈现在住在八里庄街道，工作单位却在石景山。几年前，她参加了退休人员社会化管理，将关系转移到八里庄街道，有什么事就到家门口的便民中心办理就行了。前不久,她的医保卡不小心弄丢了，需要补办。要是按照以前企业管理的办法，她补办社保卡期间的医药费需要到原单位手工报销。这一东一西，单程就要将近30公里。退休关系移交便民服务中心以后，她再也不用坐几十公里公交车去单位跑报销了。步行几分钟就走到了便民中心，经过工作人员耐心细致的引导，她在街道社会化退休窗口拿到了报销款，逢人就说：“退休社会化以后办起事来真方便，在家门口就能办，工作人员工作效率非常高，服务态度也非常好，对我们老年人来说真是件大好事”。</p>
+          <h6>退休福利待遇： 不受影响 办事查询更便利</h6>
+          <p>张芳是一家央企的人事专员，负责退休人员服务及管理工作。她告诉记者，他们公司规模很大，在职职工有几万人，这么多年来，积累了大量退休人员，达到了几千人。负担这几千名退休人员的管理，是一项极其艰巨的任务。领取养老金、调整就诊医院、开具各类证明、开展文化娱乐活动……涉及到方方面面的工作，事无巨细，要占用一个人专职来做这项服务，而且人事、财务、后勤等很多部门都要跟着一起忙活，对企业来说管理成本很高。</p>
+          <p>“有些退休职工住得离公司很远，岁数长了，身体也不太好，有时候还要因为一些小事往公司跑。比如，有人大老远来趟公司，其实就是想变更一下医保定点医院，为此要来回奔波几十公里。如果关系转移到居住地，社保所一般就在家门口不远的地方，他们去那里变更医院、查询信息都很便捷。”</p>
+          <p>所以，张芳认为，从企业的角度，很希望通过国企退休人员社会化管理的方式，在保障现有退休职工福利待遇不受影响的情况下，让他们享受更便捷的办事服务。</p>
+          <h6>档案管理服务：不用来回跑腿 手机操作一下就搞定</h6>
+          <p>退休人员转为社会化管理之后，还有一件很重要的事情就是档案管理。从企业转出来以后，退休人员的档案也将随之转移到街道，今后涉及到档案事务也会通过街道来办理。</p>
+          <p>一些央国企通过与第三方公司的合作，将退休人员的档案进行托管。专业的档案保管库房有智能库房管理系统，确保恒温恒湿，做到防火防盗防尘，保障安全保密性。再通过数字化加工，退休人员想要办理与档案相关的事务，就可以通过线上服务来办理了，在手机上操作一下，就能开好所需证明，省去了来回跑腿的麻烦。</p>
+          <p>“昨天一天我们就接收到了合作企业移交的1000多份退休人员档案，这一批总共有6000多份。”中智外企服务分公司党委书记、总经理李云峰介绍，目前中智已与在京40余家央国企签订合作协议，在退休人员社会化管理方面，使用专业的第三方档案管理服务，既能保障专业性、规范性、安全性，也能帮助企业相关部门减轻事务性工作压力。</p>
+          <h6>退休生活不耽误： “十分钟生活圈”更加丰富多彩</h6>
+          <p>除了这些，退休人员社会化管理的另一个重要功能就是组织退休人员的文化教育活动，让退休人员在家门口享受到“老有所乐、老有所为”的退休生活。</p>
+          <p>王大爷是个“文艺青年”，在原来单位里，退休职工的文体生活特别丰富，他很担心社会化了以后没人组织他们活动了，生活会比较单调。转移到街道以后，他发现原来的担心都是多余的。街道的便民中心将辖区内的文艺爱好者根据居住社区还有爱好特长组织到一起，定期开展爬山、歌唱、广场舞、诗朗诵等活动，不仅丰富了生活，还能让老年人能够在“十分钟生活圈”内找到志同道合的玩伴。</p>
+          <p>66岁的朱小萍大妈是和平街街道便民服务中心一名社会化退休人员，来自北京汽车摩托车联合制造公司的破产企业。退休后朱大妈依然活跃在社会舞台，奉献自己的爱心。通过街道搭桥，2004年至2016年间，朱大妈分别在北京农业技术学校和劳动保障职业学院教学，培养了几百名学生取得了机械加工资格证，并在技能大赛比赛中取得了好成绩，为学生今后就业铺平了道路。</p>
+          <p>朱大妈还一直热衷公益事业，参加街道组织的慰问活动，到太阳宫养老院探望老人们，为他们做心理疏导、慰问演出、包饺子、聊家常，让老人们感觉到家的温暖。今年疫情期间，朱大妈还主动报名社区志愿者，不畏严冬酷暑在社区楼宇路口执勤。
 
-            <p>“项目制管理”是个经济术语，上世纪八十年代以来广泛运用于经济领域，但大量引入到艺术领域还是一件新鲜事。“三年有成”，通过三年的摸索，国家艺术基金的“艺术项目制管理”已走入正轨，这是文化体制改革的新实践，是提升文化治理能力的新探索。大力支持艺术创作生产传播，推动舞台艺术和美术领域作品数量与质量齐进，国家艺术基金正努力成为艺术繁荣发展的“孵化器”和“发动机”。</p>
-
-            <p>
-              <strong>“百里挑一”的项目形成机制</strong>
-            </p>
-
-            <p>虽然来自偏远的四川省凉山彝族自治州，但彝族的首部民族歌剧作品《彝红》却是一路“过关斩将”，通过审核、初评、复评、答辩，成为国家艺术基金首批资助项目。《彝红》能征服评委，不仅是歌剧的选题立意好，把1935年红军长征过凉山，刘伯承与彝族头人果基小叶丹歃血为盟的故事搬上舞台，更为重要的是评委被其艺术质量所折服，歌词清爽优美，秉承彝族山歌的特点，音乐富有史诗色彩，旋律简单好记，非常容易引发共鸣。</p>
-
-            <p>像《彝红》一样，国家艺术基金每个资助项目都是“百里挑一”、“过五关斩六将”，由评审专家们精挑细选出来的。“大比例使用专家，引入专家评审，选优拔萃，提倡竞争，充分让申报项目比优势、比特点、比质量、比实力，从过去的‘相马’变‘赛马’;从行政层层审批变为集中申报和集中评审;从只面向文化系部内变为面向全社会，不分体制内外、国有民营;从只‘管脚下’变为要‘管天下’。”国家艺术基金管理中心主任韩子勇一口气道出了国家艺术基金“项目制管理”的特点。</p>
-
-            <p>果然，记者翻阅近两年来的国家艺术基金立项名单发现，资助范围包括十几个大的艺术门类和近80个小的艺术品种，项目主体丰富多样，既有“高大上”的艺术机构，又有新出现的“小而精”的特色机构，还有不少体制外“单打独斗”的艺术家，不再以身份论英雄，比的是项目的质量、价值、可行性和主体的“经验值”。大家都在同一起跑线上，接受同一种规则，要填报同样的申报材料，走过同样的评审程序，体现了公开、平等，在同一个平台上充分展示和竞争。</p>
-
-            <p>国家艺术基金2014年项目综合立项率约为10%，确定了393个资助项目，资助金额4.03亿元;2015年项目综合立项率约为16%，确定了728个立项资助项目，资助总金额约为7.5亿元。如此高的“淘汰率”，怎样能取舍?怎样去把好质量关?在国家艺术基金理事长蔡武看来，“关键是要发挥充分发挥专家的作用，尊重艺术规律，保证项目评审的公正性，才能推出更多的名家、名作。”三年来，国家艺术基金建立了6000人的专家库，涉及艺术、管理、财务、审计等多个方面，而且每年都要对专家进行培训，要求专家在咨询、评审、监督的全过程中，坚持高标准严要求、选优择优。</p>
-
-            <p>
-              <strong>严密规范的全流程监督机制</strong>
-            </p>
-
-            <p>“实施不当，小心进入黑名单!国家艺术基金的申报主体必须是执行主体，对于弄虚作假，借壳申报的单位，一经发现将被列入黑名单，再次申报项目时将被限报。”此严厉提醒出现在了国家艺术基金的官网上。原来，在2014年度的项目结项验收中，发现有极个别申报主体在项目执行过程中并没有具体参与项目的实施，而是将项目整体转包给第三方。这一现象引起了国家艺术基金的高度警觉。因此，国家艺术基金特别重申：项目申报主体必须同时是项目执行主体，国家艺术基金资助的项目一定是谁申报、谁实施、谁负责。</p>
-
-            <p>发现问题，及时解决问题。中央财经大学文化经济研究院院长魏鹏举评价说，三年来国家艺术基金加强制度建设，围绕资助项目征集评审、实施监督、结项验收、成果运用做了多项开创性的工作，走通了指南发布、项目申报、专家评审、项目实施监督和宣传推广的全流程，确保管理和运行全面做到公平公正、信息透明、监督有力。</p>
-
-            <p>“过去，文艺单位重艺术创作，在财务和管理方面比较粗放、随意，而获得国家艺术基金资助后，以项目执行为主线，要签合同，要有具体的责任主体、实施目标，还有监督和审计，哪些钱该花哪些不能花，钱应该花到哪里，都是有讲究和规范的，项目实施的目标、期限、团队、责任都有章可循。”山西省话剧院院长梁军深有感触地谈起“项目制管理”倒逼文化艺术机构管理上台阶的体会，“国家艺术基金项目评上不容易，花钱更严格”。</p>
-
-            <p>改变还在悄然进行，记者从一张节目单中看出了新变化。过去，一台演出制作的挂名者满满当当好几页，各级宣传部、文化厅层层领导都无一遗漏，再加上“创而优则仕”、“演而优则仕”，艺术单位行政色彩浓，院团的各级领导不管是否参与都要挂上名字，密密麻麻列一大串，而主要艺术家的名字却被淹没其中。现在实施项目制后，有名字就有任务和责任，项目策划和实施都是扎扎实实做事的艺术家，挂名者也就少了，节目单变得简化、清爽了许多，真正让项目的执行者----艺术家成为“主角”。</p>
-
-            <p>“通过选优拔萃、扶优扶强，培育好作品、推出好人才，促进形成良好的艺术生态。”文化部部长雒树刚希望，国家艺术基金努力探索适应治理体系和治理能力现代化要求、符合我国实际的基金管理规律，进一步提高艺术基金运作的科学化、专业化水平。</p>
-
-            <p>
-              <strong>优中选优的项目提升机制</strong>
-            </p>
-
-            <p>记者注意到，在国家艺术基金2016年度的申报指南中，少了对“加工修改”项目的资助。对此，韩子勇回应说，从2014年一开始资助项目中是有“加工修改”的，但经过这两年的消化，优秀作品的“加工修改”项目基本已结项，因此，今年就特别强调“原创”，而且与过去不同的是，除了大型舞台剧的原创外，还支持小型项目的原创，让好创意、好作品不断涌现，也给更多新人机会，保持艺术生产的活力。</p>
-
-            <p>“没有国家艺术基金的支持，不可能打破行政区划，完成跨六个省区的演出和展览。”内蒙古民族艺术剧院院长刘春良参与了晋冀蒙陕甘宁六省区地方戏曲及民乐民歌“三展”联动项目，体会到国家艺术基金促进演出交流和演出市场发育的良苦用心。“原来省市院团大多只能局限在本省区演出，最多去北京、上海演出，很少去其他省演出。国家艺术基金重点资助了传播推广和交流项目，打破行政藩篱，追随文脉分布与有效观众，组织跨省跨区域的巡回演出，让好的作品传播得更远，促进了优质文化资源在更大范围的共享。”</p>
-
-            <p>2016年度国家艺术基金资助项目的一大亮点是创新性地推出了“滚动资助项目”。国家艺术基金理事会副理事长、秘书长赵少华介绍，经过前两年的项目实践，各项目主体对“项目制”已经有了一定认识和经验，国家艺术基金精益求精，继续做好项目成果管理工作。从2014年度已完成结项的一般项目中，本着“坚持标准、宁缺勿滥”的原则，根据专家评审意见，参考网上投票结果，优中选优、层层筛选出8个大型舞台剧和作品，47名青年艺术家的103幅美术、书法、摄影作品作为滚动资助项目。这是艺术基金根据艺术创作生产规律，探索“项目制”管理方式，努力扩大艺术基金资助效益，推动精品力作与优秀人才的产生所采取的一项新举措。</p>
-
-            <p>“艺术创作生产是一个艰难的过程，而精品的产生更是一个漫长而复杂的过程，都有一个反复修改、锤炼、提高的过程。”蔡武认为，着重强调了大型舞台剧和作品滚动资助项目的工作重心是“聚焦于改，以改为主”，广泛听取专家和群众的意见，真正“问需于民、问计于民”，能克服舞台艺术传播面有限，受众狭窄的天然缺陷，积极探索建立观众信息反馈机制和群众评价机制，把老百姓喜欢不喜欢、满意不满意作为衡量成败的标准。而美术、书法、摄影创作人才滚动资助项目，做好对青年艺术家收藏作品的出版、展览与推广工作，有利于发现和培养名家。这样“抓精品、攀高峰”，努力推出思想性、艺术性、欣赏性完美统一的作品，才能是经得起人民评价、专家评价、市场检验的优秀作品。</p>
+           <br/> 忙起来，自己不觉得闷了，也为社会做了贡献，朱大妈觉得，在街道管理下的退休生活，要比在原单位更加丰富多彩。</p>
           </div>
         </div>
       </div>
-
       <div v-if="activityFlag" class="activity-content">
         <div class>
           <div class="graTit">
@@ -151,150 +155,7 @@
           </div>
         </div>
         <div class="item-content">
-          <div class="activity">
-            <p>
-              &nbsp; &nbsp; &nbsp;&nbsp; 国家艺术基金美术、书法、摄影创作人才滚动资助项目是对一般资助项目成果开展宣传推广。由国家艺术基金组织，在已获得资助并结项的美术、书法、摄影创作人才资助项目中，评审出优秀项目成果，组织出版和展览，进行传播交流推广。
-              <br />&nbsp; &nbsp; &nbsp; &nbsp;国家艺术基金2014年共立项资助了93个美术、书法、摄影创作人才项目。历经为期一年的组织实施，多数项目执行顺利，并参与了结项验收工作。为积极探索创新国家艺术基金资助项目评审和宣传推广方式，将专家评价与群众意见有机地统一起来，国家艺术基金管理中心在雅昌艺术网开展线上投票活动。
-              <br />&nbsp; &nbsp; &nbsp; &nbsp;管理中心将根据专家对结项验收项目成果的评定，参考网上投票情况，组织开展有关成果宣传推广工作。
-            </p>
-
-            <p>&nbsp;</p>
-
-            <p>
-              <strong>附件：</strong>
-            </p>
-
-            <p style="text-align: center;">
-              <strong>国家艺术基金美术、书法、摄影创作人才</strong>
-              <strong>滚动资助项目作品（2016年度）名单</strong>
-            </p>
-
-            <p>
-              <strong>一、中国画</strong>
-            </p>
-
-            <p>1．张 博 《再不封闭的山村》</p>
-
-            <p>2．籍洪达 《心印寂静—花鸟画组图创作》</p>
-
-            <p>3．翟书同 《特战神兵》</p>
-
-            <p>4．褚晓莉 《丝路使者—细君公主》</p>
-
-            <p>5．吕 印 《明代丽江木氏土司像复制》</p>
-
-            <p>6．刘同顺 《甲午战争120周年祭》</p>
-
-            <p>7．杨 军 《寄梦丹霞》系列组画</p>
-
-            <p>8．李德惠 《红楼梦》组画</p>
-
-            <p>9．彭震中 《汉口租界历史建筑之当代水墨》</p>
-
-            <p>10．秦 晖 《广西少数民族村寨山水画创作》</p>
-
-            <p>11．杨 柳 《都市系列》</p>
-
-            <p>12．陈 健 《大运河·我的家》</p>
-
-            <p>
-              <strong>二、书法</strong>
-            </p>
-
-            <p>1．张晓东 《中国梦（57方篆刻组印）》</p>
-
-            <p>2．胡朝霞 《楹联书法创作》</p>
-
-            <p>3．唐朝轶 《小楷书老子道德经长卷》</p>
-
-            <p>4．纪 松 《李白诗歌十幅》</p>
-
-            <p>5．袁文甲 《古人书论选》</p>
-
-            <p>6．李明桓 《传统文化名句组印》</p>
-
-            <p>
-              <strong>三、漆画</strong>
-            </p>
-
-            <p>1．简锦斯 《中国漆·本生故事》</p>
-
-            <p>
-              <strong>四、工艺美术</strong>
-            </p>
-
-            <p>1．宋海峰 《长白山纤维编织艺术创作》</p>
-
-            <p>2．李素芳 《山之意》</p>
-
-            <p>3．李明谦 《青韵系列》</p>
-
-            <p>4．楚 艳 《中国传统天然染缬艺术服饰》</p>
-
-            <p>5．韩纳黎 《家居生活艺术的再创作》</p>
-
-            <p>6．熊开波 《华夏器韵》</p>
-
-            <p>7．周 震 《茶则与勺子》</p>
-
-            <p>
-              <strong>五、油画</strong>
-            </p>
-
-            <p>1．刘玉龙 《中国梦—造船》</p>
-
-            <p>2．刘 刚 《云南文山》系列创作</p>
-
-            <p>3．边小强 《佤族文化》系列创作</p>
-
-            <p>4．孟新宇 《四季太行》</p>
-
-            <p>5．刘 悦 《手机围城》</p>
-
-            <p>6．程建利 《寂静的纳吾错》</p>
-
-            <p>7．周 亭 《记忆的味道》系列创作</p>
-
-            <p>8．郭仁海 《傣家》</p>
-
-            <p>9．蒯连会 《春水东流》</p>
-
-            <p>10．王裕亮 《陈宝琛》</p>
-
-            <p>11．孔庆雄 《布里亚特的冬日—思》</p>
-
-            <p>
-              <strong>六、水彩（粉）画</strong>
-            </p>
-
-            <p>1．焦立强 《工业备忘录》</p>
-
-            <p>2．吴 洁 《城》</p>
-
-            <p>
-              <strong>七、版画</strong>
-            </p>
-
-            <p>1．刘益春 《幼学杂字》</p>
-
-            <p>2．傅 洁 《时空事迹》</p>
-
-            <p>3．彭 伟 《盛世益州》</p>
-
-            <p>4．尹小勇 《回顾与展望》</p>
-
-            <p>5．吴娅妮 《红军东征》</p>
-
-            <p>
-              <strong>八、摄影</strong>
-            </p>
-
-            <p>1．胡群山 《血色—史迪威公路》</p>
-
-            <p>2．郭月霞 《河南传统手工技艺》</p>
-
-            <p>3．范南丹 《边地行走》</p>
-          </div>
+          <eventDetailsHtml></eventDetailsHtml>
         </div>
       </div>
 
@@ -308,28 +169,9 @@
           </div>
         </div>
         <div class="item-content">
-          <p style="text-align:center;font-size:16px;font-weight:bold;">国家艺术基金</p>
-          <p style="text-align:center;font-size:16px;font-weight:bold;">美术、书法、摄影创作人才资助项目作品</p>
-          <p style="text-align:center;font-size:16px;font-weight:bold;">网络投票规则</p>
-          <p>&nbsp;</p>
-          <p>资助项目作品网络投票由国家艺术基金管理中心与雅昌艺术网合作组织。</p>
-
-          <p>一、投票规则</p>
-          <p>1.投票时间：2016年1月23日至2016年2月20日。</p>
-          <p>2.投票时间间隔：24小时。</p>
-          <p></p>
-          <p>3.投票次数限制：每个ID用户每天可分别为每件作品投1次票。</p>
-          <p>二、投票流程</p>
-          <p>1.进入国家艺术基金官网通过链接进入雅昌艺术网首页，或直接登录雅昌艺术网，根据提示进行注册。</p>
-          <p>2.进入“国家艺术基金美术、书法、摄影创作人才资助项目作品”页面，进入作品列表（也可以通过输入关键字进行搜索)。</p>
-          <p>3.选择作品并投票。</p>
-          <p>三、声明</p>
-          <p>1.反对作弊、刷票、拉票、买票行为。</p>
-          <p>2.参与评选的图片内容，未经国家艺术基金许可，任何人或机构不得擅自转载或发表。</p>
-          <p>3.本次活动的最终解释权归国家艺术基金管理中心所有。</p>
+          <ruleHtml></ruleHtml>
         </div>
       </div>
-
       <div v-if="opusFlag" class="opus-content">
         <div class>
           <div class="graTit">
@@ -348,20 +190,119 @@
         </el-row>
         <div class="item-content">
           <el-row :gutter="20">
-            <el-col :span="8" v-for="(o, index) in 9" :key="index">
+            <el-col :span="8">
               <el-card :body-style="{ padding: '0px' }">
-                <img @click="goDetail()" class="image" src="~@/assets/img/zuopin.jpg" alt />
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img1.png" alt />
+                </a>
                 <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">古人书论选</span>
+                  <span @click="goDetail()" class="title">绘画001<i>朝阳区-张三</i></span>
                   <div class="bottom clearfix">
-                    <time class="time">袁文甲</time>
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
                   </div>
-
-                  <div class="ticket-opr">
-                    <div class="ticket-opr-item">
-                      <el-button :disabled="true" size="mini">投票结束</el-button>
-                      <span>42552 票</span>
-                    </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img2.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画002<i>昌平区-李斯</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img3.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画003<i>海淀区-王五</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img4.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画004<i>海淀区-赵三</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img5.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画005<i>门头沟区-著一名</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img6.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画006<i>海淀区-计划好</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img7.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画007<i>朝阳区-袁飞</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img8.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">绘画008<i>海淀区-组爱民</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail()" class="image" src="~@/assets/img/shufa/img1.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail()" class="title">书法001<i>海淀区-王保保</i></span>
+                  <div class="bottom clearfix">
+                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
                   </div>
                 </div>
               </el-card>
@@ -374,6 +315,9 @@
 </template>
 
 <script>
+import ruleHtml from './rule.vue'
+import eventDetailsHtml from './eventDetails.vue'
+import headerHtml from './header'
 export default {
   data () {
     return {
@@ -387,19 +331,17 @@ export default {
       flagArry: ['newsFlag', 'activityFlag', 'ruleFlag', 'opusFlag'],
       opusArry: [
         { name: '全部', id: '' },
-        { name: '国画', id: '' },
         { name: '书法', id: '' },
-        { name: '工艺美术', id: '' },
-        { name: '漆画', id: '' },
-        { name: '油画', id: '' },
-        { name: '水彩水粉', id: '' },
-        { name: '版画', id: '' },
-        { name: '雕塑', id: '' },
+        { name: '绘画', id: '' },
         { name: '摄影', id: '' }
       ]
     }
   },
-
+  components: {
+    ruleHtml,
+    eventDetailsHtml,
+    headerHtml
+  },
   methods: {
     // tabs切换
     handleClick (tab, event) {
@@ -416,11 +358,6 @@ export default {
     // 查看作品详情
     goDetail () {
       this.$router.push({ name: 'detail', query: { path: 'home' } })
-    },
-
-    // 作品展示及投票
-    goList (showFlag) {
-      this.$router.push({ name: 'allList', query: { showFlag: showFlag } })
     },
 
     // 查看新闻详情
@@ -455,15 +392,15 @@ export default {
 .el-carousel__item h3 {
   color: #475669;
   font-size: 14px;
-  opacity: 0.75;
-  line-height: 188px;
-  height: 188px;
+  height: 400px;
+  // opacity: 0.75;
   margin: 0;
 }
 
-.el-carousel__item h3 img {
+h3.small img {
   /* height: 100%; */
   width: 100%;
+  height: 100%;
 }
 
 .el-row {
@@ -479,7 +416,7 @@ export default {
   background: #99a9bf;
 }
 .bg-purple {
-  background: #d3dce6;
+  background: #f1dfef;
 }
 .bg-purple-light {
   background: #e5e9f2;
@@ -494,7 +431,7 @@ export default {
 }
 .nav-box {
   background: #b50103;
-  height: 143px;
+  // height: 143px;
 }
 
 .el-tab-pane {
@@ -597,8 +534,8 @@ export default {
 
 .rule-content .item-content,
 .activity-content .item-content {
-  padding: 60px 90px 90px;
-  background: #f2f2f2;
+  padding: 20px 90px 90px;
+  background: #fff;
 }
 .rule-content .item-content p,
 .activity-content .item-content p {
@@ -609,7 +546,9 @@ export default {
   width: 20%;
   margin-bottom: 20px;
 }
-
+.grid-content{
+  padding-bottom: 20px;
+}
 .opus-content .grid-content button {
   width: 178px;
   height: 38px;
@@ -631,6 +570,7 @@ export default {
 .time {
   color: #999;
   font-size: 12px;
+  line-height: 18px;
 }
 
 .bottom {
@@ -709,9 +649,22 @@ export default {
   line-height: 36px;
   cursor: pointer;
 }
-
+.grid-content h5{
+  font-size: 14px;
+  line-height: 30px;
+}
+.grid-content img{
+  width: 140px;
+  height: 130px;
+}
 .title {
   cursor: pointer;
+  i{
+    font-style: normal;
+    float: right;
+    font-size: 14px;
+    color: #666666
+  }
 }
 .title:hover {
   text-decoration: underline;
@@ -786,6 +739,25 @@ export default {
 }
 .news-item {
   cursor: pointer;
+}
+.bg-purple img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 20px;;
+}
+.bg-purple a{
+  text-decoration: none;
+}
+.bg-purple span{
+  display:block;
+  color: #666666;
+  font-style: normal;
+  font-size: 18px;
+}
+.yun-box{
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 </style>
 
