@@ -47,7 +47,7 @@
                   <img @click="goDetail($route.query.showFlag)" class="image" :src="item.imgs" alt />
                 </a>
                 <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail($route.query.showFlag)" class="title">{{item.category+item.id}}</span>
+                  <span @click="goDetail($route.query.showFlag)" class="title">{{item.category + '-' +item.id}}</span>
                   <span v-if="$route.query.showFlag == 2" class="miaoshu">{{item.area + '-' +item.author_name}}</span>
                   <div class="bottom clearfix">
                     <time class="time" v-if="$route.query.showFlag == 2">{{item.discribe}}</time>
@@ -57,7 +57,7 @@
                   <div v-if="$route.query.showFlag == 1" class="ticket-opr">
                     <div class="ticket-opr-item">
                       <el-button @click="handleClick(item.id)" :disabled="false" size="mini">投 票</el-button>
-                      <span>42552 票</span>
+                      <span>{{item.vote_count}}票</span>
                     </div>
                   </div>
                 </div>
@@ -113,11 +113,27 @@ export default {
     goBack () {
       this.$router.push({ name: 'home' })
     },
-    handleClick () {
-      this.$message({
-        message: '投票成功',
-        type: 'success'
-      })
+    handleClick (id) {
+      this.sendVote(id)
+    },
+    sendVote(id) {
+      this.$http({
+            url: this.$http.adornUrl('/proxyApi/vote.php'),
+            method: 'post',
+            // data: {'id': id}
+            params: this.$http.adornParams({'id': id})
+          }).then(({data}) => {
+            if (data && data.code === 200) {
+              this.$message({
+                message: '投票成功',
+                type: 'success'
+              })
+              this.viewsCount = data.info.viewsCount
+              this.voteCount = data.info.voteCount
+            } else {
+              this.$message.error(data.msg)
+            }
+          })
     },
     getWorksList() {
       this.dataListLoading = true

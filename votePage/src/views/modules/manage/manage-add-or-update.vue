@@ -11,13 +11,13 @@
         :rules="dataRule"
         label-position="left"
         ref="dataForm"
-        @keyup.enter.native="dataFormSubmit()"
         label-width="90px"
       >
+      <!-- @keyup.enter.native="dataFormSubmit()" -->
         <el-row>
           <el-col :span="12">
             <el-form-item label="作者姓名" prop="name">
-              <el-input clearable v-model="dataForm.name" placeholder="请输入"></el-input>
+              <el-input v-model="dataForm.name" placeholder="请输入"></el-input>
             </el-form-item>
           </el-col>
           <el-col :span="12">
@@ -92,7 +92,7 @@
                 :show-file-list="false"
                 :on-success="handleAvatarSuccess"
                 :before-upload="beforeAvatarUpload"
-              >
+              > 
                 <img v-if="imageUrl" :src="imageUrl" class="avatar" />
                 <i v-else class="el-icon-plus avatar-uploader-icon"></i>
               </el-upload>
@@ -163,6 +163,7 @@ export default {
         {label: '摄影', value: '摄影'}
       ],
       wareCode: 0, // 货架编码开头字母
+      imageDefault: '',
       imageUrl: '',
       dataForm: {
         id: 0,
@@ -191,12 +192,15 @@ export default {
   },
   methods: {
     init (id, row) {
-      console.log(row)
       this.dataForm.id = id || 0
       this.visible = true
       if (id) {
-        this.dataForm = row
-        this.dataForm.name = row.author_name
+        let list = JSON.parse(JSON.stringify(row))
+        list.name = list.author_name
+        this.dataForm = list
+        this.imageDefault = list.imgs
+        this.imageUrl = this.$httpUrl + list.imgs
+        this.$forceUpdate()
       }
     },
     getCloseDataForm() {
@@ -216,12 +220,17 @@ export default {
     // })
       this.$refs['dataForm'].validate(valid => {
         if (valid) {
+          if (this.imageDefault === '') {
+            this.$message.error('请上传作品图片')
+            return false
+          }
           let url = ''
           if (!this.dataForm.id) {
             url = this.$http.adornUrl('/proxyApi/save.php?act=add')
           } else {
             url = this.$http.adornUrl('/proxyApi/save.php?act=updata')
           }
+          this.dataForm.imgs = this.imageDefault
           this.$http({
             url: url,
             method: 'post',
@@ -295,7 +304,10 @@ export default {
 
     handleAvatarSuccess (res, file) {
       console.log(res, file)
-      this.imageUrl = URL.createObjectURL(file.raw)
+      if (res.code === 200) {
+        this.imageDefault = res.url
+        this.imageUrl = this.$httpUrl + res.url
+      }
     },
     beforeAvatarUpload (file) {
       const isJPG = file.type === 'image/jpeg'
