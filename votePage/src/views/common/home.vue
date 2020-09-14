@@ -188,126 +188,31 @@
             </div>
           </el-col>
         </el-row>
-        <div class="item-content">
+        <div class="item-content" v-loading="dataListLoading">
           <el-row :gutter="20">
-            <el-col :span="8">
+            <el-col :span="8" v-for="(item, index) in worksList" :key="index">
               <el-card :body-style="{ padding: '0px' }">
                 <a class="picCon" href="javascript:;">
-                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img1.png" alt />
+                  <img @click="goDetail()" class="image" :src="item.imgs" alt />
                 </a>
                 <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">绘画001<i>朝阳区-张三</i></span>
+                  <span @click="goDetail()" class="title">{{item.category+item.id}}<i>{{item.area + '-' +item.author_name}}</i></span>
                   <div class="bottom clearfix">
-                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
-                  </div>
-                </div>
-              </el-card>
-            </el-col>
-            <el-col :span="8">
-              <el-card :body-style="{ padding: '0px' }">
-                <a class="picCon" href="javascript:;">
-                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img2.png" alt />
-                </a>
-                <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">绘画002<i>昌平区-李斯</i></span>
-                  <div class="bottom clearfix">
-                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
-                  </div>
-                </div>
-              </el-card>
-            </el-col>
-            <el-col :span="8">
-              <el-card :body-style="{ padding: '0px' }">
-                <a class="picCon" href="javascript:;">
-                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img3.png" alt />
-                </a>
-                <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">绘画003<i>海淀区-王五</i></span>
-                  <div class="bottom clearfix">
-                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
-                  </div>
-                </div>
-              </el-card>
-            </el-col>
-            <el-col :span="8">
-              <el-card :body-style="{ padding: '0px' }">
-                <a class="picCon" href="javascript:;">
-                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img4.png" alt />
-                </a>
-                <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">绘画004<i>海淀区-赵三</i></span>
-                  <div class="bottom clearfix">
-                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
-                  </div>
-                </div>
-              </el-card>
-            </el-col>
-            <el-col :span="8">
-              <el-card :body-style="{ padding: '0px' }">
-                <a class="picCon" href="javascript:;">
-                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img5.png" alt />
-                </a>
-                <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">绘画005<i>门头沟区-著一名</i></span>
-                  <div class="bottom clearfix">
-                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
-                  </div>
-                </div>
-              </el-card>
-            </el-col>
-            <el-col :span="8">
-              <el-card :body-style="{ padding: '0px' }">
-                <a class="picCon" href="javascript:;">
-                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img6.png" alt />
-                </a>
-                <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">绘画006<i>海淀区-计划好</i></span>
-                  <div class="bottom clearfix">
-                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
-                  </div>
-                </div>
-              </el-card>
-            </el-col>
-            <el-col :span="8">
-              <el-card :body-style="{ padding: '0px' }">
-                <a class="picCon" href="javascript:;">
-                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img7.png" alt />
-                </a>
-                <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">绘画007<i>朝阳区-袁飞</i></span>
-                  <div class="bottom clearfix">
-                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
-                  </div>
-                </div>
-              </el-card>
-            </el-col>
-            <el-col :span="8">
-              <el-card :body-style="{ padding: '0px' }">
-                <a class="picCon" href="javascript:;">
-                  <img @click="goDetail()" class="image" src="~@/assets/img/hua/img8.png" alt />
-                </a>
-                <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">绘画008<i>海淀区-组爱民</i></span>
-                  <div class="bottom clearfix">
-                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
-                  </div>
-                </div>
-              </el-card>
-            </el-col>
-            <el-col :span="8">
-              <el-card :body-style="{ padding: '0px' }">
-                <a class="picCon" href="javascript:;">
-                  <img @click="goDetail()" class="image" src="~@/assets/img/shufa/img1.png" alt />
-                </a>
-                <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">书法001<i>海淀区-王保保</i></span>
-                  <div class="bottom clearfix">
-                    <time class="time">序号：油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮...</time>
+                    <time class="time">{{item.discribe}}</time>
                   </div>
                 </div>
               </el-card>
             </el-col>
           </el-row>
+          <el-pagination
+            @size-change="sizeChangeHandle"
+            @current-change="currentChangeHandle"
+            :current-page="pageObj.pageIndex"
+            :page-sizes="[10, 20, 50, 100]"
+            :page-size="pageObj.pageSize"
+            :total="pageObj.totalPage"
+            layout="total, sizes, prev, pager, next, jumper"
+          ></el-pagination>
         </div>
       </div>
     </div>
@@ -324,10 +229,17 @@ export default {
       input: '',
       activeName: 'first',
       newsDetailFlag: false,
+      dataListLoading: false,
       newsFlag: true,
       activityFlag: false,
       ruleFlag: false,
       opusFlag: false,
+      pageObj: {
+        pageIndex: 1,
+        pageSize: 9,
+        totalPage: 0
+      },
+      worksList: [],
       flagArry: ['newsFlag', 'activityFlag', 'ruleFlag', 'opusFlag'],
       opusArry: [
         { name: '全部', id: '' },
@@ -349,12 +261,34 @@ export default {
       this.flagArry.forEach(item => {
         if (tab.$attrs.flag === item) {
           this[item] = true
+          if (item === 'opusFlag') {
+            this.getWorksList()
+          }
         } else {
           this[item] = false
         }
       })
     },
-
+    getWorksList() {
+      this.dataListLoading = true
+      this.$http({
+        url: this.$http.adornUrl('/proxyApi/getlist.php?act=tp'),
+        method: 'get',
+        params: this.$http.adornParams({
+          'page': this.pageObj.pageIndex,
+          'limit': this.pageObj.pageSize
+        })
+      }).then(({ data }) => {
+        if (data && data.code === 200) {
+          this.worksList = data.info.list
+          this.pageObj.totalPage = data.info.total
+        } else {
+          this.worksList = []
+          this.pageObj.totalPage = 0
+        }
+        this.dataListLoading = false
+      })
+    },
     // 查看作品详情
     goDetail () {
       this.$router.push({ name: 'detail', query: { path: 'home' } })
@@ -378,6 +312,17 @@ export default {
         }
       })
       this[NowFlag] = false
+    },
+    // 每页数
+    sizeChangeHandle (val) {
+      this.pageObj.pageSize = val
+      this.pageObj.pageIndex = 1
+      this.getWorksList()
+    },
+    // 当前页
+    currentChangeHandle (val) {
+      this.pageObj.pageIndex = val
+      this.getWorksList()
     }
   }
 }

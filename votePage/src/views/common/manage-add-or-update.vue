@@ -4,6 +4,7 @@
       :title="!dataForm.id ? '新增' : '编辑'"
       :close-on-click-modal="false"
       :visible.sync="visible"
+      @close="getCloseDataForm"
     >
       <el-form
         :model="dataForm"
@@ -15,79 +16,79 @@
       >
         <el-row>
           <el-col :span="12">
-            <el-form-item label="作者姓名" prop="shelfName">
-              <el-input clearable v-model="dataForm.shelfName" placeholder="请输入"></el-input>
+            <el-form-item label="作者姓名" prop="name">
+              <el-input clearable v-model="dataForm.name" placeholder="请输入"></el-input>
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="作品编号" prop="shelfName">
-              <el-input clearable v-model="dataForm.shelfName" placeholder="请输入"></el-input>
-            </el-form-item>
-          </el-col>
-        </el-row>
-        <el-row>
-          <el-col :span="12">
-            <el-form-item label="作品分类" prop="wareId">
-              <el-select @change="wareChange" v-model="dataForm.wareId" placeholder="请选择">
+            <el-form-item label="作品分类" prop="category">
+              <el-select v-model="dataForm.category" placeholder="请选择">
                 <el-option
                   v-for="item in goodsHouse"
-                  :key="item.wareId"
-                  :label="item.wareName"
-                  :value="item.wareId"
+                  :key="item.value"
+                  :label="item.label"
+                  :value="item.value"
                 ></el-option>
               </el-select>
             </el-form-item>
           </el-col>
-
+          <!-- <el-col :span="12">
+            <el-form-item label="作品编号" prop="shelfName">
+              <el-input clearable v-model="dataForm.shelfName" placeholder="请输入"></el-input>
+            </el-form-item>
+          </el-col> -->
+        </el-row>
+        <el-row>
           <el-col :span="12">
-            <el-form-item label="区域选择" prop="wareId">
-              <el-cascader
-                size="large"
-                :options="options_"
-                v-model="selectedOptions"
-                @change="handleChange"
-                placeholder="请选择区域"
-              ></el-cascader>
+            <el-form-item label="区域选择" prop="area">
+              <el-select v-model="dataForm.area" placeholder="请选择">
+                <el-option
+                  v-for="item in areaArr"
+                  :key="item.value"
+                  :label="item.label"
+                  :value="item.value">
+                </el-option>
+              </el-select>
+            </el-form-item>
+          </el-col>
+          <el-col :span="12">
+            <el-form-item label="创作年代" prop="years">
+              <el-input @input="shelfCodeHadnle" v-model="dataForm.years"></el-input>
             </el-form-item>
           </el-col>
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="创作年代" prop="shelfCode">
-              <el-input @input="shelfCodeHadnle" v-model="dataForm.shelfCode"></el-input>
+            <el-form-item label="作品尺寸" prop="size">
+              <el-input @input="shelfCodeHadnle" v-model="dataForm.size"></el-input>
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="作品尺寸" prop="shelfCode">
-              <el-input @input="shelfCodeHadnle" v-model="dataForm.shelfCode"></el-input>
+            <el-form-item label="作品材质" prop="texture">
+              <el-input @input="shelfCodeHadnle" v-model="dataForm.texture"></el-input>
             </el-form-item>
           </el-col>
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="作品材质" prop="shelfCode">
-              <el-input @input="shelfCodeHadnle" v-model="dataForm.shelfCode"></el-input>
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="作品题材" prop="shelfCode">
-              <el-input @input="shelfCodeHadnle" v-model="dataForm.shelfCode"></el-input>
+            <el-form-item label="作品题材" prop="theme">
+              <el-input @input="shelfCodeHadnle" v-model="dataForm.theme"></el-input>
             </el-form-item>
           </el-col>
         </el-row>
         <el-row>
           <el-col :span="24">
-            <el-form-item label="作品描述" prop="desc">
-              <el-input type="textarea" v-model="dataForm.desc"></el-input>
+            <el-form-item label="作品描述" prop="discribe">
+              <el-input type="textarea" v-model="dataForm.discribe"></el-input>
             </el-form-item>
           </el-col>
         </el-row>
         <el-row>
           <el-col :span="24">
-            <el-form-item label="上传作品" prop="shelfCode">
+            <el-form-item label="上传作品" prop="imageUrl">
               <el-upload
                 class="avatar-uploader"
-                action="http://xriml.com/shortvideo/upload.php"
+                :action="this.$http.adornUrl('/proxyApi/upload.php')"
                 :show-file-list="false"
                 :on-success="handleAvatarSuccess"
                 :before-upload="beforeAvatarUpload"
@@ -100,7 +101,7 @@
         </el-row>
       </el-form>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="visible = false">取消</el-button>
+        <el-button @click="getCloseDataForm()">取消</el-button>
         <el-button type="primary" @click="dataFormSubmit()">确定</el-button>
       </span>
     </el-dialog>
@@ -108,100 +109,163 @@
 </template>
 
 <script>
-import { regionData } from 'element-china-area-data'
+// import Axios from 'axios'
 export default {
   data () {
-    var validateShelfCode = (rule, value, callback) => {
-      if (value.length > 2) {
-        let regStr = value.substring(0, 2)
-        if (regStr !== this.wareCode) {
-          callback(new Error('货架编码格式错误'))
-        } else {
-          callback()
-        }
-      } else {
-        callback(new Error('货架编码格式错误'))
-        this.dataForm.shelfCode = this.wareCode
-      }
-    }
+    // var validateShelfCode = (rule, value, callback) => {
+    //   if (value.length > 2) {
+    //     let regStr = value.substring(0, 2)
+    //     if (regStr !== this.wareCode) {
+    //       callback(new Error('货架编码格式错误'))
+    //     } else {
+    //       callback()
+    //     }
+    //   } else {
+    //     callback(new Error('货架编码格式错误'))
+    //     this.dataForm.shelfCode = this.wareCode
+    //   }
+    // }
 
-    var validateMaxShelfNum = (rule, value, callback) => {
-      console.log(value)
-      if (/^[0-9]+$/.test(value)) {
-        callback()
-      } else {
-        callback(new Error('请输入正整数'))
-      }
-    }
+    // var validateMaxShelfNum = (rule, value, callback) => {
+    //   console.log(value)
+    //   if (/^[0-9]+$/.test(value)) {
+    //     callback()
+    //   } else {
+    //     callback(new Error('请输入正整数'))
+    //   }
+    // }
 
     return {
       visible: false,
-      options_: regionData,
+      areaArr: [
+        {label: '东城区', value: '东城区'},
+        {label: '西城区', value: '西城区'},
+        {label: '海淀区', value: '海淀区'},
+        {label: '朝阳区', value: '朝阳区'},
+        {label: '丰台区', value: '丰台区'},
+        {label: '门头沟区', value: '门头沟区'},
+        {label: '石景山区', value: '石景山区'},
+        {label: '房山区', value: '房山区'},
+        {label: '通州区', value: '通州区'},
+        {label: '顺义区', value: '顺义区'},
+        {label: '昌平区', value: '昌平区'},
+        {label: '大兴区', value: '大兴区'},
+        {label: '怀柔区', value: '怀柔区'},
+        {label: '平谷区', value: '平谷区'},
+        {label: '延庆区', value: '延庆区'},
+        {label: '密云区', value: '密云区'}
+      ],
       selectedOptions: [],
       tableData: [],
-      goodsHouse: [],
+      goodsHouse: [
+        {label: '书法', value: '书法'},
+        {label: '绘画', value: '绘画'},
+        {label: '摄影', value: '摄影'}
+      ],
       wareCode: 0, // 货架编码开头字母
       imageUrl: '',
       dataForm: {
         id: 0,
-        shelfName: '', // 货架名字
-        shelfCode: '', // 货架编码
-        status: '', // 状态 1可用2禁用
-        maxShelfNum: '', // 最大货架数量
-        wareId: '', // 仓库Id
-        desc: '' // 作品描述
+        name: '', // 名字
+        category: '', // 作品分类
+        area: '', // 区域
+        years: '', // 创作年代
+        size: '', // 作品尺寸
+        texture: '', // 作品材质
+        theme: '', // 作品题材
+        discribe: '', // 作品描述
+        imgs: ''
       },
       dataRule: {
-        shelfName: [{ required: true, message: '名称不能为空', trigger: 'blur' }],
-        wareId: [{ required: true, message: '请选择仓库', trigger: 'blur' }],
-        shelfCode: [{ required: true, validator: validateShelfCode, trigger: 'blur' }],
-        status: [{ required: true, message: '请选择货架状态', trigger: 'change' }],
-        maxShelfNum: [{ required: true, validator: validateMaxShelfNum, trigger: 'blur' }]
+        name: [{ required: true, message: '名称不能为空', trigger: 'blur' }],
+        area: [{ required: true, message: '请选择区域', trigger: 'change' }],
+        category: [{ required: true, message: '请选择分类', trigger: 'change' }]
+        // wareId: [{ required: true, message: '请选择仓库', trigger: 'blur' }],
+        // shelfCode: [{ required: true, validator: validateShelfCode, trigger: 'blur' }],
+        // status: [{ required: true, message: '请选择货架状态', trigger: 'change' }],
+        // maxShelfNum: [{ required: true, validator: validateMaxShelfNum, trigger: 'blur' }]
       }
     }
   },
-  created () { },
+  created () {
+  },
   methods: {
-    init (id) {
+    init (id, row) {
+      console.log(row)
       this.dataForm.id = id || 0
       this.visible = true
-      new Promise((resolve, reject) => {
-        resolve(
-          this.$nextTick(() => {
-            this.$refs['dataForm'].resetFields()
-          })
-        )
-      }).then(() => {
-        if (this.dataForm.id) {
-
-        }
-      })
+      if (id) {
+        this.dataForm = row
+        this.dataForm.name = row.author_name
+      }
     },
-
+    getCloseDataForm() {
+      this.visible = false
+      this.imageUrl = ''
+      this.$refs['dataForm'].resetFields()
+    },
     // 表单提交
     dataFormSubmit () {
+    // Axios({
+    //   url: this.$http.adornUrl('/proxyApi/save.php?act=add'),
+    //   method: 'post',
+    //   data: this.dataForm
+    // })
+    // .then(res => {
+    //   console.log(res)
+    // })
       this.$refs['dataForm'].validate(valid => {
         if (valid) {
-          const params = {
-            url: `/ware/shelf/${!this.dataForm.id ? 'save' : 'update'}`,
-            data: {
-              ...this.dataForm
-            },
-            isLoading: true,
-            callback: res => {
+          let url = ''
+          if (!this.dataForm.id) {
+            url = this.$http.adornUrl('/proxyApi/save.php?act=add')
+          } else {
+            url = this.$http.adornUrl('/proxyApi/save.php?act=updata')
+          }
+          this.$http({
+            url: url,
+            method: 'post',
+            // headers: {
+            //   'Content-Type': 'multipart/form-data; boundary=<calculated when request is sent>'
+            // },
+            data: this.dataForm
+            // params: this.$http.adornParams(this.dataForm)
+          }).then(({data}) => {
+            if (data && data.code === 200) {
+              this.getCloseDataForm()
+              this.$refs['dataForm'].resetFields()
               this.$message({
                 message: '操作成功',
                 type: 'success',
                 duration: 1500,
                 onClose: () => {
-                  this.visible = false
                   this.$emit('refreshDataList')
                 }
               })
-            },
-            errcallback: msg => { }
-          }
-          this.$https.sendRequest(params)
+            } else {
+              this.$message.error(data.msg)
+            }
+          })
+          // const params = {
+          //   url: `/ware/shelf/${!this.dataForm.id ? 'save' : 'update'}`,
+          //   data: {
+          //     ...this.dataForm
+          //   },
+          //   isLoading: true,
+          //   callback: res => {
+          //     this.$message({
+          //       message: '操作成功',
+          //       type: 'success',
+          //       duration: 1500,
+          //       onClose: () => {
+          //         this.visible = false
+          //         this.$emit('refreshDataList')
+          //       }
+          //     })
+          //   },
+          //   errcallback: msg => { }
+          // }
+          // this.$https.sendRequest(params)
         }
       })
     },
@@ -211,15 +275,15 @@ export default {
       console.log(rst)
     },
 
-    // 仓库选择
-    wareChange (res) {
-      this.goodsHouse.forEach(item => {
-        if (item.wareId === res) {
-          this.wareCode = item.wareCode + '-'
-          this.dataForm.shelfCode = item.wareCode + '-'
-        }
-      })
-    },
+    // // 仓库选择
+    // wareChange (res) {
+    //   this.goodsHouse.forEach(item => {
+    //     if (item.wareId === res) {
+    //       this.wareCode = item.wareCode + '-'
+    //       this.dataForm.shelfCode = item.wareCode + '-'
+    //     }
+    //   })
+    // },
 
     // 编码操作
     shelfCodeHadnle (val) {
@@ -230,6 +294,7 @@ export default {
     },
 
     handleAvatarSuccess (res, file) {
+      console.log(res, file)
       this.imageUrl = URL.createObjectURL(file.raw)
     },
     beforeAvatarUpload (file) {
