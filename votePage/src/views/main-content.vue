@@ -96,7 +96,7 @@
           }
         } else {
           this.menuActiveName = ''
-          this.$router.push({ name: 'home' })
+          this.$router.push({ name: 'opus-manage' })
         }
       },
       // tabs, 关闭当前
