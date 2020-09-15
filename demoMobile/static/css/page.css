@@ -173,8 +173,8 @@
 .cList .curr{color:#000;}
 /*瀑布流*/
 .waterFall{ padding-top:.5rem;}
-.waterCol{float: left; margin-left: .5rem; width:7.25rem;}
-.waterCol li{position: relative;margin-bottom: .875rem;color:#333333;  padding-bottom: .2rem;text-align: center;}
+.waterCol{width: 94%;column-count: 2;margin: 0 auto;column-gap:0.5rem;}
+.waterCol li{break-inside: avoid;position: relative;margin-bottom: .875rem;color:#333333;  padding-bottom: .2rem;text-align: center;}
 .waterCol li:last-child{border:none;}
 .waterCol img{max-width: 100%; font-size: .3rem;}
 .waterCol h3{ font-size: .7rem; padding:.625rem 0 .1rem;margin-bottom: .2rem;  line-height: 1;text-align: left; height: 1.325rem; overflow: hidden; width: 100%; white-space: nowrap; text-overflow: ellipsis;}

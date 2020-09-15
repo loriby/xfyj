@@ -56,14 +56,14 @@
     </header>
     <div class="detail-toupiao-btn yunpingxuan">
       <p class="toupiao-btn-box">
-        <span>票数 <i>8987</i></span>
+        <span>票数 <i id="vote_count">8987</i></span>
         <a class="toupiao-btn" href="javascript:;">投票</a>
       </p>
     </div>
     <div class="body">
       <section id="workImg" class="workImg">
         <!-- <p class="renci">浏览人次：123123</p> -->
-        <img src="../static/imgs/shufa/img1.png" alt="嘉年华" onerror="javascript:this.src='/static/mobile/imgs/img.png'">
+        <img src="" id="detailImg">
         <div class="fixIcon">
           <!-- <em class="icon shareIcn">&#xe608;</em> -->
           <!--检查投票状态 0:未开启投票功能； 1:未投票；2：已投票； 3：投票未开始；4：投票已结束-->
@@ -74,36 +74,37 @@
         </div>
       </section>
       <section class="workInfo">
-        <h1>嘉年华</h1>
+        <h1 id="works_name"></h1>
         <!--2015-06-19修改开始-->
         <!--图片尺寸：100*100-->
         <!--2015-06-19修改结束-->
         <div class="author">
           <a class="links noLinks" href="javascript:;">
-            <img src="../static/imgs/head_icon.png" alt="汤雪村" onerror="this.src='/static/mobile/imgs/nophoto2.jpg'" />
+            <img src="../static/imgs/head_icon.png"/>
             <!--图片尺寸:100*100-->
             <div class="authorInfo">
-              <h2>汤雪村</h2>
-              <p>&nbsp; &nbsp; 中国画</p>
+              <h2 id="author_name"></h2>
+              <p>&nbsp; &nbsp; <span id="area"></span></p>
             </div>
           </a>
         </div>
         <div class="infoItem">
           <dl>
             <dt>分类</dt>
-            <dd>国画</dd></dl>
+            <dd id="category"></dd>
+          </dl>
           <dl>
             <dt>年代</dt>
-            <dd>--</dd></dl>
+            <dd id="years"></dd></dl>
           <dl>
             <dt>尺寸</dt>
-            <dd>180x120cm</dd></dl>
+            <dd id="size"></dd></dl>
           <dl>
             <dt>材质</dt>
-            <dd>绢本</dd></dl>
+            <dd id="texture"></dd></dl>
           <dl>
             <dt>编号</dt>
-            <dd>12618</dd></dl>
+            <dd id="workId"></dd></dl>
         </div>
       </section>
       <section class="txtInfo">
@@ -112,7 +113,7 @@
             <span>Introduction</span></h1>
         </header>
         <div class="txtSlide">
-          <div class="txt htmlEdit">序号：书法01 作品编码 1组A-14 项目名称 中国画《嘉年华》 承担主体 汤雪村 艺术门类 中国画 材质 绢本 作品尺寸 180cm*120cm</div>
+          <div class="txt htmlEdit" id="discribe"></div>
           <p class="btnBox">
             <a class="btn bMore icon">
               <b>&#xe613;</b>
@@ -120,76 +121,11 @@
           </p>
         </div>
       </section>
-      <!--<section class="comment">-->
-      <!--<header class="title">-->
-      <!--<h1>大家来评论<span>Response</span></h1>-->
-      <!--</header>-->
-      <!--<div class="comWrap">-->
-      <!---->
-      <!--<div class="comBtn writeIcn" data-login="0">发表评论</div>-->
-      <!---->
-      <!--<div class="writCom" id="lablecomment">-->
-      <!--<form id="forComment" name="forComment" method="post" action="/works/mobileComment/12618/">-->
-      <!--<div id="comWrite" class="write">-->
-      <!--<div class="comTxt"><textarea name="content" id="comInput" maxlength="50"></textarea></div>-->
-      <!--<div class="btnBox"><span id="cancel">取消</span><span id="send" data-more="/works/getCommentList/12618/" >发送</span></div>-->
-      <!--</div>-->
-      <!--</form>-->
-      <!--</div>-->
-      <!--<div class="comList" id="retcomment">-->
-      <!---->
-      <!---->
-      <!--<dl>-->
-      <!--<dt>-->
-      <!--<span class="time">2016年02月19日</span><em>手机用户1773625</em>-->
-      <!--</dt>-->
-      <!--<dd>好好看的作品</dd>-->
-      <!--</dl>-->
-      <!---->
-      <!--<dl>-->
-      <!--<dt>-->
-      <!--<span class="time">2016年02月19日</span><em>手机用户1773625</em>-->
-      <!--</dt>-->
-      <!--<dd>好作品值得观赏</dd>-->
-      <!--</dl>-->
-      <!---->
-      <!--<dl>-->
-      <!--<dt>-->
-      <!--<span class="time">2016年02月18日</span><em>手机用户1804884</em>-->
-      <!--</dt>-->
-      <!--<dd>很棒</dd>-->
-      <!--</dl>-->
-      <!---->
-      <!--<dl>-->
-      <!--<dt>-->
-      <!--<span class="time">2016年02月18日</span><em>手机用户1804873</em>-->
-      <!--</dt>-->
-      <!--<dd>好作品值得欣赏</dd>-->
-      <!--</dl>-->
-      <!---->
-      <!--<dl>-->
-      <!--<dt>-->
-      <!--<span class="time">2016年02月18日</span><em>手机用户1804873</em>-->
-      <!--</dt>-->
-      <!--<dd>中国好作品</dd>-->
-      <!--</dl>-->
-      <!---->
-      <!---->
-      <!--</div>-->
-      <!--<p class="moreCom ">-->
-      <!--<a href="/works/getCommentList/12618/" class="comMore">还有<em id="totalCom" class="count">117</em>条评论</a>-->
-      <!--</p>-->
-      <!--</div>-->
-      <!--</section>--></div>
+    </div>
     <!--作品大图开始-->
     <div id="zoomShow" class="zoomShow">
       <b class="close icon">
         <cite>&#xe60d;</cite></b>
-      <!--<div id="imgZoom">-->
-      <!--<div id="scroller" class="albumPanel">-->
-      <!--<img src="https://upload1.artron.net/young/2016/0121/1453358173_535213.jpg" alt="嘉年华" onerror="javascript:this.src='/static/mobile/imgs/img.png'">-->
-      <!--</div>-->
-      <!--</div>-->
       <div class="swiper-container" style="width: 100%;height: 100%;">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -199,151 +135,73 @@
         </div>
       </div>
       <div class="workTit">
-        <h2>嘉年华</h2></div>
-    </div>
-    <!--作品大图结束-->
-    <div id="shareWrap" class="shareWrap fullPage">
-      <div class="share">
-        <div class="bdsharebuttonbox bdshare-button-style0-24" data-bd-bind="1429672731222">
-          <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-          <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-          <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-          <a id="weixin" href="javascript:;" class="weixin" title=""></a>
-        </div>
-        <div class="btnArea cls">取消</div></div>
-    </div>
-    <!-- <div id="fixNav" class="fixNav">
-      <div id="goTop" class="icon goTop">&#xe607;</div>
-      <a id="website" href="/exhibitions/" class="icon website">&#xe605;</a>
-      <a id="hatchLink" href="/" class="icon hatchIcon ">&#xe900;</a>
-      <div id="tel" class="icon tel">
-        <a href="tel:01080451143">&#xe609;</a></div>
-    </div> -->
-    <div id="guaid_weixin" class="fullPage ">
-      <div class="text">
-        <p class="line1">分享到微信</p>
-        <p class="line2">请点击右上角。</p>
-        <p class="line3">
-          <em>再选择</em>[发送朋友]</p>
-        <p class="line4">
-          <em>或</em>[分享到朋友圈]</p></div>
-      <div class="qrCode">
-        <div class="qrCont">
-          <!-- <img src="//qrcode.artron.net/?text=https://young.artron.net/works/12618&el=12&margin=1" data-type="jpeg"> -->
-          <p class="qrInfo">保存图片，使用微信“扫一扫”分享到朋友圈</p></div>
+        <h2>嘉年华</h2>
       </div>
     </div>
-    <div id="defGuaid" class="fullPage">
-      <!-- <img src="/static/mobile/imgs/guaid_share.png"></div> -->
-    <input id="voteLinks" type="hidden" value="/activities/checkVote/index/1021">
-    <input id="inAppAct" type="hidden" value="0">
-    <input id="mark" type="hidden" value="0" />
-    <!-- <script>
-        wx.config({
-            debug: false,
-            // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
-            appId: wxData.appId,
-            // 必填，公众号的唯一标识
-            timestamp: wxData.timestamp,
-            // 必填，生成签名的时间戳
-            nonceStr: wxData.nonceStr,
-            // 必填，生成签名的随机串
-            signature: wxData.signature,
-            // 必填，签名，见附录1
-            jsApiList: ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
-        });
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true,
+        //可选选项，自动滑动
+      })
 
-        //function
-        var shareData = {
-            title: "国家艺术基金美术、书法、摄影创作人才滚动资助项目作品网上投票",
-            // 分享标题
-            imgUrl: "//auction3-img.artimg.net/wximg/?type=img&src=https://upload1.artron.net/young/2016/0121/1453358173_535213.jpg.square.jpg",
-            // 分享图标
-            desc: "",
-            // 分享描述
-            link: "",
-
-            success: function() {
-            // $.getScript("http://customer.home.focus.cn/proauth/ipstat/index.php?gmno=14&r= "+Math.random());
-        },
-        cancel: function() {
-
-        }
-        }
-        wx.ready(function() {
-            wx.onMenuShareAppMessage(shareData);
-            wx.onMenuShareTimeline(shareData);
-            wx.onMenuShareQQ(shareData);
-            wx.onMenuShareWeibo(shareData);
-            wx.onMenuShareQZone(shareData);
-
-        });
-        wx.error(function(res) {
-            //alert(res.errMsg)
-            // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
-        });
-    </script> -->
-    <!-- <script src="/static/mobile/js/iscroll_zoom.js"></script> -->
-    <!-- <section class="copyRight">
-      <p>
-        <img src="/static/mobile/imgs/copy_logo.png"></p>
-      <p>Copyright&copy;2017&nbsp;artron.net</p>
-    </section> -->
-    <!--微信分享代码-->
-    <!-- <script src="//qrcode.artron.net/weixin/check.php"></script>
-    <script>!(function() {
-        var oScript = document.getElementById('AFedWxShareScript'),
-        localStamp = '',
-        serverStamp = '',
-        timestamp = '';
-        if (oScript) {
-          return - 1;
-        }
-        localStamp = window.localStorage && window.localStorage['__WX_FILE_UPDATE'] || ( + new Date() + '');
-        serverStamp = window.wxData && window.wxData.WX_FILE_UPDATE;
-        timestamp = serverStamp && localStamp != serverStamp ? serverStamp: localStamp;
-        if (window.localStorage) {
-          window.localStorage['__WX_FILE_UPDATE'] = timestamp;
-        }
-        oScript = document.createElement('script');
-        oScript.id = 'AFedWxShareScript';
-        oScript.src = ('https:' == document.location.protocol ? 'https://': 'http://') + "pubunder.artron.net/pubjs/m/weixin.min.js?" + timestamp;
-        document.body.appendChild(oScript);
-      })();</script> -->
-    <!--统计代码-->
-    <!-- <script>window._bd_share_config = {
-        "common": {
-          "bdSnsKey": {},
-          "bdText": "",
-          "bdMini": "2",
-          "bdMiniList": false,
-          "bdPic": "",
-          "bdStyle": "0",
-          "bdSize": "24"
-        },
-        "share": {}
-      };
-      with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = '//pubunder.artron.net/resources/cross/api/js/share.js?v=89860593.js?cdnversion=' + ~ ( - new Date() / 36e5)];</script> -->
-      <script>
-        var mySwiper = new Swiper('.swiper-container', {
-          autoplay: true,
-          //可选选项，自动滑动
-        })
-
-        //如果你初始化时没有定义Swiper实例，后面也可以通过Swiper的HTML元素来获取该实例
-        new Swiper('.swiper-container') 
-        var mySwiper = document.querySelector('.swiper-container').swiper 
-        mySwiper.slideNext();
+      //如果你初始化时没有定义Swiper实例，后面也可以通过Swiper的HTML元素来获取该实例
+      new Swiper('.swiper-container') 
+      var mySwiper = document.querySelector('.swiper-container').swiper 
+      mySwiper.slideNext();
     </script>
     <script src="../static/js/page.js?149682"></script>
     <script src="../static/js/jquery-1.11.0.min.js"></script>
     <script>
       $(function(){
-        $('.detail-toupiao-btn').click(function(){
-            alert("投票成功")
+        $('.toupiao-btn').attr('data-id', getQueryString('id'))
+        $('.toupiao-btn').click(function(){
+          var id = $(this).attr('data-id')
+          sendVote(id, $(this))
         })
+        // 投票接口
+        function sendVote (id, el) {
+            let obj = {id: id}
+            $.ajax({
+                url: httpUrl+'proxyApi/vote.php',
+                type: 'get',
+                data: obj,
+                success: function(res){
+                    if (res.code == 200) {
+                        alert('投票成功');
+                        var number = el.prev('span').find('i')
+                        number.text(Number(number.text())+1)
+                    } else {
+                        alert(res.msg)
+                    }
+                }
+            })
+        }
         if (getQueryString('type') == 1) {
           $('.yunpingxuan').show()
+        }
+        getApiDetail()
+        function getApiDetail(){
+          console.log(getQueryString('id'))
+          var id = getQueryString('id')
+          $.ajax({
+            url: httpUrl+'/proxyApi/detail.php?act=tp&id='+id,
+            type: 'get',
+            success: function(res){
+              if(res.code == 200) {
+                var list = res.list
+                $('#vote_count').text(list.vote_count)
+                $('#detailImg').attr('src', httpUrl+'/proxyApi/'+list.imgs)
+                $('#author_name').text(list.author_name)
+                $('#area').text(list.area)
+                $('#category').text(list.category)
+                $('#years').text(list.years)
+                $('#texture').text(list.texture)
+                $('#workId').text(list.id)
+                $('#discribe').text(list.discribe)
+                $('#works_name').text(list.works_name)
+              }
+            }
+          })
         }
       })
       $(function() {
@@ -410,14 +268,6 @@
           oWorkImg.addEventListener('click',
           function() {
             document.querySelector('.body').style.display = 'none';
-            // var myScroll = new IScroll('#imgZoom', {
-            //       zoom: true,
-            //       scrollX: true,
-            //       scrollY: true,
-            //       mouseWheel:true,
-            //       wheelAction: 'zoom',
-            //       zoomMax: 2
-            //   });
             var newSwiper = new Swiper('.swiper-container', {
               zoom: true,
               //开启缩放功能
@@ -430,13 +280,9 @@
               document.querySelector('.body').style.display = 'block';
               document.removeEventListener('scroll', AfedFn.prevent, false);
               newSwiper = null;
-              /*  myScroll.destroy();
-                      myScroll = null;*/
             }
-
           },
           false);
-
         }
       });
     </script>
