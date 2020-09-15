@@ -143,128 +143,30 @@
           <!-- 书法 -->
           <div class="zuopin-content" style="display: block">
             <!--图片尺寸310*310-->
-            <ul class="col2">
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/shufa/img1.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12520">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/shufa/img2.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12520">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/shufa/img3.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12520">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/shufa/img4.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12520">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/shufa/img5.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12520">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/shufa/img6.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12520">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-            </ul>
+            <ul class="col2" id="shufaUl"></ul>
             <div class="btnArea">
               <a class="linkMore" href="javascript:;">更多作品</a>
             </div>
           </div>
           <!-- 绘画 -->
           <div class="zuopin-content">
-            <ul class="col2">
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/hua/img1.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12549">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/hua/img2.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12549">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/hua/img3.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12549">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/hua/img4.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12549">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/hua/img5.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12549">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-              <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/hua/img6.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12549">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
-            </ul>
+            <ul class="col2" id="huihuaUl"></ul>
             <div class="btnArea">
               <a class="linkMore" href="javascript:;">更多作品</a>
             </div>
           </div>
           <!-- 摄影 -->
           <div class="zuopin-content">
-            <ul class="col2">
-              <li>
+            <ul class="col2" id="sheyingUl">
+              <!-- <li>
                 <a class="imgLink" href="view/detail.html">
                   <b class="prizeIco"></b>
                   <img src="static/imgs/shufa/img1.png"></a>
-                <!-- <div class="voteIcn voteDis end" data-id="12520">
-                  <span>投票结束</span>
-                </div> -->
-              </li>
+              </li> -->
             </ul>
+            <div class="btnArea">
+              <a class="linkMore" href="javascript:;">更多作品</a>
+            </div>
           </div>
         </div>
       </div>
@@ -325,7 +227,7 @@
             } else if (index == 2) {
               $('#myiframe').height($('#myiframe').contents().find(".Section0").height()+100)
             } else if (index == 3) {
-                $('.zuopin-box').show()
+                $('.zuopin-box').show().find('li').eq(0).addClass('active')
             } else {
               $('.zuopin-box').hide()
               AfedFn.lasyImg(oCurr.querySelectorAll('img'));
@@ -335,8 +237,12 @@
         false);
       })();
       $(function(){
-        var pageIndex = 1
-        var pageLimit = 10
+        var sf_pageIndex = 1
+        var sf_pageLimit = 10
+        var hh_pageIndex = 1
+        var hh_pageLimit = 10
+        var sy_pageIndex = 1
+        var sy_pageLimit = 10
         $.ajax({
           url: httpUrl+'/proxyApi/index.php?act=total',
           type: 'get',
@@ -347,21 +253,33 @@
             }
           }
         })
-        getWorksList(pageIndex, pageLimit)
-        function getWorksList(pageIndex, pageLimit) {
+        getWorksList('shufa', sf_pageIndex, sf_pageLimit, 'shufaUl')
+        getWorksList('huihua', hh_pageIndex, hh_pageLimit, 'huihuaUl')
+        getWorksList('sheying', sy_pageIndex, sy_pageLimit, 'sheyingUl')
+        function getWorksList(type, pageIndex, pageLimit, ul) {
           var obj = {}
           obj.page = pageIndex
           obj.limit = pageLimit
           $.ajax({
-          url: httpUrl+'/proxyApi/getList.php?act=tp',
-          type: 'get',
-          data: obj,
-          success: function(res){
-            if (res.code == 200) {
-              
+            url: httpUrl+'proxyApi/getList.php?act=type&type='+type,
+            type: 'get',
+            data: obj,
+            success: function(res){
+              if (res.code == 200) {
+                var list = res.info.list
+                var html = ''
+                list.forEach(element => {
+                  console.log(element)
+                  html += `<li>
+                  <a class="imgLink" href="view/detail.html?id=${element.id}">
+                    <b class="prizeIco"></b>
+                    <img src="${httpUrl+'/proxyApi/'+element.imgs}"></a>
+                </li>`
+                });
+                $('#'+ul).append(html)
+              }
             }
-          }
-        })
+          })
         }
         $('.zuopin-box li').click(function(e){
           console.log(e)
