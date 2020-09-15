@@ -153,9 +153,29 @@
     <script src="../static/js/jquery-1.11.0.min.js"></script>
     <script>
       $(function(){
-        $('.detail-toupiao-btn').click(function(){
-            alert("投票成功")
+        $('.toupiao-btn').attr('data-id', getQueryString('id'))
+        $('.toupiao-btn').click(function(){
+          var id = $(this).attr('data-id')
+          sendVote(id, $(this))
         })
+        // 投票接口
+        function sendVote (id, el) {
+            let obj = {id: id}
+            $.ajax({
+                url: httpUrl+'proxyApi/vote.php',
+                type: 'get',
+                data: obj,
+                success: function(res){
+                    if (res.code == 200) {
+                        alert('投票成功');
+                        var number = el.prev('span').find('i')
+                        number.text(Number(number.text())+1)
+                    } else {
+                        alert(res.msg)
+                    }
+                }
+            })
+        }
         if (getQueryString('type') == 1) {
           $('.yunpingxuan').show()
         }

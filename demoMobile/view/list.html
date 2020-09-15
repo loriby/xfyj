@@ -65,23 +65,11 @@
         </div>
         <div class="fullPage tabCont">
           <div class="cList">
-            <a class="curr">全部</a>
-            <a>书法</a>
-            <a>绘画</a>
-            <a>摄影</a>
-            <!-- <a href="/activities/cnaf2016/works-18-0-36-2016-0-1/">漆画</a>
-            <a href="/activities/cnaf2016/works-3-0-36-2016-0-1/">油画</a>
-            <a href="/activities/cnaf2016/works-6-0-36-2016-0-1/">水彩水粉</a>
-            <a href="/activities/cnaf2016/works-4-0-36-2016-0-1/">版画</a>
-            <a href="/activities/cnaf2016/works-9-0-36-2016-0-1/">雕塑</a>
-            <a href="/activities/cnaf2016/works-8-0-36-2016-0-1/">摄影</a></div> -->
+            <a class="curr" data-id="">全部</a>
+            <a data-id="shufa">书法</a>
+            <a data-id="huihua">绘画</a>
+            <a data-id="sheying">摄影</a>
         </div>
-        <!-- <div class="fullPage tabCont">
-          <div class="cList">
-            <a class="curr" href="/activities/cnaf2016/works-0-0-36-2016-0-1/">全部</a>
-            <a href="/activities/cnaf2016/works-0-0-36-2016-1-1/">入围作品</a>
-            <a href="/activities/cnaf2016/works-0-0-36-2016-2-1/">精选作品</a></div>
-        </div> -->
       </section>
       <section id="waterFall" class="waterFall fix">
         <ul class="waterCol" id="worksList"></ul>
@@ -129,6 +117,19 @@
             var hh_pageLimit = 10
             var sy_pageIndex = 1
             var sy_pageLimit = 10
+            $('.cList a').click(function(){
+                $('.cList a').removeClass('curr')
+                $('.cTags li a').text($(this).text())
+                $(this).addClass('curr')
+                var type = $(this).attr('data-id')
+                $('#worksList').html('')
+                pageIndex = 1
+                sf_pageIndex = 1
+                hh_pageIndex = 1
+                sy_pageIndex = 1
+                getWorksList(type, pageIndex, pageLimit, 'worksList')
+            })
+            // 获取作品列表
             getWorksList('', pageIndex, pageLimit, 'worksList')
             function getWorksList(type, pageIndex, pageLimit, ul) {
                 var url = ''
@@ -151,7 +152,7 @@
                             list.forEach(element => {
                                 console.log(element)
                                 html+= `<li>
-                                    <a href="detail.html?id=${element.id}" class="reset-link">
+                                    <a href="detail.html?type=${getQueryString('type')}&id=${element.id}" class="reset-link">
                                         <div class="identify">
                                         <img src="${httpUrl+'/proxyApi/'+element.imgs}">
                                         <cite>获奖作品</cite>
@@ -182,8 +183,28 @@
                     }
                 })
             }
-            $('.toupiao-btn').click(function(){
-                alert("投票成功")
+            // 投票接口
+            function sendVote (id, el) {
+                let obj = {id: id}
+                $.ajax({
+                    url: httpUrl+'proxyApi/vote.php',
+                    type: 'get',
+                    data: obj,
+                    success: function(res){
+                        if (res.code == 200) {
+                            alert('投票成功');
+                            console.log(el.prev('span'))
+                            var number = el.prev('span').find('i')
+                            number.text(Number(number.text())+1)
+                        } else {
+                            alert(res.msg)
+                        }
+                    }
+                })
+            }
+            $(document.body).on('click', 'a.toupiao-btn', function(){
+                var id = $(this).attr('data-id')
+                sendVote(id, $(this))
             })
             console.log(getQueryString('type'))
             if (getQueryString('type') == 1) {
