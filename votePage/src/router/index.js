@@ -87,6 +87,12 @@ const mainRoutes = {
       meta: { title: 'demo-echarts', isTab: true }
     },
     {
+      path: '/news-ueditor',
+      component: _import('modules/manage/news-add-or-update'),
+      name: 'news-ueditor',
+      meta: { title: '新闻管理' }
+    },
+    {
       path: '/demo-ueditor',
       component: _import('demo/ueditor'),
       name: 'demo-ueditor',

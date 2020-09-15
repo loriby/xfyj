@@ -1,7 +1,8 @@
 <template>
   <div class="opr-content">
     <el-dialog
-      :title="!dataForm.id ? '新增' : '编辑'"
+      :lock-scroll="true"
+      :title="!dataForm.id ? '新增1' : '编辑'"
       :close-on-click-modal="false"
       :visible.sync="visible"
       @close="getCloseDataForm"
@@ -21,8 +22,8 @@
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="作品分类" prop="category">
-              <el-select v-model="dataForm.category" placeholder="请选择">
+            <el-form-item label="作品分类" prop="category_py">
+              <el-select @change="handleChange" v-model="dataForm.category_py" placeholder="请选择">
                 <el-option
                   v-for="item in goodsHouse"
                   :key="item.value"
@@ -36,7 +37,7 @@
             <el-form-item label="作品编号" prop="shelfName">
               <el-input clearable v-model="dataForm.shelfName" placeholder="请输入"></el-input>
             </el-form-item>
-          </el-col> -->
+          </el-col>-->
         </el-row>
         <el-row>
           <el-col :span="12">
@@ -46,8 +47,8 @@
                   v-for="item in areaArr"
                   :key="item.value"
                   :label="item.label"
-                  :value="item.value">
-                </el-option>
+                  :value="item.value"
+                ></el-option>
               </el-select>
             </el-form-item>
           </el-col>
@@ -109,58 +110,34 @@
 </template>
 
 <script>
-// import Axios from 'axios'
 export default {
   data () {
-    // var validateShelfCode = (rule, value, callback) => {
-    //   if (value.length > 2) {
-    //     let regStr = value.substring(0, 2)
-    //     if (regStr !== this.wareCode) {
-    //       callback(new Error('货架编码格式错误'))
-    //     } else {
-    //       callback()
-    //     }
-    //   } else {
-    //     callback(new Error('货架编码格式错误'))
-    //     this.dataForm.shelfCode = this.wareCode
-    //   }
-    // }
-
-    // var validateMaxShelfNum = (rule, value, callback) => {
-    //   console.log(value)
-    //   if (/^[0-9]+$/.test(value)) {
-    //     callback()
-    //   } else {
-    //     callback(new Error('请输入正整数'))
-    //   }
-    // }
-
     return {
       visible: false,
       areaArr: [
-        {label: '东城区', value: '东城区'},
-        {label: '西城区', value: '西城区'},
-        {label: '海淀区', value: '海淀区'},
-        {label: '朝阳区', value: '朝阳区'},
-        {label: '丰台区', value: '丰台区'},
-        {label: '门头沟区', value: '门头沟区'},
-        {label: '石景山区', value: '石景山区'},
-        {label: '房山区', value: '房山区'},
-        {label: '通州区', value: '通州区'},
-        {label: '顺义区', value: '顺义区'},
-        {label: '昌平区', value: '昌平区'},
-        {label: '大兴区', value: '大兴区'},
-        {label: '怀柔区', value: '怀柔区'},
-        {label: '平谷区', value: '平谷区'},
-        {label: '延庆区', value: '延庆区'},
-        {label: '密云区', value: '密云区'}
+        { label: '东城区', value: '东城区' },
+        { label: '西城区', value: '西城区' },
+        { label: '海淀区', value: '海淀区' },
+        { label: '朝阳区', value: '朝阳区' },
+        { label: '丰台区', value: '丰台区' },
+        { label: '门头沟区', value: '门头沟区' },
+        { label: '石景山区', value: '石景山区' },
+        { label: '房山区', value: '房山区' },
+        { label: '通州区', value: '通州区' },
+        { label: '顺义区', value: '顺义区' },
+        { label: '昌平区', value: '昌平区' },
+        { label: '大兴区', value: '大兴区' },
+        { label: '怀柔区', value: '怀柔区' },
+        { label: '平谷区', value: '平谷区' },
+        { label: '延庆区', value: '延庆区' },
+        { label: '密云区', value: '密云区' }
       ],
       selectedOptions: [],
       tableData: [],
       goodsHouse: [
-        {label: '书法', value: '书法'},
-        {label: '绘画', value: '绘画'},
-        {label: '摄影', value: '摄影'}
+        { label: '书法', value: 'shufa' },
+        { label: '绘画', value: 'huihua' },
+        { label: '摄影', value: 'sheying' }
       ],
       wareCode: 0, // 货架编码开头字母
       imageDefault: '',
@@ -175,16 +152,13 @@ export default {
         texture: '', // 作品材质
         theme: '', // 作品题材
         discribe: '', // 作品描述
-        imgs: ''
+        imgs: '',
+        category_py: '' // 分类拼音
       },
       dataRule: {
         name: [{ required: true, message: '名称不能为空', trigger: 'blur' }],
         area: [{ required: true, message: '请选择区域', trigger: 'change' }],
-        category: [{ required: true, message: '请选择分类', trigger: 'change' }]
-        // wareId: [{ required: true, message: '请选择仓库', trigger: 'blur' }],
-        // shelfCode: [{ required: true, validator: validateShelfCode, trigger: 'blur' }],
-        // status: [{ required: true, message: '请选择货架状态', trigger: 'change' }],
-        // maxShelfNum: [{ required: true, validator: validateMaxShelfNum, trigger: 'blur' }]
+        category_py: [{ required: true, message: '请选择分类', trigger: 'change' }]
       }
     }
   },
@@ -203,21 +177,13 @@ export default {
         this.$forceUpdate()
       }
     },
-    getCloseDataForm() {
+    getCloseDataForm () {
       this.visible = false
       this.imageUrl = ''
       this.$refs['dataForm'].resetFields()
     },
     // 表单提交
     dataFormSubmit () {
-    // Axios({
-    //   url: this.$http.adornUrl('/proxyApi/save.php?act=add'),
-    //   method: 'post',
-    //   data: this.dataForm
-    // })
-    // .then(res => {
-    //   console.log(res)
-    // })
       this.$refs['dataForm'].validate(valid => {
         if (valid) {
           if (this.imageDefault === '') {
@@ -239,7 +205,7 @@ export default {
             // },
             data: this.dataForm
             // params: this.$http.adornParams(this.dataForm)
-          }).then(({data}) => {
+          }).then(({ data }) => {
             if (data && data.code === 200) {
               this.getCloseDataForm()
               this.$refs['dataForm'].resetFields()
@@ -255,44 +221,18 @@ export default {
               this.$message.error(data.msg)
             }
           })
-          // const params = {
-          //   url: `/ware/shelf/${!this.dataForm.id ? 'save' : 'update'}`,
-          //   data: {
-          //     ...this.dataForm
-          //   },
-          //   isLoading: true,
-          //   callback: res => {
-          //     this.$message({
-          //       message: '操作成功',
-          //       type: 'success',
-          //       duration: 1500,
-          //       onClose: () => {
-          //         this.visible = false
-          //         this.$emit('refreshDataList')
-          //       }
-          //     })
-          //   },
-          //   errcallback: msg => { }
-          // }
-          // this.$https.sendRequest(params)
         }
       })
     },
 
-    // 日期选择
-    handleChange (rst) {
-      console.log(rst)
+    // 分类选择
+    handleChange (val) {
+      this.goodsHouse.forEach(item => {
+        if (item.value === val) {
+          this.dataForm.category = item.label
+        }
+      })
     },
-
-    // // 仓库选择
-    // wareChange (res) {
-    //   this.goodsHouse.forEach(item => {
-    //     if (item.wareId === res) {
-    //       this.wareCode = item.wareCode + '-'
-    //       this.dataForm.shelfCode = item.wareCode + '-'
-    //     }
-    //   })
-    // },
 
     // 编码操作
     shelfCodeHadnle (val) {
