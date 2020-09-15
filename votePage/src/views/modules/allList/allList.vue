@@ -52,7 +52,6 @@
                   />
                 </a>
                 <div style="padding: 14px;position: relative;">
-                  <<<<<<< HEAD
                   <span
                     @click="goDetail($route.query.showFlag,item.id)"
                     class="title"
@@ -61,16 +60,7 @@
                     v-if="$route.query.showFlag == 2"
                     class="miaoshu"
                   >{{item.area + '-' +item.author_name}}</span>
-                  =======
-                  <span
-                    @click="goDetail($route.query.showFlag)"
-                    class="title"
-                  >{{item.category + '-' +item.id}}</span>
-                  <span
-                    v-if="$route.query.showFlag == 2"
-                    class="miaoshu"
-                  >{{item.area + '-' +item.author_name}}</span>
-                  >>>>>>> c74a5f0806a7d23a4ccbcf07ac7c82aadbaeaffd
+
                   <div class="bottom clearfix">
                     <time class="time" v-if="$route.query.showFlag == 2">{{item.discribe}}</time>
                     <time class="time" else>{{item.area + '-' +item.author_name}}</time>
