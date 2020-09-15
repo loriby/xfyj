@@ -74,7 +74,11 @@
 
                   <div v-if="$route.query.showFlag == 1" class="ticket-opr">
                     <div class="ticket-opr-item">
-                      <el-button @click="handleClick(item.id)" :disabled="false" size="mini">投 票</el-button>
+                      <el-button
+                        @click="handleClick(item.id,item)"
+                        :disabled="false"
+                        size="mini"
+                      >投 票</el-button>
                       <span>{{item.vote_count}}票</span>
                     </div>
                   </div>
@@ -139,14 +143,13 @@ export default {
     goBack () {
       this.$router.push({ name: 'home' })
     },
-    handleClick (id) {
-      this.sendVote(id)
+    handleClick (id, item) {
+      this.sendVote(id, item)
     },
-    sendVote (id) {
+    sendVote (id, item) {
       this.$http({
         url: this.$http.adornUrl('/proxyApi/vote.php'),
         method: 'post',
-        // data: {'id': id}
         params: this.$http.adornParams({ 'id': id })
       }).then(({ data }) => {
         if (data && data.code === 200) {
@@ -154,8 +157,9 @@ export default {
             message: '投票成功',
             type: 'success'
           })
-          this.viewsCount = data.info.viewsCount
-          this.voteCount = data.info.voteCount
+          // this.viewsCount = data.info.viewsCount
+          // this.voteCount = data.info.voteCount
+          item.vote_count++
         } else {
           this.$message.error(data.msg)
         }
