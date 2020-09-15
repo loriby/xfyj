@@ -6,20 +6,19 @@
         >
         <span>作品详细</span>
       </div>
-      <h1>陈宝琛</h1>
+      <h1>陈俊生</h1>
       <div class="detail-img">
-        <img src="~@/assets/img/detail.jpg" alt />
-        <div class="oprbtn-box">
-          <!-- <el-button>投 票</el-button> -->
+        <img src="~@/assets/img/hua/img1.png" alt />
+        <!-- <div class="oprbtn-box" v-if="$route.query.showFlag == 1">
           <em>投票已结束</em>
           <span>55032票</span>
-        </div>
+        </div> -->
       </div>
       <el-row class="user-info">
         <el-col :span="8">
-          <div class="grid-content name">王裕亮</div>
+          <div class="grid-content name">朝阳区-陈俊生</div>
         </el-col>
-        <el-col :span="8">
+        <el-col :span="$route.query.showFlag == 1 ? 8 : 16">
           <div class="grid-content" style="position: relative;">
             <div class="worksInfo">
               <div class="fix">
@@ -28,7 +27,7 @@
               </div>
               <div class="fix">
                 <span>作品分类</span>
-                <strong>油画</strong>
+                <strong>水彩画</strong>
               </div>
               <div class="fix">
                 <span>创作年代</span>
@@ -49,11 +48,13 @@
             </div>
           </div>
         </el-col>
-        <el-col :span="8">
-          <div style="border:none" class="grid-content server">
-            <strong>400-601-8111</strong>
+        <el-col :span="8" v-if="$route.query.showFlag == 1">
+          <div style="border:none" class="grid-content server toupiao-box" >
+            <!-- <strong>400-601-8111</strong>
             <span>服务时间</span>
-            <span>周一至周五 9:00 - 17:00</span>
+            <span>周一至周五 9:00 - 17:00</span> -->
+            <a class="toupiao-btn" href="javascript:;" @click="handleClick()">投票</a>
+            <span class="toupiao-count">票数：8988</span>
           </div>
         </el-col>
       </el-row>
@@ -88,24 +89,211 @@
       </div>
       <div class="item-content">
         <el-row :gutter="20">
-          <el-col :span="8" v-for="(o, index) in 9" :key="index">
+          <el-col :span="8">
             <el-card :body-style="{ padding: '0px' }">
-              <img class="image" src="~@/assets/img/zuopin.jpg" alt />
+              <a class="picCon" href="javascript:;">
+                <img class="image" src="~@/assets/img/shufa/img1.png" alt />
+              </a>
               <div style="padding: 14px;position: relative;">
-                <span class="title">古人书论选</span>
-                <div class="bottom clearfix">
-                  <time class="time">袁文甲</time>
-                </div>
+                <span @click="goDetail($route.query.showFlag)" class="title">古人书论选{{$route.query.showFlag}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">海淀区-袁文甲</span>
+                  <div class="bottom clearfix">
+                    <time class="time" v-if="$route.query.showFlag == 2">油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</time>
+                    <time class="time" else>海淀区-袁文甲</time>
+                  </div>
 
-                <div class="ticket-opr">
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
+                    <div class="ticket-opr-item">
+                      <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
+                      <span>42552 票</span>
+                    </div>
+                  </div>
+
+                <!-- <div class="ticket-opr">
                   <div class="ticket-opr-item">
                     <el-button :disabled="true" size="mini">投票结束</el-button>
                     <span>42552 票</span>
                   </div>
-                </div>
+                </div> -->
               </div>
             </el-card>
           </el-col>
+          <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail($route.query.showFlag)" class="image" src="~@/assets/img/hua/img2.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail($route.query.showFlag)" class="title">绘画002{{$route.query.showFlag}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">海淀区-马艺一</span>
+                  <div class="bottom clearfix">
+                    <time class="time" v-if="$route.query.showFlag == 2">油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</time>
+                    <time class="time" else>海淀区-张三</time>
+                  </div>
+
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
+                    <div class="ticket-opr-item">
+                      <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
+                      <span>42552 票</span>
+                    </div>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail($route.query.showFlag)" class="image" src="~@/assets/img/hua/img3.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail($route.query.showFlag)" class="title">绘画003{{$route.query.showFlag}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">海淀区-罗紫裙</span>
+                  <div class="bottom clearfix">
+                    <time class="time" v-if="$route.query.showFlag == 2">油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</time>
+                    <time class="time" else>海淀区-张三</time>
+                  </div>
+
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
+                    <div class="ticket-opr-item">
+                      <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
+                      <span>42552 票</span>
+                    </div>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail($route.query.showFlag)" class="image" src="~@/assets/img/hua/img4.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail($route.query.showFlag)" class="title">绘画004{{$route.query.showFlag}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">朝阳区-贺函</span>
+                  <div class="bottom clearfix">
+                    <time class="time" v-if="$route.query.showFlag == 2">油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</time>
+                    <time class="time" else>海淀区-张三</time>
+                  </div>
+
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
+                    <div class="ticket-opr-item">
+                      <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
+                      <span>42552 票</span>
+                    </div>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail($route.query.showFlag)" class="image" src="~@/assets/img/hua/img5.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail($route.query.showFlag)" class="title">绘画005{{$route.query.showFlag}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">海淀区-罗子君</span>
+                  <div class="bottom clearfix">
+                    <time class="time" v-if="$route.query.showFlag == 2">油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</time>
+                    <time class="time" else>海淀区-张三</time>
+                  </div>
+
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
+                    <div class="ticket-opr-item">
+                      <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
+                      <span>42552 票</span>
+                    </div>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail($route.query.showFlag)" class="image" src="~@/assets/img/hua/img6.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail($route.query.showFlag)" class="title">绘画007{{$route.query.showFlag}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">朝阳区-白光</span>
+                  <div class="bottom clearfix">
+                    <time class="time" v-if="$route.query.showFlag == 2">油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</time>
+                    <time class="time" else>海淀区-张三</time>
+                  </div>
+
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
+                    <div class="ticket-opr-item">
+                      <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
+                      <span>42552 票</span>
+                    </div>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail($route.query.showFlag)" class="image" src="~@/assets/img/hua/img7.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail($route.query.showFlag)" class="title">绘画007{{$route.query.showFlag}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">门头沟区-李斯</span>
+                  <div class="bottom clearfix">
+                    <time class="time" v-if="$route.query.showFlag == 2">油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</time>
+                    <time class="time" else>海淀区-张三</time>
+                  </div>
+
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
+                    <div class="ticket-opr-item">
+                      <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
+                      <span>42552 票</span>
+                    </div>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail($route.query.showFlag)" class="image" src="~@/assets/img/hua/img8.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail($route.query.showFlag)" class="title">绘画008{{$route.query.showFlag}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">朝阳区-王哥</span>
+                  <div class="bottom clearfix">
+                    <time class="time" v-if="$route.query.showFlag == 2">油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</time>
+                    <time class="time" else>海淀区-张三</time>
+                  </div>
+
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
+                    <div class="ticket-opr-item">
+                      <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
+                      <span>42552 票</span>
+                    </div>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="8">
+              <el-card :body-style="{ padding: '0px' }">
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail($route.query.showFlag)" class="image" src="~@/assets/img/shufa/img8.png" alt />
+                </a>
+                <div style="padding: 14px;position: relative;">
+                  <span @click="goDetail($route.query.showFlag)" class="title">书法001{{$route.query.showFlag}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">房山区-刘涛</span>
+                  <div class="bottom clearfix">
+                    <time class="time" v-if="$route.query.showFlag == 2">油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</time>
+                    <time class="time" else>海淀区-张三</time>
+                  </div>
+
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
+                    <div class="ticket-opr-item">
+                      <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
+                      <span>42552 票</span>
+                    </div>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
         </el-row>
       </div>
     </div>
@@ -118,8 +306,33 @@ export default {
     return {}
   },
   methods: {
+    goDetail (flag) {
+      this.$router.push({name: 'detail', query: {path: 'allList', showFlag: flag}})
+    },
     goBack () {
       this.$router.push({ name: this.$route.query.path })
+    },
+    handleClick () {
+      this.sendVote(id)
+    },
+    sendVote(id) {
+      this.$http({
+            url: this.$http.adornUrl('/proxyApi/vote.php'),
+            method: 'post',
+            // data: {'id': id}
+            params: this.$http.adornParams({'id': id})
+          }).then(({data}) => {
+            if (data && data.code === 200) {
+              this.$message({
+                message: '投票成功',
+                type: 'success'
+              })
+              this.viewsCount = data.info.viewsCount
+              this.voteCount = data.info.voteCount
+            } else {
+              this.$message.error(data.msg)
+            }
+          })
     }
   }
 }
@@ -397,12 +610,36 @@ export default {
   background-color: #fff;
   border-color: #ebeef5;
 }
-
+.toupiao-box{
+  padding-top:70px;
+}
+.toupiao-btn{
+  display: block;
+  width: 120px;
+  background: #d7000f;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
+}
+.toupiao-count{
+  font-size: 14px !important;
+  text-align: center;
+  color:#666666;
+  padding-top:15px;
+}
 .oprbtn-box em {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   color: #333;
   padding-right: 15px;
+}
+.miaoshu {
+    font-size: 12px;
+    color: #999;
+    float: right;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div class="mod-home">
+    <!-- <headerHtml></headerHtml> -->
     <div class="top-box">
       <el-row>
         <el-col :span="24">
@@ -17,7 +18,7 @@
     <div class="nav-bar">
       <span @click="goBack">返回</span>
       >
-      <span v-if="$route.query.showFlag">云展览</span>
+      <span v-if="$route.query.showFlag == 2">云展览</span>
       <span v-else>云评选</span>
     </div>
     <!-- 内容panls区 -->
@@ -27,7 +28,7 @@
           <div class="graTit">
             <span class="graTitBox">
               <b>作品分类</b>
-              <br />
+            <br />
             </span>
           </div>
         </div>
@@ -39,30 +40,39 @@
           </el-col>
         </el-row>
         <div class="item-content">
-          <el-row :gutter="20">
-            <el-col :span="8" v-for="(o, index) in 9" :key="index">
+          <el-row :gutter="20" v-loading="dataListLoading">
+            <el-col :span="8" v-for="(item, index) in worksList" :key="index">
               <el-card :body-style="{ padding: '0px' }">
-                <img @click="goDetail()" class="image" src="~@/assets/img/zuopin.jpg" alt />
+                <a class="picCon" href="javascript:;">
+                  <img @click="goDetail($route.query.showFlag)" class="image" :src="item.imgs" alt />
+                </a>
                 <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">古人书论选</span>
-                  <span
-                    v-if="$route.query.showFlag"
-                    class="miaoshu"
-                  >油画18 作品编码 3组E-18 项目名称 油画《陈宝琛》 承担主体 王裕亮 艺术门类 油画 材质 油画 作品尺寸 200cm*250cm</span>
+                  <span @click="goDetail($route.query.showFlag)" class="title">{{item.category + '-' +item.id}}</span>
+                  <span v-if="$route.query.showFlag == 2" class="miaoshu">{{item.area + '-' +item.author_name}}</span>
                   <div class="bottom clearfix">
-                    <time class="time">袁文甲</time>
+                    <time class="time" v-if="$route.query.showFlag == 2">{{item.discribe}}</time>
+                    <time class="time" else>{{item.area + '-' +item.author_name}}</time>
                   </div>
 
-                  <div v-if="!$route.query.showFlag" class="ticket-opr">
+                  <div v-if="$route.query.showFlag == 1" class="ticket-opr">
                     <div class="ticket-opr-item">
-                      <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
-                      <span>42552 票</span>
+                      <el-button @click="handleClick(item.id)" :disabled="false" size="mini">投 票</el-button>
+                      <span>{{item.vote_count}}票</span>
                     </div>
                   </div>
                 </div>
               </el-card>
             </el-col>
           </el-row>
+          <el-pagination
+            @size-change="sizeChangeHandle"
+            @current-change="currentChangeHandle"
+            :current-page="pageObj.pageIndex"
+            :page-sizes="[10, 20, 50, 100]"
+            :page-size="pageObj.pageSize"
+            :total="pageObj.totalPage"
+            layout="total, sizes, prev, pager, next, jumper"
+          ></el-pagination>
         </div>
       </div>
     </div>
@@ -70,37 +80,91 @@
 </template>
 
 <script>
+import headerHtml from '@/views/common/header.vue'
 export default {
   data () {
     return {
       input: '',
+      dataListLoading: false,
+      worksList: [],
+      pageObj: {
+        pageIndex: 1,
+        pageSize: 9,
+        totalPage: 0
+      },
       opusArry: [
         { name: '全部', id: '' },
-        { name: '国画', id: '' },
         { name: '书法', id: '' },
-        { name: '工艺美术', id: '' },
-        { name: '漆画', id: '' },
-        { name: '油画', id: '' },
-        { name: '水彩水粉', id: '' },
-        { name: '版画', id: '' },
-        { name: '雕塑', id: '' },
+        { name: '绘画', id: '' },
         { name: '摄影', id: '' }
       ]
     }
   },
-
+  components: {
+    headerHtml
+  },
+  mounted() {
+    this.getWorksList()
+  },
   methods: {
-    goDetail () {
-      this.$router.push({ name: 'detail', query: { path: 'allList' } })
+    goDetail (flag) {
+      this.$router.push({name: 'detail', query: {path: 'allList', showFlag: flag}})
     },
     goBack () {
       this.$router.push({ name: 'home' })
     },
-    handleClick () {
-      this.$message({
-        message: '投票成功',
-        type: 'success'
+    handleClick (id) {
+      this.sendVote(id)
+    },
+    sendVote(id) {
+      this.$http({
+            url: this.$http.adornUrl('/proxyApi/vote.php'),
+            method: 'post',
+            // data: {'id': id}
+            params: this.$http.adornParams({'id': id})
+          }).then(({data}) => {
+            if (data && data.code === 200) {
+              this.$message({
+                message: '投票成功',
+                type: 'success'
+              })
+              this.viewsCount = data.info.viewsCount
+              this.voteCount = data.info.voteCount
+            } else {
+              this.$message.error(data.msg)
+            }
+          })
+    },
+    getWorksList() {
+      this.dataListLoading = true
+      this.$http({
+        url: this.$http.adornUrl('/proxyApi/getlist.php?act=tp'),
+        method: 'get',
+        params: this.$http.adornParams({
+          'page': this.pageObj.pageIndex,
+          'limit': this.pageObj.pageSize
+        })
+      }).then(({ data }) => {
+        if (data && data.code === 200) {
+          this.worksList = data.info.list
+          this.pageObj.totalPage = data.info.total
+        } else {
+          this.worksList = []
+          this.pageObj.totalPage = 0
+        }
+        this.dataListLoading = false
       })
+    },
+    // 每页数
+    sizeChangeHandle (val) {
+      this.pageObj.pageSize = val
+      this.pageObj.pageIndex = 1
+      this.getWorksList()
+    },
+    // 当前页
+    currentChangeHandle (val) {
+      this.pageObj.pageIndex = val
+      this.getWorksList()
     }
   }
 }
@@ -226,7 +290,7 @@ export default {
   width: 980px;
   margin: 0 auto;
   min-height: 147px;
-  padding-top: 82px;
+  padding-top: 50px;
 }
 
 .graTit {
@@ -381,6 +445,7 @@ export default {
 .miaoshu {
   font-size: 12px;
   color: #999;
+  float: right;
 }
 
 .nav-bar {

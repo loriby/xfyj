@@ -1,0 +1,525 @@
+<template>
+	<div class="Section0">
+	  <p style="font-size:16pt; line-height:115%; margin:0pt; text-align:justify">
+			<!-- <span style="font-family:仿宋; font-size:16pt; font-weight:bold">评分细则</span>
+			<span style="font-family:仿宋; font-size:12pt">——</span></p> -->
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt">本次评选结合疫情常态化防控需要，通过开展线上云展览、云教学、云评选三种形式开展线上书法、绘画、摄影系列活动。首先征集作品对作品进行扫描和信息校对进行线上展览，同时对展览作品开展线上大众投票评选。在评选期间要求专家对参赛人员开展书法、绘画、摄影技能知识的教学直播。在大众评选结束后邀请专家对作品进行评分，最终结合大众评选得分和专家评选得分相加，按照分数高低评选出一等奖各5名，二等奖各10名，三等奖各20名，优秀奖总数不超过200名。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt; font-weight:bold">评选标准如下：</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt 21pt; orphans:0; text-align:justify; text-indent:-21pt; widows:0">
+			<span style="font-family:Wingdings; font-size:16pt"></span>
+			<span style="font:7.0pt 'Times New Roman'">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span>
+			<span style="font-family:仿宋_GB2312; font-size:16pt">大众评选满分100分，按照票数高低进行排名根据以下规则计算得分。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt 21pt; orphans:0; text-align:justify; text-indent:-21pt; widows:0">
+			<span style="font-family:Wingdings; font-size:16pt"></span>
+			<span style="font:7.0pt 'Times New Roman'">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span>
+			<span style="font-family:仿宋_GB2312; font-size:16pt">专家评选满分200分，对投递作品快速初筛，刷掉不符合要求的作品，然后剩余作品要求专家严格从主题性、艺术功底、表现力、创造力四个维度进行打分。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt; font-weight:bold">一、大众评选规则：</span>
+			<span style="font-family:仿宋_GB2312; font-size:16pt"></span>
+		  </p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt">票数前5名得分100分，6-15名得分95分，16-35名得分90分，36-135名得分85分，136-235名得分为80分，236--500名得分剩余排名得分为75分，剩余作品得分为70分。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt; font-weight:bold">二、专家评选规则：</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt">由书法、绘画、摄影三类别的专家各5名分别组成评审小组进行作品评分。每位评委将用同样的评分标准进行打分，记分时采用加权平均的办法，以求每位评委的专业意见得到最好的体现。五位专家总分除以5得到的平均分为作品的专家打分的最终得分。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt">专家评审从主题性、艺术功底、表现力和创造力四个方面进行评分，具体如下：</span></p>
+		  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center; text-indent:32pt">
+			<span style="font-family:仿宋; font-size:12pt">表</span>
+			<span style="font-family:Calibri; font-size:12pt">1</span>
+			<span style="font-family:Calibri; font-size:12pt">&#xa0;</span>
+			<span style="font-family:仿宋; font-size:12pt">书法评分细则</span></p>
+		  <table cellspacing="0" cellpadding="0" style="border-collapse:collapse; margin-left:0pt; width:99.96%">
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:14.72%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">评分项</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:63.68%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">评分细则</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">分值</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">评分</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:14.72%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">主题性</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:63.68%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">作品主题要求内容思想健康、积极向上 ，贴合主题 。</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">50</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:14.72%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">功底</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:63.68%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">用笔精准无误，笔力苍劲；结构重心平稳，用笔流畅，结构舒展，主笔、笔锋突岀。</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">50</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:14.72%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">表现力</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:63.68%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">整篇字形大小合理，行列整齐，章法布局到位，书面干净，结体清秀，符合大众审美。</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">50</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:14.72%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">创造力</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:63.68%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">展示出雄厚的文化底蕴，具有很强的艺术色彩。</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">50</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+		  </table>
+		  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center; text-indent:32pt">
+			<span style="font-family:仿宋; font-size:12pt">表</span>
+			<span style="font-family:Calibri; font-size:12pt">2</span>
+			<span style="font-family:Calibri; font-size:12pt">&#xa0;</span>
+			<span style="font-family:仿宋; font-size:12pt">绘画评分细则</span></p>
+		  <table cellspacing="0" cellpadding="0" style="border-collapse:collapse; margin-left:0pt; width:99.96%">
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:15.14%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">评分项</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:63.24%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">评分细则</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">分值</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">评分</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:15.14%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">主题性</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:63.24%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">作品主题要求内容思想健康、积极向上 ，贴合主题 。</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">50</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:15.14%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">功底</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:63.24%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">笔墨、色彩、造型表现生动完整。</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">50</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:15.14%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">表现力</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:63.24%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">构图合理，色彩关系明确，画面生动和谐。</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">50</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:15.14%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">创造力</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:63.24%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:仿宋; font-size:12pt">内容新颖，能表现作者的创意。</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">50</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+		  </table>
+		  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+			<span style="font-family:仿宋; font-size:12pt">表</span>
+			<span style="font-family:Calibri; font-size:12pt">3</span>
+			<span style="font-family:Calibri; font-size:12pt">&#xa0;</span>
+			<span style="font-family:仿宋; font-size:12pt">摄影评分细则</span></p>
+		  <div style="text-align:center">
+			<table cellspacing="0" cellpadding="0" style="border-collapse:collapse; margin:0 auto; width:99.96%">
+			  <tr>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:15.56%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">评分项</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:62.84%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">评分细则</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">分值</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">评分</span></p>
+				</td>
+			  </tr>
+			  <tr>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:15.56%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">主题性</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:62.84%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">作品主题要求内容思想健康、积极向上 ，贴合主题 。</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:Calibri; font-size:12pt">50</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+				</td>
+			  </tr>
+			  <tr>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:15.56%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">功底</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:62.84%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">取景、构图、曝光、色调、淸晰度等符合摄影技术基本要求，色彩和谐，构 图 比例协调。</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:Calibri; font-size:12pt">50</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+				</td>
+			  </tr>
+			  <tr>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:15.56%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">表现力</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:62.84%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">作品风格突出，拍摄视角独特，手法新颖。</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:Calibri; font-size:12pt">50</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+				</td>
+			  </tr>
+			  <tr>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:15.56%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">创造力</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:62.84%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:仿宋; font-size:12pt">作品表达形式新颖，构思独特，作品能够通过形象化的摄影语言符号和创新的立意去 诠 释摄影作品的主题。</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.58%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:Calibri; font-size:12pt">50</span></p>
+				</td>
+				<td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:10.98%">
+				  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify">
+					<span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+				</td>
+			  </tr>
+			</table>
+		  </div>
+		  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:justify; text-indent:32pt">
+			<span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+		  <p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center; text-indent:32pt">
+			<span style="font-family:仿宋; font-size:12pt">表</span>
+			<span style="font-family:Calibri; font-size:12pt">4</span>
+			<span style="font-family:Calibri; font-size:12pt">&#xa0;</span>
+			<span style="font-family:仿宋; font-size:12pt">专家评分表</span></p>
+		  <table cellspacing="0" cellpadding="0" style="border-collapse:collapse; margin-left:0pt; width:99.9%">
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:19.26%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:仿宋; font-size:12pt">作品编号</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.62%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:仿宋; font-size:12pt">主题性</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:17.04%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:仿宋; font-size:12pt">功底</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.34%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:仿宋; font-size:12pt">表现力</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:15.78%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:仿宋; font-size:12pt">创造力</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; border-top-color:#000000; border-top-style:solid; border-top-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:14.92%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:仿宋; font-size:12pt">总分</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:19.26%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.62%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:17.04%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.34%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:15.78%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:14.92%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:19.26%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.62%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:17.04%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.34%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:15.78%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:14.92%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:19.26%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.62%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:17.04%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.34%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:15.78%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:14.92%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:19.26%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.62%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:17.04%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.34%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:15.78%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:14.92%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+			<tr>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-left-color:#000000; border-left-style:solid; border-left-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:4.9pt; padding-right:4.9pt; vertical-align:top; width:19.26%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.62%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:17.04%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:16.34%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:15.78%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			  <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:1pt; border-right-color:#000000; border-right-style:solid; border-right-width:1pt; padding-left:5.4pt; padding-right:4.9pt; vertical-align:top; width:14.92%">
+				<p style="font-size:12pt; line-height:115%; margin:0pt; text-align:center">
+				  <span style="font-family:Calibri; font-size:12pt">&#xa0;</span></p>
+			  </td>
+			</tr>
+		  </table>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt; font-weight:bold">&#xa0;</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt; font-weight:bold">作品名次获奖排名计算：</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt">最终作品按照大众评选获得的最终分值（满分100分）+专家评审获得的最终分值（满分200分）得到作品最终得分，然后按照排名先后顺序，按照分数高低评选出一等奖各5名，二等奖各10名，三等奖各20名，优秀奖总数</span>
+			<span style="font-family:仿宋_GB2312; font-size:16pt">200名。</span></p>
+		  <p style="line-height:28pt; margin:0pt 0pt 10pt; orphans:0; text-align:justify; text-indent:32pt; widows:0">
+			<span style="font-family:仿宋_GB2312; font-size:16pt; font-weight:bold">&#xa0;</span></p>
+	</div>
+</template>
+<script>
+	
+</script>
+<style lang="scss">
+	body{
+		background: #fff;
+		padding: 0 1%;
+	}
+	.MsoNormal,.MsoNormal font,.MsoNormal span{
+		font-size: 14px;
+		color: #666;
+	}
+	p{
+		line-height: 30px !important;
+	}
+	p span{
+		font-size: 16px !important;
+		color: #444444;
+	}
+	.title1 font{
+		font-size: 20px !important;
+	}
+	.title1{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+</style>
