@@ -415,7 +415,6 @@ export default {
       this.$router.push({ name: this.$route.query.path })
     },
     handleClick () {
-<<<<<<< HEAD
       this.$message({
         message: '投票成功',
         type: 'success'
@@ -439,28 +438,6 @@ export default {
 
         }
       })
-=======
-      this.sendVote(id)
-    },
-    sendVote(id) {
-      this.$http({
-            url: this.$http.adornUrl('/proxyApi/vote.php'),
-            method: 'post',
-            // data: {'id': id}
-            params: this.$http.adornParams({'id': id})
-          }).then(({data}) => {
-            if (data && data.code === 200) {
-              this.$message({
-                message: '投票成功',
-                type: 'success'
-              })
-              this.viewsCount = data.info.viewsCount
-              this.voteCount = data.info.voteCount
-            } else {
-              this.$message.error(data.msg)
-            }
-          })
->>>>>>> c74a5f0806a7d23a4ccbcf07ac7c82aadbaeaffd
     }
   }
 
