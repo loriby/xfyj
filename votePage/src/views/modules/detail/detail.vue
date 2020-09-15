@@ -53,8 +53,8 @@
             <!-- <strong>400-601-8111</strong>
             <span>服务时间</span>
             <span>周一至周五 9:00 - 17:00</span>-->
-            <a class="toupiao-btn" href="javascript:;" @click="handleClick()">投票</a>
-            <span class="toupiao-count">票数：8988</span>
+            <a class="toupiao-btn" href="javascript:;" @click="sendVote()">投票</a>
+            <span class="toupiao-count">票数：{{worksInfo.vote_count}}</span>
           </div>
         </el-col>
       </el-row>
@@ -107,7 +107,7 @@
 
                 <div v-if="$route.query.showFlag == 1" class="ticket-opr">
                   <div class="ticket-opr-item">
-                    <el-button @click="handleClick()" :disabled="false" size="mini">投 票</el-button>
+                    <el-button @click="sendVote(item.id)" :disabled="false" size="mini">投 票</el-button>
                     <span>{{item.vote_count}} 票</span>
                   </div>
                 </div>
@@ -143,6 +143,7 @@ export default {
         size: '',
         texture: '', // 作品材质
         theme: '', // 题材
+        vote_count: '',
         discribe: ''
       }
     }
@@ -153,7 +154,7 @@ export default {
   },
   methods: {
     goDetail (id, type) {
-      this.$router.push({ name: 'detail', query: { path: 'home', id: id, type: type } })
+      this.$router.push({ name: 'detail', query: { showFlag: this.$route.query.showFlag, path: 'home', id: id, type: type } })
       this.getApiDetail()
       this.getWorksList()
     },
@@ -161,7 +162,7 @@ export default {
       this.$router.push({
         name: this.$route.query.path,
         query: {
-          active: this.$route.query.path === 'home' ? 'fourth' : ''
+          active: this.$route.query.active ? 'fourth' : ''
         }
       })
     },
@@ -205,6 +206,25 @@ export default {
           this.worksList = data.info.list
         } else {
           this.worksList = []
+        }
+      })
+    },
+
+    sendVote (id) {
+      this.$http({
+        url: this.$http.adornUrl('/proxyApi/vote.php'),
+        method: 'post',
+        params: this.$http.adornParams({ 'id': id || this.id })
+      }).then(({ data }) => {
+        if (data && data.code === 200) {
+          this.$message({
+            message: '投票成功',
+            type: 'success'
+          })
+          this.viewsCount = data.info.viewsCount
+          this.voteCount = data.info.voteCount
+        } else {
+          this.$message.error(data.msg)
         }
       })
     }

@@ -10,7 +10,6 @@
           />
           <span style="color:#cc9844;float: left; margin-left: -22px;">幸福亿家</span>
         </a>
-        <!-- <a class="site-navbar__brand-mini" href="javascript:;"> <img  style="height: 36px;" src="~@/assets/img/out.png" alt="logo"></a> -->
       </h1>
     </div>
     <div class="site-navbar__body clearfix">
@@ -22,8 +21,8 @@
               {{ userName }}
             </span>
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item @click.native="updatePasswordHandle()">修改密码</el-dropdown-item>
-              <el-dropdown-item @click.native="logoutHandle()">退出</el-dropdown-item>
+              <!-- <el-dropdown-item @click.native="updatePasswordHandle()">修改密码</el-dropdown-item> -->
+              <el-dropdown-item @click.native="logoutHandle()">去客户端</el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
         </el-menu-item>
@@ -36,7 +35,7 @@
 
 <script>
 import UpdatePassword from './main-navbar-update-password'
-import { clearLoginInfo } from '@/utils'
+// import { clearLoginInfo } from '@/utils'
 export default {
   data () {
     return {
@@ -65,29 +64,14 @@ export default {
   methods: {
     // 修改密码
     updatePasswordHandle () {
-      this.updatePassowrdVisible = true
-      this.$nextTick(() => {
-        this.$refs.updatePassowrd.init()
-      })
+      // this.updatePassowrdVisible = true
+      // this.$nextTick(() => {
+      //   this.$refs.updatePassowrd.init()
+      // })
     },
-    // 退出
+    // 去客户端
     logoutHandle () {
-      this.$confirm(`确定进行[退出]操作?`, '提示', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
-        type: 'warning'
-      }).then(() => {
-        this.$http({
-          url: this.$http.adornUrl('/sys/logout'),
-          method: 'post',
-          data: this.$http.adornData()
-        }).then(({ data }) => {
-          if (data && data.code === 0) {
-            clearLoginInfo()
-            this.$router.push({ name: 'login' })
-          }
-        })
-      }).catch(() => { })
+      this.$router.push({ name: 'home' })
     }
   }
 }

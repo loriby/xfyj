@@ -339,7 +339,7 @@ export default {
     },
     // 查看作品详情
     goDetail (id, type) {
-      this.$router.push({ name: 'detail', query: { path: 'home', id: id, type: type } })
+      this.$router.push({ name: 'detail', query: { active: true, path: 'home', id: id, type: type } })
     },
 
     // 查看新闻详情

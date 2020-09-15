@@ -1,7 +1,7 @@
 <template>
   <div class="mod-role">
     <el-form :inline="true" :model="dataForm" @keyup.enter.native="getDataList()">
-      <el-form-item>
+      <!-- <el-form-item>
         <el-form-item label="区域选择" prop="wareId">
           <el-cascader
             size="large"
@@ -11,7 +11,7 @@
             placeholder="请选择区域"
           ></el-cascader>
         </el-form-item>
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item>
         <el-input v-model="dataForm.name" placeholder="作者姓名" clearable></el-input>
       </el-form-item>

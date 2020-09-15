@@ -65,8 +65,11 @@
                   >{{item.area + '-' +item.author_name}}</span>
 
                   <div class="bottom clearfix">
-                    <time class="time" v-if="$route.query.showFlag == 2">{{item.discribe}}</time>
-                    <time class="time" else>{{item.area + '-' +item.author_name}}</time>
+                    <time
+                      class="time"
+                      v-if="$route.query.showFlag == 2"
+                    >{{item.discribe.substring(0,20)+'...'}}</time>
+                    <time class="time" v-else>{{item.area + '-' +item.author_name}}</time>
                   </div>
 
                   <div v-if="$route.query.showFlag == 1" class="ticket-opr">
