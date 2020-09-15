@@ -28,14 +28,14 @@
           <div class="graTit">
             <span class="graTitBox">
               <b>作品分类</b>
-            <br />
+              <br />
             </span>
           </div>
         </div>
         <el-row :gutter="20">
           <el-col v-for="(item, index) in opusArry" :key="index" :span="5">
             <div class="grid-content">
-              <el-button>{{item.name}}</el-button>
+              <el-button @click="typeSearch(item.type)">{{item.name}}</el-button>
             </div>
           </el-col>
         </el-row>
@@ -44,11 +44,22 @@
             <el-col :span="8" v-for="(item, index) in worksList" :key="index">
               <el-card :body-style="{ padding: '0px' }">
                 <a class="picCon" href="javascript:;">
-                  <img @click="goDetail($route.query.showFlag)" class="image" :src="item.imgs" alt />
+                  <img
+                    @click="goDetail($route.query.showFlag,item.id)"
+                    class="image"
+                    :src="item.imgs"
+                    alt
+                  />
                 </a>
                 <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail($route.query.showFlag)" class="title">{{item.category+item.id}}</span>
-                  <span v-if="$route.query.showFlag == 2" class="miaoshu">{{item.area + '-' +item.author_name}}</span>
+                  <span
+                    @click="goDetail($route.query.showFlag,item.id)"
+                    class="title"
+                  >{{item.category+item.id}}</span>
+                  <span
+                    v-if="$route.query.showFlag == 2"
+                    class="miaoshu"
+                  >{{item.area + '-' +item.author_name}}</span>
                   <div class="bottom clearfix">
                     <time class="time" v-if="$route.query.showFlag == 2">{{item.discribe}}</time>
                     <time class="time" else>{{item.area + '-' +item.author_name}}</time>
@@ -93,22 +104,22 @@ export default {
         totalPage: 0
       },
       opusArry: [
-        { name: '全部', id: '' },
-        { name: '书法', id: '' },
-        { name: '绘画', id: '' },
-        { name: '摄影', id: '' }
+        { name: '全部', id: '', type: '' },
+        { name: '书法', id: '', type: 'shufa' },
+        { name: '绘画', id: '', type: 'huihua' },
+        { name: '摄影', id: '', type: 'sheying' }
       ]
     }
   },
   components: {
     headerHtml
   },
-  mounted() {
+  mounted () {
     this.getWorksList()
   },
   methods: {
-    goDetail (flag) {
-      this.$router.push({name: 'detail', query: {path: 'allList', showFlag: flag}})
+    goDetail (flag, id) {
+      this.$router.push({ name: 'detail', query: { path: 'allList', showFlag: flag, id: id } })
     },
     goBack () {
       this.$router.push({ name: 'home' })
@@ -119,14 +130,43 @@ export default {
         type: 'success'
       })
     },
-    getWorksList() {
+    getWorksList () {
       this.dataListLoading = true
       this.$http({
-        url: this.$http.adornUrl('/proxyApi/getlist.php?act=tp'),
+        url: this.$http.adornUrl('proxyApi/getList.php?act=tp'),
         method: 'get',
         params: this.$http.adornParams({
           'page': this.pageObj.pageIndex,
           'limit': this.pageObj.pageSize
+        })
+      }).then(({ data }) => {
+        if (data && data.code === 200) {
+          this.worksList = data.info.list
+          this.pageObj.totalPage = data.info.total
+        } else {
+          this.worksList = []
+          this.pageObj.totalPage = 0
+        }
+        this.dataListLoading = false
+      })
+    },
+    typeSearch (type) {
+      console.log(type)
+      if (type) {
+        this.handleGetWorksList(type)
+      } else {
+        this.getWorksList()
+      }
+    },
+    handleGetWorksList (type) {
+      this.dataListLoading = true
+      this.$http({
+        url: this.$http.adornUrl('proxyApi/getList.php?act=type'),
+        method: 'get',
+        params: this.$http.adornParams({
+          'page': this.pageObj.pageIndex,
+          'limit': this.pageObj.pageSize,
+          'type': type
         })
       }).then(({ data }) => {
         if (data && data.code === 200) {

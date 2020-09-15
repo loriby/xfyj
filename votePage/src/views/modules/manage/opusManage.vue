@@ -71,7 +71,7 @@
     ></el-pagination>
     <!-- 弹窗, 新增 / 修改 -->
     <add-or-update v-if="addOrUpdateVisible" ref="addOrUpdate" @refreshDataList="getDataList"></add-or-update>
-    <el-dialog title="查看作品" :visible.sync="viewImg.popShow" :close-on-click-modal="false" width="60%">
+    <el-dialog lock-scroll title="查看作品" :visible.sync="viewImg.popShow" :close-on-click-modal="false" width="60%">
       <div class="s-img">
           <img :src="viewImg.data" alt="">
         </div>
@@ -119,7 +119,7 @@ export default {
     getDataList () {
       this.dataListLoading = true
       this.$http({
-        url: this.$http.adornUrl('/proxyApi/getlist.php?act=tp'),
+        url: this.$http.adornUrl('/proxyApi/getList.php?act=tp'),
         method: 'get',
         params: this.$http.adornParams({
           'page': this.pageIndex,

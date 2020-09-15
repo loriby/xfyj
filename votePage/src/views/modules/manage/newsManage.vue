@@ -1,18 +1,7 @@
 <template>
   <div>
-    <div class="mod-role">
+    <div v-if="!routerViewFlag" class="mod-role">
       <el-form :inline="true" :model="dataForm" @keyup.enter.native="getDataList()">
-        <el-form-item>
-          <el-form-item label="区域选择" prop="wareId">
-            <el-cascader
-              size="large"
-              :options="options_"
-              v-model="selectedOptions"
-              @change="handleChange"
-              placeholder="请选择区域"
-            ></el-cascader>
-          </el-form-item>
-        </el-form-item>
         <el-form-item>
           <el-input v-model="dataForm.name" placeholder="作者姓名" clearable></el-input>
         </el-form-item>
@@ -26,36 +15,19 @@
         <el-form-item>
           <el-button @click="getDataList()">查询</el-button>
           <el-button type="primary" @click="addOrUpdateHandle()">新增</el-button>
-          <!-- <el-button
-          type="danger"
-          @click="deleteHandle()"
-          :disabled="dataListSelections.length <= 0"
-          >批量删除</el-button>-->
         </el-form-item>
       </el-form>
-      <el-table
-        :data="dataList"
-        v-loading="dataListLoading"
-        @selection-change="selectionChangeHandle"
-        style="width: 100%;"
-      >
-        <el-table-column prop="id" header-align="center" align="center" label="作品编号"></el-table-column>
-        <el-table-column prop="area" header-align="center" align="center" label="区域"></el-table-column>
-        <el-table-column prop="author_name" header-align="center" align="center" label="作者姓名"></el-table-column>
-        <el-table-column prop="category" header-align="center" align="center" label="作品分类"></el-table-column>
-        <el-table-column prop="years" header-align="center" align="center" label="创作年代"></el-table-column>
-        <el-table-column prop="size" header-align="center" align="center" label="作品尺寸"></el-table-column>
-        <el-table-column prop="texture" header-align="center" align="center" label="作品材质"></el-table-column>
-        <el-table-column prop="theme" header-align="center" align="center" label="作品题材"></el-table-column>
-        <el-table-column prop="discribe" header-align="center" align="center" label="作品描述"></el-table-column>
-        <el-table-column prop="discribe" header-align="center" align="center" label="图片">
+      <el-table :data="dataList" v-loading="dataListLoading" style="width: 100%;">
+        <el-table-column prop="title" header-align="center" align="center" label="新闻标题"></el-table-column>
+        <el-table-column prop="author_name" header-align="center" align="center" label="新闻作者"></el-table-column>
+        <el-table-column prop="content" header-align="center" align="center" label="内容">
           <template slot-scope="scope">
-            <span class="el-button--text" @click="viewImgFun(scope.row.imgs)">查看图片</span>
+            <span class="content-box" v-html="scope.row.content"></span>
           </template>
         </el-table-column>
+        <el-table-column prop="create_time" header-align="center" align="center" label="创建时间"></el-table-column>
         <el-table-column fixed="right" header-align="center" align="center" width="150" label="操作">
           <template slot-scope="scope">
-            <!-- <el-button type="text" size="small" @click="addOrUpdateHandle(scope.row.roleId)">查看</el-button> -->
             <el-button
               type="text"
               size="small"
@@ -76,53 +48,41 @@
       ></el-pagination>
     </div>
     <!-- 弹窗, 新增 / 修改 -->
-    <div>
+    <div v-else>
       <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
-import { regionData } from 'element-china-area-data'
-import AddOrUpdate from './manage-add-or-update'
 export default {
   data () {
     return {
       dataForm: {
         roleName: ''
       },
-      options_: regionData,
-      selectedOptions: [],
+      routerViewFlag: false,
       dataList: [],
       pageIndex: 1,
       pageSize: 10,
       totalPage: 0,
-      viewImg: {
-        popShow: false,
-        data: ''
-      },
-      dataListLoading: false,
-      dataListSelections: [],
-      addOrUpdateVisible: false
+      dataListLoading: false
     }
   },
-  components: {
-    AddOrUpdate
-  },
   activated () {
-    // this.getDataList()
+    if (this.$route.name === 'news-ueditor') {
+      this.routerViewFlag = true
+    } else {
+      this.routerViewFlag = false
+      this.getDataList()
+    }
   },
   methods: {
-    // 查看图片
-    viewImgFun (data) {
-      this.viewImg.popShow = true
-      this.viewImg.data = data
-    },
     // 获取数据列表
     getDataList () {
       this.dataListLoading = true
       this.$http({
-        url: this.$http.adornUrl('/proxyApi/getlist.php?act=tp'),
+        url: this.$http.adornUrl('proxyApi/getList.php?act=news'),
         method: 'get',
         params: this.$http.adornParams({
           'page': this.pageIndex,
@@ -150,20 +110,16 @@ export default {
       this.pageIndex = val
       this.getDataList()
     },
-    // 多选
-    selectionChangeHandle (val) {
-      this.dataListSelections = val
-    },
+
     // 新增 / 修改
     addOrUpdateHandle (id, row) {
-      // this.addOrUpdateVisible = true
-      // this.$nextTick(() => {
-      //   this.$refs.addOrUpdate.init(id, row)
-      // })
       this.$router.push({
-        name: 'demo-ueditor',
+        name: 'news-ueditor',
         query: {
-          id: id
+          id: id,
+          title: row.title,
+          name: row.author_name,
+          content: row.content
         }
       })
     },
@@ -180,7 +136,7 @@ export default {
       }).then(() => {
         this.dataListLoading = true
         this.$http({
-          url: this.$http.adornUrl('/proxyApi/delete.php?act=tp'),
+          url: this.$http.adornUrl('/proxyApi/delete.php?act=news'),
           method: 'get',
           params: this.$http.adornParams({ 'id': id })
         }).then(({ data }) => {
@@ -206,5 +162,14 @@ export default {
 <style lang="scss" scoped>
 .el-button--text {
   cursor: pointer;
+}
+
+.content-box {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 </style>
