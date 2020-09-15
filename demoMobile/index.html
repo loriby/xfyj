@@ -37,8 +37,8 @@
     </header>
     <section class="view-tip">
       <p>
-        <span class="left">浏览量：189098</span>
-        <span class="right">总票数：2098373</span>
+        <span class="left">浏览量：<span class="viewsCount"></span></span>
+        <span class="right">总票数：<span class="voteCount"></span></span>
       </p>
     </section>
     <section class="schoolList">
@@ -335,6 +335,34 @@
         false);
       })();
       $(function(){
+        var pageIndex = 1
+        var pageLimit = 10
+        $.ajax({
+          url: httpUrl+'/proxyApi/index.php?act=total',
+          type: 'get',
+          success: function(res){
+            if (res.code == 200) {
+              $('.viewsCount').text(res.info.viewsCount)
+              $('.voteCount').text(res.info.voteCount)
+            }
+          }
+        })
+        getWorksList(pageIndex, pageLimit)
+        function getWorksList(pageIndex, pageLimit) {
+          var obj = {}
+          obj.page = pageIndex
+          obj.limit = pageLimit
+          $.ajax({
+          url: httpUrl+'/proxyApi/getList.php?act=tp',
+          type: 'get',
+          data: obj,
+          success: function(res){
+            if (res.code == 200) {
+              
+            }
+          }
+        })
+        }
         $('.zuopin-box li').click(function(e){
           console.log(e)
           var index = $(this).index()
