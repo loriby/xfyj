@@ -8,7 +8,7 @@ function getQueryString(name) {
 /*rem处理*/
 var AfedFn = {};
 var myScroll;
-
+var httpUrl = 'http://xiaodeng666.com'
 AfedFn = {
     fontScale : 20 * innerWidth / 320,
     /*返回顶部*/
