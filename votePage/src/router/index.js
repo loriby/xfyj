@@ -23,12 +23,12 @@ const globalRoutes = [
     name: '404',
     meta: { title: '404未找到' }
   },
-  {
-    path: '/login',
-    component: _import('common/login'),
-    name: 'login',
-    meta: { title: '登录' }
-  },
+  // {
+  //   path: '/login',
+  //   component: _import('common/login'),
+  //   name: 'login',
+  //   meta: { title: '登录' }
+  // },
   {
     path: '/home',
     component: _import('common/home'),
