@@ -11,7 +11,7 @@ import httpRequest from '@/utils/httpRequest' // api: https://github.com/axios/a
 import { isAuth } from '@/utils'
 import cloneDeep from 'lodash/cloneDeep'
 // Vue.prototype.$httpUrl = 'http://xriml.com/proxyApi/'
-Vue.prototype.$httpUrl = 'http://xiaodeng666.com/proxyApi/'
+Vue.prototype.$httpUrl = 'http://210.16.188.29:8081/proxyApi/'
 Vue.use(VueCookie)
 Vue.config.productionTip = false
 

@@ -71,10 +71,16 @@
     ></el-pagination>
     <!-- 弹窗, 新增 / 修改 -->
     <add-or-update v-if="addOrUpdateVisible" ref="addOrUpdate" @refreshDataList="getDataList"></add-or-update>
-    <el-dialog lock-scroll title="查看作品" :visible.sync="viewImg.popShow" :close-on-click-modal="false" width="60%">
+    <el-dialog
+      lock-scroll
+      title="查看作品"
+      :visible.sync="viewImg.popShow"
+      :close-on-click-modal="false"
+      width="60%"
+    >
       <div class="s-img">
-          <img :src="viewImg.data" alt="">
-        </div>
+        <img style="width: 100%;" :src="this.$httpUrl+viewImg.data" alt />
+      </div>
     </el-dialog>
   </div>
 </template>
@@ -111,7 +117,7 @@ export default {
   },
   methods: {
     // 查看图片
-    viewImgFun(data) {
+    viewImgFun (data) {
       this.viewImg.popShow = true
       this.viewImg.data = data
     },
@@ -176,7 +182,7 @@ export default {
         this.$http({
           url: this.$http.adornUrl('/proxyApi/delete.php?act=tp'),
           method: 'get',
-          params: this.$http.adornParams({'id': id})
+          params: this.$http.adornParams({ 'id': id })
         }).then(({ data }) => {
           console.log(data)
           if (data && data.code === 200) {
@@ -198,7 +204,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.el-button--text{
+.el-button--text {
   cursor: pointer;
 }
 </style>

@@ -35,7 +35,10 @@
         <el-row :gutter="20">
           <el-col v-for="(item, index) in opusArry" :key="index" :span="5">
             <div class="grid-content">
-              <el-button @click="typeSearch(item.type)">{{item.name}}</el-button>
+              <el-button
+                :class="item.isActive?'is-active-type':''"
+                @click="typeSearch(item.type)"
+              >{{item.name}}</el-button>
             </div>
           </el-col>
         </el-row>
@@ -45,15 +48,15 @@
               <el-card :body-style="{ padding: '0px' }">
                 <a class="picCon" href="javascript:;">
                   <img
-                    @click="goDetail($route.query.showFlag,item.id)"
+                    @click="goDetail($route.query.showFlag,item.id,item.category_py)"
                     class="image"
-                    :src="item.imgs"
+                    :src="$httpUrl+item.imgs"
                     alt
                   />
                 </a>
                 <div style="padding: 14px;position: relative;">
                   <span
-                    @click="goDetail($route.query.showFlag,item.id)"
+                    @click="goDetail($route.query.showFlag,item.id,item.category_py)"
                     class="title"
                   >{{item.category+item.id}}</span>
                   <span
@@ -105,10 +108,10 @@ export default {
         totalPage: 0
       },
       opusArry: [
-        { name: '全部', id: '', type: '' },
-        { name: '书法', id: '', type: 'shufa' },
-        { name: '绘画', id: '', type: 'huihua' },
-        { name: '摄影', id: '', type: 'sheying' }
+        { name: '全部', id: '', type: '', isActive: true },
+        { name: '书法', id: '', type: 'shufa', isActive: false },
+        { name: '绘画', id: '', type: 'huihua', isActive: false },
+        { name: '摄影', id: '', type: 'sheying', isActive: false }
       ]
     }
   },
@@ -119,8 +122,16 @@ export default {
     this.getWorksList()
   },
   methods: {
-    goDetail (flag, id) {
-      this.$router.push({ name: 'detail', query: { path: 'allList', showFlag: flag, id: id } })
+    goDetail (flag, id, type) {
+      this.$router.push({
+        name: 'detail',
+        query: {
+          path: 'allList',
+          showFlag: flag,
+          id: id,
+          type: type
+        }
+      })
     },
     goBack () {
       this.$router.push({ name: 'home' })
@@ -168,7 +179,13 @@ export default {
       })
     },
     typeSearch (type) {
-      console.log(type)
+      this.opusArry.forEach(item => {
+        if (item.type === type) {
+          item.isActive = true
+        } else {
+          item.isActive = false
+        }
+      })
       if (type) {
         this.handleGetWorksList(type)
       } else {
@@ -358,6 +375,7 @@ export default {
 
 .item-content img {
   width: 100%;
+  height: 100%;
 }
 
 .rule-content .item-content,
@@ -510,6 +528,12 @@ export default {
 }
 .nav-bar span:hover {
   color: #000;
+}
+
+.is-active-type {
+  color: #fff;
+  background: #000;
+  border: 1px solid #000000;
 }
 </style>
 

@@ -156,11 +156,12 @@ img {
   }
 
   &__header {
-    position: relative;
-    float: left;
+    position: absolute;
+    // float: left;
     width: 230px;
     height: 50px;
     overflow: hidden;
+    z-index: 999;
   }
   &__brand {
     display: table-cell;

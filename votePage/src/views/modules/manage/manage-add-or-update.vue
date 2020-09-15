@@ -2,7 +2,7 @@
   <div class="opr-content">
     <el-dialog
       :lock-scroll="true"
-      :title="!dataForm.id ? '新增1' : '编辑'"
+      :title="!dataForm.id ? '新增' : '编辑'"
       :close-on-click-modal="false"
       :visible.sync="visible"
       @close="getCloseDataForm"
@@ -14,7 +14,7 @@
         ref="dataForm"
         label-width="90px"
       >
-      <!-- @keyup.enter.native="dataFormSubmit()" -->
+        <!-- @keyup.enter.native="dataFormSubmit()" -->
         <el-row>
           <el-col :span="12">
             <el-form-item label="作者姓名" prop="name">
@@ -54,26 +54,31 @@
           </el-col>
           <el-col :span="12">
             <el-form-item label="创作年代" prop="years">
-              <el-input @input="shelfCodeHadnle" v-model="dataForm.years"></el-input>
+              <el-input v-model="dataForm.years"></el-input>
             </el-form-item>
           </el-col>
         </el-row>
         <el-row>
           <el-col :span="12">
             <el-form-item label="作品尺寸" prop="size">
-              <el-input @input="shelfCodeHadnle" v-model="dataForm.size"></el-input>
+              <el-input v-model="dataForm.size"></el-input>
             </el-form-item>
           </el-col>
           <el-col :span="12">
             <el-form-item label="作品材质" prop="texture">
-              <el-input @input="shelfCodeHadnle" v-model="dataForm.texture"></el-input>
+              <el-input v-model="dataForm.texture"></el-input>
             </el-form-item>
           </el-col>
         </el-row>
         <el-row>
           <el-col :span="12">
             <el-form-item label="作品题材" prop="theme">
-              <el-input @input="shelfCodeHadnle" v-model="dataForm.theme"></el-input>
+              <el-input v-model="dataForm.theme"></el-input>
+            </el-form-item>
+          </el-col>
+          <el-col :span="12">
+            <el-form-item label="作品名称" prop="works_name">
+              <el-input v-model="dataForm.works_name"></el-input>
             </el-form-item>
           </el-col>
         </el-row>
@@ -93,7 +98,7 @@
                 :show-file-list="false"
                 :on-success="handleAvatarSuccess"
                 :before-upload="beforeAvatarUpload"
-              > 
+              >
                 <img v-if="imageUrl" :src="imageUrl" class="avatar" />
                 <i v-else class="el-icon-plus avatar-uploader-icon"></i>
               </el-upload>
@@ -153,10 +158,16 @@ export default {
         theme: '', // 作品题材
         discribe: '', // 作品描述
         imgs: '',
-        category_py: '' // 分类拼音
+        category_py: '', // 分类拼音
+        works_name: '' // 作品名称
       },
       dataRule: {
-        name: [{ required: true, message: '名称不能为空', trigger: 'blur' }],
+        name: [{ required: true, message: '请填写作者名称', trigger: 'blur' }],
+        years: [{ required: true, message: '请填写创作年代', trigger: 'blur' }],
+        size: [{ required: true, message: '请填写作品尺寸', trigger: 'blur' }],
+        texture: [{ required: true, message: '请填写作品材质', trigger: 'blur' }],
+        theme: [{ required: true, message: '请填写作品题材', trigger: 'blur' }],
+        works_name: [{ required: true, message: '请填写作品名称', trigger: 'blur' }],
         area: [{ required: true, message: '请选择区域', trigger: 'change' }],
         category_py: [{ required: true, message: '请选择分类', trigger: 'change' }]
       }
@@ -190,21 +201,11 @@ export default {
             this.$message.error('请上传作品图片')
             return false
           }
-          let url = ''
-          if (!this.dataForm.id) {
-            url = this.$http.adornUrl('/proxyApi/save.php?act=add')
-          } else {
-            url = this.$http.adornUrl('/proxyApi/save.php?act=updata')
-          }
           this.dataForm.imgs = this.imageDefault
           this.$http({
-            url: url,
+            url: `proxyApi/proxyApi/save.php?act=${!this.dataForm.id ? 'add' : 'update'}`,
             method: 'post',
-            // headers: {
-            //   'Content-Type': 'multipart/form-data; boundary=<calculated when request is sent>'
-            // },
             data: this.dataForm
-            // params: this.$http.adornParams(this.dataForm)
           }).then(({ data }) => {
             if (data && data.code === 200) {
               this.getCloseDataForm()
@@ -234,14 +235,6 @@ export default {
       })
     },
 
-    // 编码操作
-    shelfCodeHadnle (val) {
-      let regStr = val.substring(0, 2)
-      if (this.wareCode !== regStr) {
-        this.dataForm.shelfCode = this.wareCode
-      }
-    },
-
     handleAvatarSuccess (res, file) {
       console.log(res, file)
       if (res.code === 200) {
@@ -250,7 +243,7 @@ export default {
       }
     },
     beforeAvatarUpload (file) {
-      const isJPG = file.type === 'image/jpeg'
+      const isJPG = file.type === 'image/png'
       const isLt2M = file.size / 1024 / 1024 < 2
 
       if (!isJPG) {

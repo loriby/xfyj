@@ -12,6 +12,8 @@
         <el-col :span="24">
           <div style="text-align: center;" class="grid-content">
             <el-input
+              @blur="searchByName()"
+              @keyup.enter.native="searchByName()"
               class="search-box"
               prefix-icon="el-icon-search"
               v-model="input"
@@ -179,7 +181,10 @@
         <el-row :gutter="20">
           <el-col v-for="(item, index) in opusArry" :key="index" :span="5">
             <div class="grid-content">
-              <el-button>{{item.name}}</el-button>
+              <el-button
+                :class="item.isActive?'is-active-type':''"
+                @click="typeSearch(item.type)"
+              >{{item.name}}</el-button>
             </div>
           </el-col>
         </el-row>
@@ -188,15 +193,20 @@
             <el-col :span="8" v-for="(item, index) in worksList" :key="index">
               <el-card :body-style="{ padding: '0px' }">
                 <a class="picCon" href="javascript:;">
-                  <img @click="goDetail()" class="image" :src="item.imgs" alt />
+                  <img
+                    @click="goDetail(item.id,item.category_py)"
+                    class="image"
+                    :src="$httpUrl+item.imgs"
+                    alt
+                  />
                 </a>
                 <div style="padding: 14px;position: relative;">
-                  <span @click="goDetail()" class="title">
+                  <span @click="goDetail(item.id,item.category_py)" class="title">
                     {{item.category+item.id}}
                     <i>{{item.area + '-' +item.author_name}}</i>
                   </span>
                   <div class="bottom clearfix">
-                    <time class="time">{{item.discribe}}</time>
+                    <time class="time">{{item.discribe?item.discribe.substring(0,20)+'...':'-'}}</time>
                   </div>
                 </div>
               </el-card>
@@ -225,7 +235,7 @@ export default {
   data () {
     return {
       input: '',
-      activeName: 'first',
+      activeName: this.$route.query.active ? this.$route.query.active : 'first',
       newsDetailFlag: false,
       dataListLoading: false,
       newsFlag: true,
@@ -240,10 +250,10 @@ export default {
       worksList: [],
       flagArry: ['newsFlag', 'activityFlag', 'ruleFlag', 'opusFlag'],
       opusArry: [
-        { name: '全部', id: '', type: '' },
-        { name: '书法', id: '', type: 'shufa' },
-        { name: '绘画', id: '', type: 'huihua' },
-        { name: '摄影', id: '', type: 'sheying' }
+        { name: '全部', id: '', type: '', isActive: true },
+        { name: '书法', id: '', type: 'shufa', isActive: false },
+        { name: '绘画', id: '', type: 'huihua', isActive: false },
+        { name: '摄影', id: '', type: 'sheying', isActive: false }
       ]
     }
   },
@@ -251,6 +261,18 @@ export default {
     ruleHtml,
     eventDetailsHtml,
     headerHtml
+  },
+  created () {
+    if (this.$route.query.active === 'fourth') {
+      this.flagArry.forEach(item => {
+        if (item === 'opusFlag') {
+          this[item] = true
+          this.getWorksList()
+        } else {
+          this[item] = false
+        }
+      })
+    }
   },
   methods: {
     // tabs切换
@@ -267,6 +289,34 @@ export default {
         }
       })
     },
+    // 条件查询
+    searchByName () {
+      if (!this.input) {
+        this.getWorksList()
+        return
+      }
+      this.dataListLoading = true
+      this.$http({
+        url: this.$http.adornUrl('proxyApi/getList.php?act=search'),
+        method: 'get',
+        params: this.$http.adornParams({
+          'page': this.pageObj.pageIndex,
+          'limit': this.pageObj.pageSize,
+          'key': this.input
+        })
+      }).then(({ data }) => {
+        if (data && data.code === 200) {
+          this.worksList = data.info.list
+          this.pageObj.totalPage = data.info.total
+        } else {
+          this.worksList = []
+          this.pageObj.totalPage = 0
+        }
+        this.dataListLoading = false
+      })
+    },
+
+    // 无条件查询
     getWorksList () {
       this.dataListLoading = true
       this.$http({
@@ -288,8 +338,8 @@ export default {
       })
     },
     // 查看作品详情
-    goDetail () {
-      this.$router.push({ name: 'detail', query: { path: 'home' } })
+    goDetail (id, type) {
+      this.$router.push({ name: 'detail', query: { path: 'home', id: id, type: type } })
     },
 
     // 查看新闻详情
@@ -321,6 +371,44 @@ export default {
     currentChangeHandle (val) {
       this.pageObj.pageIndex = val
       this.getWorksList()
+    },
+
+    handleGetWorksList (type) {
+      this.dataListLoading = true
+      this.$http({
+        url: this.$http.adornUrl('proxyApi/getList.php?act=type'),
+        method: 'get',
+        params: this.$http.adornParams({
+          'page': this.pageObj.pageIndex,
+          'limit': this.pageObj.pageSize,
+          'type': type
+        })
+      }).then(({ data }) => {
+        if (data && data.code === 200) {
+          this.worksList = data.info.list
+          this.pageObj.totalPage = data.info.total
+        } else {
+          this.worksList = []
+          this.pageObj.totalPage = 0
+        }
+        this.dataListLoading = false
+      })
+    },
+
+    // 根据分类查询
+    typeSearch (type) {
+      this.opusArry.forEach(item => {
+        if (item.type === type) {
+          item.isActive = true
+        } else {
+          item.isActive = false
+        }
+      })
+      if (type) {
+        this.handleGetWorksList(type)
+      } else {
+        this.getWorksList()
+      }
     }
   }
 }
@@ -440,6 +528,7 @@ h3.small img {
 
 .el-input--medium .el-input__icon {
   line-height: 30px;
+  cursor: pointer;
 }
 
 .content-box {
@@ -473,6 +562,7 @@ h3.small img {
 
 .item-content img {
   width: 100%;
+  height: 100%;
 }
 
 .rule-content .item-content,
@@ -701,6 +791,12 @@ h3.small img {
 .yun-box {
   margin-top: 20px;
   margin-bottom: 0px;
+}
+
+.is-active-type {
+  color: #fff;
+  background: #000;
+  border: 1px solid #000000;
 }
 </style>
 
