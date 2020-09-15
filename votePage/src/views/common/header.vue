@@ -22,10 +22,10 @@
         </el-carousel>
         <el-row class="liulan-list">
             <el-col :span="12">
-                <span class="left">浏览量：189098</span>
+                <span class="left">浏览量：{{viewsCount}}</span>
             </el-col>
             <el-col :span="12">
-                <span class="right">总票数：2098373</span>
+                <span class="right">总票数：{{voteCount}}</span>
             </el-col>
         </el-row>
         <el-row class="yun-box" :gutter="30">
@@ -55,9 +55,32 @@
 <script>
 export default {
   data () {
-    return {}
+    return {
+        viewsCount: 100, // 浏览量
+        voteCount: 100 // 总票数
+    }
+  },
+  mounted(){
+      this.getTotal()
   },
   methods: {
+    getTotal() {
+        this.$http({
+            url: this.$http.adornUrl('/proxyApi/index.php?act=total'),
+            method: 'get'
+            // headers: {
+            //   'Content-Type': 'multipart/form-data; boundary=<calculated when request is sent>'
+            // },
+            // params: this.$http.adornParams(this.dataForm)
+          }).then(({data}) => {
+            if (data && data.code === 200) {
+              this.viewsCount = data.info.viewsCount
+              this.voteCount = data.info.voteCount
+            } else {
+              this.$message.error(data.msg)
+            }
+          })
+    },
     // 作品展示及投票
     goList (showFlag) {
       this.$router.push({ name: 'allList', query: { showFlag: showFlag } })
