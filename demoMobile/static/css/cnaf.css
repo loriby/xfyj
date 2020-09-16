@@ -68,18 +68,18 @@ body{
 
 
 /*展览聚合页*/
-.exhLogo{ text-align: center; height: 8rem;}
+.exhLogo{ text-align: center; height: 9rem;}
 .exhLogo img{ width: 100%;}
 /**/
 .schoolList { overflow: hidden; padding:.8rem 0; background:#fff; text-align: center;font-size: 0; }
 .schoolList a{display: inline-block; width: 30%;margin:0 .87.35rem 0 ; text-align: center;}
-.schoolList dt{width: 2.5rem; height: 2.5rem; line-height:2rem;font-size: 1.125rem; border-radius: 50%; border:2px solid #d4237a; color: #999999;margin: 0 auto;}
-.schoolList dd{color: #666666; font-size: .5rem; line-height: 1;padding-top:.3rem;}
+.schoolList dt{width: 2.5rem; height: 2.5rem; line-height:2rem;font-size: 1.125rem; border-radius: 50%; color: #999999;margin: 0 auto;}
+.schoolList dd{color: #222222; font-size: .5rem; line-height: 1;padding-top:.5rem;}
 .graduation .title{padding-top:0rem; padding-bottom: 1rem; font-size: .8rem}
 .graduation .title:after{top:52.5%}
 .graduTabs{}
-.graduTabs .tabTags{ overflow: hidden; padding-bottom: .5rem;padding-top:.8rem;background: #fff;text-align:center;display:inline-block;}
-.graduTabs .tabTags li{display:inline;font-size: .65rem; height: 1.5rem; width: 20%; line-height: 1.5rem;border:1px solid #e6e6e6;border-radius: .2rem; margin-left: .5rem;margin-bottom: .25rem;}
+.graduTabs .tabTags{ /*overflow: hidden;*/background: #fff;text-align:center;display:inline-block;width:100%;background:#F7F8F8}
+.graduTabs .tabTags li{display:inline-block;font-size: .7rem; width: 20%;position: relative;padding: .9rem 0 0.6rem}
 .graduTabs .tabCont{ display: none;}
 .col2{ overflow: hidden;}
 .col2 li{ float:left;width: 7.3rem;margin-right: .5rem;}
@@ -93,7 +93,18 @@ body{
 .col2 .voteDis{color:#cccccc}
 .graduTabs .btnArea{text-align: center; font-size: 0; padding:1rem 0 .5rem;}
 .graduTabs .btnArea a{display:inline-block;height: 1.5rem; line-height: 1.5rem;border:1px solid #e6e6e6;border-radius:1.5rem; padding:0 1.5rem; font-size: .6rem; color: #666666;}
-.graduTabs .tabTags .curr{ background: #d4237a; color:#fff;border-color: #d4237a;}
+.graduTabs .tabTags .curr{ color:#C20E23;}
+.graduTabs .tabTags .curr::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 36%;
+    height: 2px;
+    left: 50%;
+    margin-left: -18%;
+    background: #C20E23;
+    bottom: 0;
+}
 .graduTabs .currShow{ display: block;padding-bottom: 20px;}
 
 /*noinfo*/
@@ -114,22 +125,47 @@ body{
 .zuopin-box{
     width:100%;
     text-align: center;
-    line-height: 50px;
-    height: 50px;
+    /* line-height: 1.8rem;
+    height: 1.8rem; */
     display: none;
-    background: #fff;
+    padding: 1rem 0;
+    font-size: .5rem;
+    /* background: #fff;
     margin-bottom: 10px;
-    border-top: solid 1px #ececec;
+    border-top: solid 1px #ececec; */
 }
 .zuopin-box li{
     display:inline-block;
-    padding: 0 5%;
-    font-size: 0.65rem;
+    padding: 0 8%;
+    font-size: 0.5rem;
+    position: relative;
+}
+.zuopin-box li::after{
+    content: "";
+    display:block;
+    position: absolute;
+    width: 1px;
+    height: .8rem;
+    background: #DADADA;
+    right: 0;
+    top: .7rem;
+}
+.zuopin-box li:last-child::after{
+    display: none;
+}
+.zuopin-box li span{
+    display: block;
+    color: #000000;
+    font-size: .9rem;
+    margin-bottom: .3rem;
 }
 .zuopin-box li.active{
-    color: red;
+    color: #C20E23;
 }
-.doctor{background: #fff;overflow: hidden;border-top: solid 1px #ececec;padding-bottom: 15px;}
+.zuopin-box li.active span{
+    color: #C20E23;
+}
+.doctor{background: #fff;overflow: hidden;padding-bottom: 15px;}
 .zhanwei{
 	height: 64px;
 }
@@ -184,10 +220,9 @@ body{
 .col2{
     width:95%;
     margin: 0px auto;
-    padding: 5px 0
 }
 .col2 li{
-    padding-top: 10px;
+    padding-bottom: .5rem;
 }
 .swiper-container{
 	position: relative;
@@ -202,11 +237,11 @@ body{
     background:#fff;
     height: 1.5rem;
     line-height: 1.5rem;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .schoolList{
     /* border-bottom: solid 1px #ececec; */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .view-tip p {
     width: 95%;
@@ -216,18 +251,35 @@ body{
 }
 .view-tip p span{
     font-size: .5rem;
-    color: #444444;
+    color: #8A8A8A;
 }
 .view-tip p .left{
     float:left;
-    padding-left: 30px;
+    padding-left: 1.5rem;
+    position: relative;
+}
+.view-tip p .left::after,.view-tip p .right::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: .3rem;
+    height: .3rem;
+    background: #fff;
+    border-radius:50%;
+    border: solid 2px #BA1221;
+    left: .9rem;
+    top: .5rem;
+}
+.view-tip p .right::after{
+    left: -0.6rem;
 }
 .view-tip p .right{
     float:right;
-    padding-right: 30px
+    padding-right: 1.5rem;
+    position: relative;
 }
 .foundIcon img {
-    width: 76%;
+    width: 100%;
 }
 .swiper-pagination-bullet-active{
     --swiper-theme-color: #d4237a !important;
