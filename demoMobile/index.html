@@ -27,9 +27,9 @@
               <div class="swiper-slide"><img src="static/imgs/d_banner1.png"></div>
               <div class="swiper-slide"><img src="static/imgs/d_banner2.png"></div>
               <div class="swiper-slide"><img src="static/imgs/d_banner3.png"></div>
-              <div class="swiper-slide"><img src="static/imgs/banner1.jpg"></div>
+              <!-- <div class="swiper-slide"><img src="static/imgs/banner1.jpg"></div>
               <div class="swiper-slide"><img src="static/imgs/banner2.jpg"></div>
-              <div class="swiper-slide"><img src="static/imgs/banner3.jpg"></div>
+              <div class="swiper-slide"><img src="static/imgs/banner3.jpg"></div> -->
           </div>
           <!-- 如果需要分页器 -->
           <div class="swiper-pagination"></div>
@@ -70,11 +70,6 @@
           <!-- <li>版画</li>
           <li>雕塑</li>
           <li>摄影</li> -->
-        </ul>
-        <ul class="zuopin-box">
-          <li>书法</li>
-          <li>绘画</li>
-          <li>摄影</li>
         </ul>
         <!-- 新闻动态 -->
         <div class="tabCont currShow news-list-box">
@@ -140,6 +135,20 @@
           </article>
         </div>
         <div class="tabCont">
+          <ul class="zuopin-box">
+            <li>
+              <span class="icon-shufa"></span>
+              书法
+            </li>
+            <li>
+              <span class="icon-huihua"></span>
+              绘画
+            </li>
+            <li>
+              <span class="icon-sheying"></span>
+              摄影
+            </li>
+          </ul>
           <!-- 书法 -->
           <div class="zuopin-content" style="display: block">
             <!--图片尺寸310*310-->
@@ -285,7 +294,7 @@
           console.log(e)
           var index = $(this).index()
           $(this).addClass('active').siblings().removeClass('active')
-          $('.zuopin-content').eq(index).show().siblings().hide()
+          $('.zuopin-content').eq(index).show().siblings('.zuopin-content').hide()
         })
         var swiper = new Swiper('.swiper-container', {
           pagination: {
