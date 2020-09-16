@@ -19,11 +19,30 @@
       label-width="80px"
       :model="dataForm"
     >
-      <el-form-item label="新闻标题" prop="title">
-        <el-input v-model="dataForm.title"></el-input>
-      </el-form-item>
-      <el-form-item label="作者姓名" prop="name">
-        <el-input v-model="dataForm.name"></el-input>
+      <el-row :gutter="20">
+        <el-col :span="12">
+          <el-form-item label="新闻标题" prop="title">
+            <el-input v-model="dataForm.title"></el-input>
+          </el-form-item>
+        </el-col>
+        <el-col :span="12">
+          <el-form-item label="作者姓名" prop="name">
+            <el-input v-model="dataForm.name"></el-input>
+          </el-form-item>
+        </el-col>
+      </el-row>
+
+      <el-form-item label="新闻图片" prop="imgs">
+        <el-upload
+          class="avatar-uploader"
+          :action="this.$http.adornUrl('/proxyApi/upload.php')"
+          :show-file-list="false"
+          :on-success="handleAvatarSuccess"
+          :before-upload="beforeAvatarUpload"
+        >
+          <img v-if="dataForm.imgs" :src="this.$httpUrl+dataForm.imgs" class="avatar" />
+          <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+        </el-upload>
       </el-form-item>
     </el-form>
 
@@ -50,7 +69,8 @@ export default {
       dataForm: {
         id: this.$route.query.id ? Number(this.$route.query.id) : 0,
         title: '',
-        name: ''
+        name: '',
+        imgs: ''
       },
 
       rules: {
@@ -63,13 +83,18 @@ export default {
           required: true,
           message: '请输入作者姓名',
           trigger: 'blur'
+        }],
+        imgs: [{
+          required: true,
+          message: '请上传图片',
+          trigger: 'change'
         }]
       }
     }
   },
   mounted () {
     this.ue = ueditor.getEditor(this.ueId, {
-      serverUrl: '', // 服务器统一请求接口路径
+      serverUrl: 'http://210.16.188.29:8081', // 服务器统一请求接口路径
       zIndex: 3000
     })
   },
@@ -94,6 +119,7 @@ export default {
           let dataHadnle = data && data.list
           this.dataForm.title = dataHadnle.title
           this.dataForm.name = dataHadnle.author_name
+          this.dataForm.imgs = dataHadnle.imgs
           this.ueContent = dataHadnle.content
           this.ue.ready(() => {
             this.ue.setContent(dataHadnle.content)
@@ -125,6 +151,25 @@ export default {
       })
     },
 
+    handleAvatarSuccess (res, file) {
+      if (res.code === 200) {
+        this.dataForm.imgs = res.url
+      }
+    },
+
+    beforeAvatarUpload (file) {
+      const isJPG = file.type === 'image/png'
+      const isLt2M = file.size / 1024 / 1024 < 2
+
+      if (!isJPG) {
+        this.$message.error('上传头像图片只能是 JPG 格式!')
+      }
+      if (!isLt2M) {
+        this.$message.error('上传头像图片大小不能超过 2MB!')
+      }
+      return isJPG && isLt2M
+    },
+
     goBack () {
       history.go(-1)
     }
@@ -137,7 +182,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style  lang="scss" scoped>
 .mod-demo-ueditor {
   position: relative;
   z-index: 510;
@@ -149,5 +194,29 @@ export default {
 .back-btn {
   cursor: pointer;
   margin-bottom: 40px;
+}
+
+/deep/.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+/deep/.avatar-uploader .el-upload:hover {
+  border-color: #409eff;
+}
+/deep/.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 178px;
+  height: 178px;
+  line-height: 178px;
+  text-align: center;
+}
+/deep/.avatar {
+  width: 178px;
+  height: 178px;
+  display: block;
 }
 </style>
