@@ -268,7 +268,7 @@ export default {
   background: #99a9bf;
 }
 .bg-purple {
-  background: #d3dce6;
+  background: #FDF9F1;
 }
 .bg-purple-light {
   background: #e5e9f2;
@@ -282,7 +282,7 @@ export default {
   background-color: #f9fafc;
 }
 .top-box {
-  background: #b50103;
+  background: #C20E23;
   padding: 10px;
 }
 
@@ -410,8 +410,8 @@ export default {
 .grid-content .el-button:focus,
 .grid-content .el-button:hover {
   color: #fff;
-  background: #000;
-  border: 1px solid #000000;
+  background: #C20E23;
+  border: 1px solid #C20E23;
 }
 
 .el-col-8 {
@@ -539,8 +539,15 @@ export default {
 
 .is-active-type {
   color: #fff;
-  background: #000;
-  border: 1px solid #000000;
+  background: #C20E23;
+  border: 1px solid #C20E23;
+}
+.ticket-opr-item {
+  .el-button--mini:hover{
+    background: #C20E23;
+    color: #fff;
+    border-color: #C20E23;
+  }
 }
 </style>
 

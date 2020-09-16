@@ -287,7 +287,7 @@ export default {
   height: 38px;
   line-height: 1px;
   padding-left: 20px;
-  background: #17b3a3;
+  background: #C20E23;
 }
 
 /deep/.opr-content .el-dialog__title {

@@ -276,7 +276,7 @@ export default {
   background: #99a9bf;
 }
 .bg-purple {
-  background: #d3dce6;
+  background: #FDF9F1;
 }
 .bg-purple-light {
   background: #e5e9f2;

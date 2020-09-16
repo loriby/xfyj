@@ -44,7 +44,7 @@
             <el-col :span="20">
               <div @click="newsDetail(item.id)" class="grid-content">
                 <h5>{{item.title}}</h5>
-                <div style="height: 50px;overflow: hidden;" v-html="item.content" />
+                <div class="word-content-view" style="height: 50px;overflow: hidden;" v-html="item.content" />
               </div>
             </el-col>
           </el-row>
@@ -429,7 +429,7 @@ h3.small img {
   background: #99a9bf;
 }
 .bg-purple {
-  background: #f1dfef;
+  background: #FDF9F1;
 }
 .bg-purple-light {
   background: #e5e9f2;
@@ -443,7 +443,7 @@ h3.small img {
   background-color: #f9fafc;
 }
 .nav-box {
-  background: #b50103;
+  background: #C20E23;
   // height: 143px;
 }
 
@@ -574,8 +574,8 @@ h3.small img {
 .grid-content .el-button:focus,
 .grid-content .el-button:hover {
   color: #fff;
-  background: #000;
-  border: 1px solid #000000;
+  background: #C20E23;
+  border: 1px solid #C20E23;
 }
 
 .el-col-8 {
@@ -756,8 +756,8 @@ h3.small img {
   cursor: pointer;
 }
 .bg-purple img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -777,8 +777,23 @@ h3.small img {
 
 .is-active-type {
   color: #fff;
-  background: #000;
-  border: 1px solid #000000;
+  background: #C20E23;
+  border: 1px solid #C20E23;
+}
+.word-content-view{
+  p{
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  p.first-view-text{
+    display:block;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 }
 </style>
 

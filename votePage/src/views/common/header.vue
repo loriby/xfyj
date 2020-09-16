@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-carousel height="400px">
+    <el-carousel height="480px">
       <el-carousel-item>
         <img src="~@/assets/img/d_banner1.png" alt />
       </el-carousel-item>
@@ -10,7 +10,7 @@
       <el-carousel-item>
         <img src="~@/assets/img/d_banner3.png" alt />
       </el-carousel-item>
-      <el-carousel-item>
+      <!-- <el-carousel-item>
         <img src="~@/assets/img/banner1.jpg" alt />
       </el-carousel-item>
       <el-carousel-item>
@@ -18,14 +18,14 @@
       </el-carousel-item>
       <el-carousel-item>
         <img src="~@/assets/img/banner3.jpg" alt />
-      </el-carousel-item>
+      </el-carousel-item> -->
     </el-carousel>
     <el-row class="liulan-list">
       <el-col :span="12">
-        <span class="left">浏览量：{{viewsCount}}</span>
+        <span class="left"><i class="icon-left-border"></i>浏览量：{{viewsCount}}</span>
       </el-col>
       <el-col :span="12">
-        <span class="right">总票数：{{voteCount}}</span>
+        <span class="right"><i class="icon-left-border"></i>总票数：{{voteCount}}</span>
       </el-col>
     </el-row>
     <el-row class="yun-box" :gutter="30">
@@ -91,6 +91,14 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.icon-left-border{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: solid 2px #C20E23
+}
 .el-carousel__item {
   display: flex;
   align-items: center;
