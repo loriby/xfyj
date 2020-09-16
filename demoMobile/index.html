@@ -72,8 +72,8 @@
           <li>摄影</li> -->
         </ul>
         <!-- 新闻动态 -->
-        <div class="tabCont currShow news-list-box">
-          <div class="doctor doctorlist">
+        <div class="tabCont currShow news-list-box" id="newsList">
+          <!-- <div class="doctor doctorlist">
             <div class="item clearfix" onclick="location.href='view/newDetail.html'">
               <div class="item-img">
                 <img src="static/imgs/news_img2.jpg">
@@ -116,7 +116,7 @@
                 <span>近日，市人力社保局发布消息，今年年底前，本市要将尚未实行社会化管理的国有企业已退休人员移交街道和社区实行社会化管理，届时，社会化管理退休人员总量将从目前的114.1万人增加到210.4万人。</span>
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- 活动详情 -->
         <div class="tabCont">
@@ -265,6 +265,7 @@
         getWorksList('shufa', sf_pageIndex, sf_pageLimit, 'shufaUl')
         getWorksList('huihua', hh_pageIndex, hh_pageLimit, 'huihuaUl')
         getWorksList('sheying', sy_pageIndex, sy_pageLimit, 'sheyingUl')
+        getDataList() // 获取新闻列表
         function getWorksList(type, pageIndex, pageLimit, ul) {
           var obj = {}
           obj.page = pageIndex
@@ -286,6 +287,36 @@
                 </li>`
                 });
                 $('#'+ul).append(html)
+              }
+            }
+          })
+        }
+        // 新闻列表查询
+        function getDataList () {
+          var obj = {page: 1, limit: 20}
+          $.ajax({
+            url: httpUrl+'proxyApi/getList.php?act=news',
+            type: 'get',
+            data: obj,
+            success: function(res){
+              if (res.code == 200) {
+                var list = res.info.list
+                var html = ''
+                list.forEach(item => {
+                  html += `<div class="doctor doctorlist">
+                  <a class="link-a" href="view/newDetail.html?id=${item.id}"></a>
+                  <div class="item clearfix" >
+                    <div class="item-img">
+                      <img src="${httpUrl+'/proxyApi/'+item.imgs}">
+                    </div>
+                    <a class="item-word" href="javascript:void(0)">
+                      <p>${item.title}</p> 
+                      <span>${item.content}</span>
+                    </a>
+                  </div>
+                </div>`
+                });
+                $('#newsList').append(html);
               }
             }
           })

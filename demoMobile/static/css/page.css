@@ -174,7 +174,7 @@
 /*瀑布流*/
 .waterFall{ padding-top:.5rem;}
 .waterCol{width: 94%;column-count: 2;margin: 0 auto;column-gap:0.5rem;}
-.waterCol li{break-inside: avoid;position: relative;margin-bottom: .875rem;color:#333333;  padding-bottom: .2rem;text-align: center;}
+.waterCol li{break-inside: avoid;position: relative;margin-bottom: .5rem;color:#333333;  padding-bottom: .7rem;text-align: center;background: #FBFBFB}
 .waterCol li:last-child{border:none;}
 .waterCol img{max-width: 100%; font-size: .3rem;}
 .waterCol h3{ font-size: .7rem; padding:.625rem 0 .1rem;margin-bottom: .2rem;  line-height: 1;text-align: left; height: 1.325rem; overflow: hidden; width: 100%; white-space: nowrap; text-overflow: ellipsis;}
@@ -682,12 +682,22 @@
 	border-radius: 5px;
 	background:#fff;
 	font-size: 0.75rem;
-	padding: .4rem;
+	padding: .6rem .4rem .7rem;
 	text-align:center;
 	z-index: 9;
+	
+}
+.detail-toupiao-btn .toupiao-btn-box span{
+	font-size: .7rem;
+}
+.detail-toupiao-btn .toupiao-btn-box{
+	padding-top: 0;
 }
 .detail-toupiao-btn a{
 	color:#fff;
+	font-size: 0.7rem;
+	padding:0.25rem 0;
+
 }
 .txtInfo{
 	margin-bottom: .5rem;
@@ -701,9 +711,11 @@
 	color: #fff
 }
 .toupiao-btn-box{
-	width: 100%;
+	width: 90%;
 	height: 1.7rem;
 	background: rgba(255, 255, 255, 0.5);
+	padding-top:0.3rem;
+	margin: 0 auto;
 	/* position: absolute;
 	bottom: 0;
 	left: 0; */
@@ -720,14 +732,19 @@
 .toupiao-btn{
 	display: block;
 	float: right;
-	width: 45% !important;
-	font-size: .65rem;
+	width: 41% !important;
+	font-size: .53rem;
 	display: block;
 	width: 100%;
-	background: #d7000f;
+	background: #C00D1A;
 	color:#fff;
 	text-align: center;
-	line-height: 1.2rem;
+	line-height: 1rem;
 	padding: 0.1rem 0;
 	margin-top: 0.15rem;
+	border-radius:0.1rem;
+}
+#works_name{
+	color: #945821;
+	/* font-size:.7rem; */
 }
