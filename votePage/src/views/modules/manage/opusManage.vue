@@ -125,7 +125,7 @@ export default {
     getDataList () {
       this.dataListLoading = true
       this.$http({
-        url: this.$http.adornUrl('/proxyApi/getList.php?act=tp'),
+        url: this.$http.adornUrl('proxyApi/getList.php?act=tp'),
         method: 'get',
         params: this.$http.adornParams({
           'page': this.pageIndex,

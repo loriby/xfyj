@@ -31,7 +31,7 @@
             <el-button
               type="text"
               size="small"
-              @click="addOrUpdateHandle(scope.row.id, scope.row)"
+              @click="addOrUpdateHandle(scope.row.id)"
             >修改</el-button>
             <el-button type="text" size="small" @click="deleteHandle(scope.row.id)">删除</el-button>
           </template>
@@ -112,14 +112,11 @@ export default {
     },
 
     // 新增 / 修改
-    addOrUpdateHandle (id, row) {
+    addOrUpdateHandle (id) {
       this.$router.push({
         name: 'news-ueditor',
         query: {
-          id: id,
-          title: row.title,
-          name: row.author_name,
-          content: row.content
+          id: id || ''
         }
       })
     },

@@ -45,12 +45,12 @@ export default {
     return {
       ue: null,
       ueId: `J_ueditorBox_${new Date().getTime()}`,
-      ueContent: this.$route.query.content ? this.$route.query.content : '',
+      ueContent: '',
       dialogVisible: false,
       dataForm: {
         id: this.$route.query.id ? Number(this.$route.query.id) : 0,
-        title: this.$route.query.title ? this.$route.query.title : '',
-        name: this.$route.query.name ? this.$route.query.name : ''
+        title: '',
+        name: ''
       },
 
       rules: {
@@ -81,11 +81,33 @@ export default {
       })
     },
 
+    // 获取详情
+    getDetail () {
+      this.$http({
+        url: this.$http.adornUrl('proxyApi/detail.php?act=news'),
+        method: 'get',
+        params: this.$http.adornParams({
+          id: this.dataForm.id
+        })
+      }).then(({ data }) => {
+        if (data && data.code === 200) {
+          let dataHadnle = data && data.list
+          this.dataForm.title = dataHadnle.title
+          this.dataForm.name = dataHadnle.author_name
+          this.ueContent = dataHadnle.content
+          this.ue.ready(() => {
+            this.ue.setContent(dataHadnle.content)
+          })
+        } else { }
+      })
+    },
+
+    // 提交数据
     dataFormSubmit () {
       this.$refs.dataForm.validate((valid) => {
         if (valid) {
           this.$http({
-            url: `proxyApi/proxyApi/news.php?act=${!this.dataForm.id ? 'add' : 'update'}`,
+            url: this.$http.adornUrl(`proxyApi/news.php?act=${!this.dataForm.id ? 'add' : 'update'}`),
             method: 'post',
             data: {
               ...this.dataForm,
@@ -105,6 +127,11 @@ export default {
 
     goBack () {
       history.go(-1)
+    }
+  },
+  created () {
+    if (this.dataForm.id) {
+      this.getDetail()
     }
   }
 }

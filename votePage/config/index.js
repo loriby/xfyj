@@ -17,7 +17,7 @@ module.exports = {
         target: 'http://210.16.188.29:8081/',
         changeOrigin: true,
         pathRewrite: {
-          '^/proxyApi': '/'
+          '^/proxyApi': ''
         }
       }
     },

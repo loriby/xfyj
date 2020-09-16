@@ -101,8 +101,11 @@
                   class="miaoshu"
                 >{{item.area}}-{{item.author_name}}</span>
                 <div class="bottom clearfix">
-                  <time class="time" v-if="$route.query.showFlag == 2">{{item.discribe}}</time>
-                  <time class="time" else>{{item.area}}-{{item.author_name}}</time>
+                  <time
+                    class="time"
+                    v-if="$route.query.showFlag == 2"
+                  >{{item.discribe?item.discribe.substring(0,20)+'...':'--'}}</time>
+                  <time class="time" v-else>{{item.area}}-{{item.author_name}}</time>
                 </div>
 
                 <div v-if="$route.query.showFlag == 1" class="ticket-opr">
@@ -154,7 +157,7 @@ export default {
   },
   methods: {
     goDetail (id, type) {
-      this.$router.push({ name: 'detail', query: { showFlag: this.$route.query.showFlag, path: 'home', id: id, type: type } })
+      this.$router.push({ name: 'detail', query: { active: this.$route.query.active, showFlag: this.$route.query.showFlag, path: this.$route.query.path, id: id, type: type } })
       this.getApiDetail()
       this.getWorksList()
     },
@@ -162,7 +165,9 @@ export default {
       this.$router.push({
         name: this.$route.query.path,
         query: {
-          active: this.$route.query.active ? 'fourth' : ''
+          active: this.$route.query.active ? 'fourth' : '',
+          showFlag: this.$route.query.showFlag || '',
+          path: this.$route.query.path || ''
         }
       })
     },

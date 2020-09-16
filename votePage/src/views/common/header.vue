@@ -97,7 +97,7 @@ export default {
 }
 .el-carousel__item img {
   width: 100%;
-  // height:100%;
+  height:100%;
 }
 .liulan-list span {
   color: #666666;

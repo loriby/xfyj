@@ -203,7 +203,7 @@ export default {
           }
           this.dataForm.imgs = this.imageDefault
           this.$http({
-            url: `proxyApi/proxyApi/save.php?act=${!this.dataForm.id ? 'add' : 'update'}`,
+            url: this.$http.adornUrl(`proxyApi/save.php?act=${!this.dataForm.id ? 'add' : 'update'}`),
             method: 'post',
             data: this.dataForm
           }).then(({ data }) => {
