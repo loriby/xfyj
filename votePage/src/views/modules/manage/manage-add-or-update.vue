@@ -245,16 +245,16 @@ export default {
     beforeAvatarUpload (file) {
       // const isJPG = file.type === 'image/png'
       // const isLt2M = file.size / 1024 / 1024 < 2
-      const isJPG = true;
-      const isLt2M = true;
+      // const isJPG = true
+      // const isLt2M = true
 
-      if (!isJPG) {
-        this.$message.error('上传头像图片只能是 JPG 格式!')
-      }
-      if (!isLt2M) {
-        this.$message.error('上传头像图片大小不能超过 2MB!')
-      }
-      return isJPG && isLt2M
+      // if (!isJPG) {
+      //   this.$message.error('上传头像图片只能是 JPG 格式!')
+      // }
+      // if (!isLt2M) {
+      //   this.$message.error('上传头像图片大小不能超过 2MB!')
+      // }
+      // return isJPG && isLt2M
     }
   }
 }
@@ -289,7 +289,7 @@ export default {
   height: 38px;
   line-height: 1px;
   padding-left: 20px;
-  background: #C20E23;
+  background: #c20e23;
 }
 
 /deep/.opr-content .el-dialog__title {

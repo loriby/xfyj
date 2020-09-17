@@ -33,7 +33,7 @@
           </el-form-item>
         </el-col>
       </el-row>
-       <el-row :gutter="20">
+      <el-row :gutter="20">
         <el-col :span="12">
           <el-form-item label="作者姓名" prop="name">
             <el-input v-model="dataForm.name"></el-input>
@@ -94,7 +94,7 @@ export default {
           trigger: 'blur'
         }],
         discribe: [
-          {required: true, message: '请输入新闻描述', trigger: 'blur'}
+          { required: true, message: '请输入新闻描述', trigger: 'blur' }
         ],
         imgs: [{
           required: true,
@@ -174,7 +174,7 @@ export default {
       // const isJPG = file.type === 'image/png'
       // const isLt2M = file.size / 1024 / 1024 < 2
       // const isJPG = true;
-      const isLt2M = true;
+      const isLt2M = true
       // if (!isJPG) {
       //   this.$message.error('上传头像图片只能是 JPG 格式!')
       // }
@@ -232,10 +232,10 @@ export default {
   height: 178px;
   display: block;
 }
-.news-save-btn{
+.news-save-btn {
   margin-top: 50px;
-  .el-button--medium{
-    background: #C20E23;
+  .el-button--medium {
+    background: #c20e23;
     color: #fff !important;
   }
   // .el-button:focus, .el-button:hover
