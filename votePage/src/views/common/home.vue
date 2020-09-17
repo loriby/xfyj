@@ -18,7 +18,11 @@
               v-model="input"
               placeholder="请输入作品名称或者作者姓名"
             ></el-input>
-            <span @click="searchByName()" class="el-icon-search" style="color:#fff;padding-left:5px;cursor: pointer;font-size:20px;margin-top:2px; vertical-align: text-bottom;"></span>
+            <span
+              @click="searchByName()"
+              class="el-icon-search"
+              style="color:#fff;padding-left:5px;cursor: pointer;font-size:20px;margin-top:2px; vertical-align: text-bottom;"
+            ></span>
           </div>
         </el-col>
       </el-row>
@@ -44,7 +48,11 @@
             <el-col :span="20">
               <div @click="newsDetail(item.id)" class="grid-content">
                 <h5>{{item.title}}</h5>
-                <div class="word-content-view" style="height: 50px;overflow: hidden;" v-html="item.discribe" />
+                <div
+                  class="word-content-view"
+                  style="height: 50px;overflow: hidden;"
+                  v-html="item.discribe"
+                />
               </div>
             </el-col>
           </el-row>
@@ -127,7 +135,9 @@
           </el-col>
         </el-row>
         <div class="item-content" v-loading="dataListLoading">
-          <div class="list-noData" v-if="worksList.length === 0"><div class="noDataTxt">暂无相关作品~</div></div>
+          <div class="list-noData" v-if="worksList.length === 0">
+            <div class="noDataTxt">暂无相关作品~</div>
+          </div>
           <el-row :gutter="20">
             <el-col :span="8" v-for="(item, index) in worksList" :key="index">
               <el-card :body-style="{ padding: '0px' }">
@@ -381,6 +391,7 @@ export default {
 
     // 根据分类查询
     typeSearch (type) {
+      this.pageObj.pageIndex = 1
       this.opusArry.forEach(item => {
         if (item.type === type) {
           item.isActive = true
@@ -399,10 +410,12 @@ export default {
 </script>
 
 <style lang="scss">
-.list-noData{
+.fenlei-box {
+}
+.list-noData {
   width: 100%;
   padding: 30px 0;
-  .noDataTxt{
+  .noDataTxt {
     width: 100%;
     text-align: center;
     font-size: 14px;
@@ -440,7 +453,7 @@ h3.small img {
   background: #99a9bf;
 }
 .bg-purple {
-  background: #FDF9F1;
+  background: #fdf9f1;
 }
 .bg-purple-light {
   background: #e5e9f2;
@@ -454,7 +467,7 @@ h3.small img {
   background-color: #f9fafc;
 }
 .nav-box {
-  background: #C20E23;
+  background: #c20e23;
   // height: 143px;
 }
 
@@ -585,8 +598,8 @@ h3.small img {
 .grid-content .el-button:focus,
 .grid-content .el-button:hover {
   color: #fff;
-  background: #C20E23;
-  border: 1px solid #C20E23;
+  background: #c20e23;
+  border: 1px solid #c20e23;
 }
 
 .el-col-8 {
@@ -767,8 +780,8 @@ h3.small img {
   cursor: pointer;
 }
 .bg-purple img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -788,18 +801,18 @@ h3.small img {
 
 .is-active-type {
   color: #fff;
-  background: #C20E23;
-  border: 1px solid #C20E23;
+  background: #c20e23;
+  border: 1px solid #c20e23;
 }
-.word-content-view{
-  p{
+.word-content-view {
+  p {
     display: none;
     padding: 0;
     margin: 0;
   }
-  p.first-view-text{
-    display:block;
-    overflow : hidden;
+  p.first-view-text {
+    display: block;
+    overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;

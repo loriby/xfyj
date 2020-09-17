@@ -5,7 +5,8 @@
         <img src="~@/assets/img/d_banner1.png" alt />
       </el-carousel-item>
       <el-carousel-item>
-        <div v-if="playFlag">
+        <img v-show="!playFlag" v-on:click="playVideo()" src="~@/assets/img/d_banner2.png" alt />
+        <div v-show="playFlag">
           <video
             controls
             style="width: 100%;margin-top:-50px"
@@ -14,14 +15,13 @@
             class="video"
           >您的浏览器不支持 video 视屏播放。</video>
         </div>
-        <img v-else v-on:click="playVideo()" src="~@/assets/img/d_banner2.png" alt />
       </el-carousel-item>
       <!-- <el-carousel-item>
         <img src="~@/assets/img/d_banner2.png" alt />
       </el-carousel-item>
       <el-carousel-item>
         <img src="~@/assets/img/d_banner3.png" alt />
-      </el-carousel-item> -->
+      </el-carousel-item>-->
       <!-- <el-carousel-item>
         <img src="~@/assets/img/banner1.jpg" alt />
       </el-carousel-item>
@@ -30,20 +30,28 @@
       </el-carousel-item>
       <el-carousel-item>
         <img src="~@/assets/img/banner3.jpg" alt />
-      </el-carousel-item> -->
+      </el-carousel-item>-->
     </el-carousel>
     <el-row class="liulan-list">
       <el-col :span="12">
-        <span class="left"><i class="icon-left-border"></i>浏览量：{{viewsCount}}</span>
+        <span class="left">
+          <i class="icon-left-border"></i>
+          浏览量：{{viewsCount}}
+        </span>
       </el-col>
       <el-col :span="12">
-        <span class="right"><i class="icon-left-border"></i>总票数：{{voteCount}}</span>
+        <span class="right">
+          <i class="icon-left-border"></i>
+          总票数：{{voteCount}}
+        </span>
       </el-col>
     </el-row>
     <el-row class="yun-box" :gutter="30">
       <el-col :span="8">
         <div class="grid-content bg-purple">
-          <a href="https://wxdc5079dd9cc75887.h5.xiaoe-tech.com/content_page/eyJ0eXBlIjozLCJyZXNvdXJjZV90eXBlIjoiIiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81ZjYyMWZkNGU0YjBkNTljODdiNjUyYjEiLCJhcHBfaWQiOiJhcHBQVEZGd2toUTIyMDYifQ">
+          <a
+            href="https://wxdc5079dd9cc75887.h5.xiaoe-tech.com/content_page/eyJ0eXBlIjozLCJyZXNvdXJjZV90eXBlIjoiIiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81ZjYyMWZkNGU0YjBkNTljODdiNjUyYjEiLCJhcHBfaWQiOiJhcHBQVEZGd2toUTIyMDYifQ"
+          >
             <img src="~@/assets/img/yunketang1.png" alt />
             <span>云课堂</span>
           </a>
@@ -114,13 +122,13 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.icon-left-border{
+.icon-left-border {
   display: inline-block;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   margin-right: 5px;
-  border: solid 2px #C20E23
+  border: solid 2px #c20e23;
 }
 .el-carousel__item {
   display: flex;
@@ -128,7 +136,7 @@ export default {
 }
 .el-carousel__item img {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 .liulan-list span {
   color: #666666;
