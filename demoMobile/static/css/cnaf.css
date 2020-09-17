@@ -74,7 +74,7 @@ body{
 .schoolList { overflow: hidden; padding:.8rem 0; background:#fff; text-align: center;font-size: 0; }
 .schoolList a{display: inline-block; width: 30%;margin:0 .87.35rem 0 ; text-align: center;}
 .schoolList dt{width: 2.5rem; height: 2.5rem; line-height:2rem;font-size: 1.125rem; border-radius: 50%; color: #999999;margin: 0 auto;}
-.schoolList dd{color: #222222; font-size: .65rem; line-height: 1;padding-top:.5rem;}
+.schoolList dd{color: #222222; font-size: .5rem; line-height: 1;padding-top:.5rem;}
 .graduation .title{padding-top:0rem; padding-bottom: 1rem; font-size: .8rem}
 .graduation .title:after{top:52.5%}
 .graduTabs{}
@@ -253,7 +253,7 @@ body{
     overflow: hidden;
 }
 .view-tip p span{
-    font-size: .6rem;
+    font-size: .55rem;
     color: #8A8A8A;
 }
 .view-tip p .left{
@@ -285,7 +285,7 @@ body{
     width: 100%;
 }
 .swiper-pagination-bullet-active{
-    --swiper-theme-color: #d4237a !important;
+    --swiper-theme-color: #C20E23 !important;
 }
 .swiper-pagination-bullets{
     bottom: -5px !important;
