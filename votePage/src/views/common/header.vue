@@ -43,9 +43,7 @@
     <el-row class="yun-box" :gutter="30">
       <el-col :span="8">
         <div class="grid-content bg-purple">
-          <a
-            href="https://wxdc5079dd9cc75887.h5.xiaoe-tech.com/content_page/eyJ0eXBlIjozLCJyZXNvdXJjZV90eXBlIjoiIiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81ZjYyMWZkNGU0YjBkNTljODdiNjUyYjEiLCJhcHBfaWQiOiJhcHBQVEZGd2toUTIyMDYifQ"
-          >
+          <a href="https://wxdc5079dd9cc75887.h5.xiaoe-tech.com/content_page/eyJ0eXBlIjozLCJyZXNvdXJjZV90eXBlIjoiIiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81ZjYyMWZkNGU0YjBkNTljODdiNjUyYjEiLCJhcHBfaWQiOiJhcHBQVEZGd2toUTIyMDYifQ">
             <img src="~@/assets/img/yunketang1.png" alt />
             <span>云课堂</span>
           </a>
