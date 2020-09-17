@@ -73,13 +73,14 @@
       </section>
       <section id="waterFall" class="waterFall fix">
         <ul class="waterCol" id="worksList"></ul>
+        <div class="notBox"></div>
       </section>
     </div>
     <div id="searchShow" class="searchShow fullPage">
       <div class="search">
         <span id="sBtn" class="sBtn">确定</span>
         <div class="sForm">
-          <n class="iconSearch icon">&#xe60a;</n>
+          <n class="iconSearch icon icon-head-tools"></n>
           <input id="searchInput" type="search" placeholder="请输入作品名称或作者名称" autocomplete="off" onkeyup='javascript:cSearch(event);'></div>
       </div>
     </div>
@@ -93,6 +94,7 @@
     <input id="voteLinks" type="hidden" value="/activities/checkVote/index/1021">
     <input id="inAppAct" type="hidden" value="0">
     <input id="router" type="hidden" value="/activities/cnaf2016/works-0-0-36-2016-0-1/" /> -->
+    <input type="hidden" value="" id="listType">
   </body>
   <script src="../static/js/page.js?149682"></script>
   <script src="../static/js/jquery-1.11.0.min.js"></script>
@@ -109,32 +111,91 @@
         //     !1)
         // })()
         $(function(){
+            var isBottom = true
             var pageIndex = 1
-            var pageLimit = 10
+            var pageLimit = 9
             var sf_pageIndex = 1
-            var sf_pageLimit = 10
+            var sf_pageLimit = 9
             var hh_pageIndex = 1
-            var hh_pageLimit = 10
+            var hh_pageLimit = 9
             var sy_pageIndex = 1
-            var sy_pageLimit = 10
+            var sy_pageLimit = 9
             $('.cList a').click(function(){
                 $('.cList a').removeClass('curr')
                 $('.cTags li a').text($(this).text())
                 $(this).addClass('curr')
                 var type = $(this).attr('data-id')
+                $('#listType').val(type)
                 $('#worksList').html('')
+                isBottom = true
                 pageIndex = 1
                 sf_pageIndex = 1
                 hh_pageIndex = 1
                 sy_pageIndex = 1
-                getWorksList(type, pageIndex, pageLimit, 'worksList')
+                getWorksList(type, pageIndex, pageLimit, 'worksList', false)
+            })
+            // 点击加载更多作品
+            $(window).scroll(function() {
+                var scroH = $(document).scrollTop();  //滚动高度
+                var viewH = $(window).height();  //可见高度 
+                var contentH = $(document).height();  //内容高度
+                if (contentH - (scroH + viewH) <= 100){  //距离底部高度小于100px
+                    if (isBottom === true) {
+                        isBottom = false
+                        var type = $('#listType').val()
+                        if (type == '') {
+                            ++pageIndex
+                            getWorksList('', pageIndex, pageLimit, 'worksList', false)
+                        } else if (type == 'shufa') {
+                            ++sf_pageIndex
+                            getWorksList('shufa', sf_pageIndex, sf_pageLimit, 'worksList', false)
+                        } else if (type == 'huihua') {
+                            ++hh_pageIndex
+                            getWorksList('huihua', hh_pageIndex, hh_pageLimit, 'worksList', false)
+                        } else if(type == 'sheying') {
+                            ++sy_pageIndex
+                            getWorksList('sheying', sy_pageIndex, sy_pageLimit, 'worksList', false)
+                        }   
+                    }
+                }
+            })
+            // 查询作品
+            function getSearch() {
+                this.$http({
+                    url: this.$http.adornUrl('proxyApi/rgb(250,238,239)'),
+                    method: 'get',
+                    params: this.$http.adornParams({
+                    'page': this.pageObj.pageIndex,
+                    'limit': this.pageObj.pageSize,
+                    'key': this.input
+                    })
+                }).then(({ data }) => {
+                    if (data && data.code === 200) {
+                    this.worksList = data.info.list
+                    this.pageObj.totalPage = data.info.total
+                    } else {
+                    this.worksList = []
+                    this.pageObj.totalPage = 0
+                    }
+                    this.dataListLoading = false
+                })
+            }
+            $('.sBtn').click(function() {
+                if ($('#searchInput').val() != '') {
+                    $('#worksList').html('')
+                    getWorksList('', pageIndex, pageLimit, 'worksList', true)
+                }
             })
             // 获取作品列表
-            getWorksList('', pageIndex, pageLimit, 'worksList')
-            function getWorksList(type, pageIndex, pageLimit, ul) {
+            getWorksList('', pageIndex, pageLimit, 'worksList', false)
+            function getWorksList(type, pageIndex, pageLimit, ul, search) {
+                $('#'+ul).next('.notBox').html('')
                 var url = ''
                 var obj = {}
-                if (type !== '') {
+                if (search) {
+                    url = httpUrl+'proxyApi/getList.php?act=search'
+                    obj.key = $('#searchInput').val()
+                } else if (type !== '') {
                     url = httpUrl+'proxyApi/getList.php?act=type&type='+type
                 } else {
                     url = httpUrl+'proxyApi/getList.php?act=tp'
@@ -148,32 +209,46 @@
                     success: function(res){
                         if (res.code == 200) {
                             var list = res.info.list
+                            var total = res.info.total
                             var html = ''
-                            list.forEach(element => {
-                                console.log(element)
-                                html+= `<li>
-                                    <a href="detail.html?type=${getQueryString('type')}&id=${element.id}" class="reset-link">
-                                        <div class="identify">
-                                        <img src="${httpUrl+'/proxyApi/'+element.imgs}">
-                                        <cite>获奖作品</cite>
-                                        </div>
-                                        <div class="yunzhanlan">
-                                            <h3>${element.works_name}<p class="gal">${element.area+'-'+element.author_name}</p></h3>
-                                            <p class="zuopin-jianjie">
-                                                ${'作品编号:'+element.id+' '+element.discribe}
+                            if (list !== 0) {
+                                list.forEach(element => {
+                                    console.log(element)
+                                    html+= `<li>
+                                        <a href="detail.html?type=${getQueryString('type')}&id=${element.id}" class="reset-link">
+                                            <div class="identify">
+                                            <img src="${httpUrl+'/proxyApi/'+element.imgs}">
+                                            <cite>获奖作品</cite>
+                                            </div>
+                                            <div class="yunzhanlan">
+                                                <h3>${element.works_name}<p class="gal">${element.area+'-'+element.author_name}</p></h3>
+                                                <p class="zuopin-jianjie">
+                                                    ${'作品编号:'+element.id+' '+element.discribe}
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="yunpingxuan">
+                                            <p class="toupiao-btn-box">
+                                                <span>票数 <i>${element.vote_count}</i></span>
+                                                <a class="toupiao-btn" href="javascript:;" data-id="${element.id}">投票</a>
                                             </p>
                                         </div>
-                                    </a>
-                                    <div class="yunpingxuan">
-                                        <p class="toupiao-btn-box">
-                                            <span>票数 <i>${element.vote_count}</i></span>
-                                            <a class="toupiao-btn" href="javascript:;" data-id="${element.id}">投票</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                `
-                            });
-                            $('#'+ul).append(html)
+                                    </li>
+                                    `
+                                });
+                                $('#'+ul).append(html)
+                                if (list.length === 9 && total > 9) {
+                                    isBottom = true
+                                } else {
+                                    if(search) {
+                                        $('#searchInput').val('')
+                                        $('#'+ul).next('.notBox').append('<p class="noInfo">暂无相关作品</p>')
+                                    } else{
+
+                                        $('#'+ul).next('.notBox').append('<p class="noMore">没有更多作品啦~</p>')
+                                    }
+                                }
+                            }
                             if (getQueryString('type') == 1) {
                                 $('.yunpingxuan').show()
                             } else {

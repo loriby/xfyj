@@ -149,8 +149,8 @@
 .searchShow{}
 .searchShow .search{ height: 2.25rem; padding-left: .5rem; height: 2.25rem; background: #FFF; overflow: hidden;}
 .sForm{width: 13.075rem;margin-top:.375rem; position: relative;}
-#searchInput{height: 1.5rem; border:1px solid #999999; border-radius:.2rem; background: #FFF; width: 100%; vertical-align: top; line-height: 1rem; padding:.25rem .5rem .25rem 1.7rem;font-size: .75rem;}
-.sForm .iconSearch{ position: absolute; left: 0; top:50%; margin-top:-.85rem; font-size: .75rem; width: 1.7rem;color:#cccccc;}
+#searchInput{height: 1.5rem; border:1px solid #999999 !important; border-radius:.2rem; background: #FFF; width: 100%; vertical-align: top; line-height: 1rem; padding:.25rem .5rem .25rem 1.7rem;font-size: .75rem;}
+.sForm .iconSearch{ position: absolute; left: 0; top:50%; margin-top:-.75rem; font-size: .9rem; width: 1.7rem;color:#cccccc;}
 .search .sBtn{float:right; width: 2.4rem; height: 100%; line-height: 2.25rem; font-size: .7rem; text-align: center;}
 
 /*作品列表*/
@@ -321,7 +321,7 @@
 .share .bdsharebuttonbox .bds_tqq{background-position:-1.5rem 0 ;}
 .share .bdsharebuttonbox .bds_qzone{background-position:-4.5rem 0 ;}
 .share .bdsharebuttonbox .weixin{background-position:-3rem 0 ;}
-.btnArea{ height: 2.25rem; line-height: 2.25rem;font-size: .7rem; text-align: center; color: #666;}
+.btnArea{ height: 2.25rem; line-height: 2.25rem;font-size: .7rem; text-align: center; color: #666;display:none}
 /*分享默认引导层*/
 #defGuaid{ padding: .4rem .25rem 0 0;  text-align: right;  }
 #defGuaid img{ width: 9.45; height: 3.25rem; vertical-align: top}
@@ -655,8 +655,8 @@
 }
 .search-list a{
 	display:block;
-	width: 25px !important;
-	height:25px !important;
+	width: 1rem !important;
+	height:1rem !important;
 	background: url('../imgs/search.png') no-repeat;
 	background-size: 100%;
 	border:none !important;

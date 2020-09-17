@@ -25,8 +25,12 @@
       <div class="swiper-container">
           <div class="swiper-wrapper">
               <div class="swiper-slide"><img src="static/imgs/d_banner1.png"></div>
-              <div class="swiper-slide"><img src="static/imgs/d_banner2.png"></div>
-              <div class="swiper-slide"><img src="static/imgs/d_banner3.png"></div>
+              <div class="swiper-slide">
+                <video controls="" name="media" width="100%" height="100%">
+                  <source src="http://91hesuan.com/video/banner_video.mp4" type="video/mp4">
+                </video>
+              </div>
+              <!-- <div class="swiper-slide"><img src="static/imgs/d_banner3.png"></div> -->
               <!-- <div class="swiper-slide"><img src="static/imgs/banner1.jpg"></div>
               <div class="swiper-slide"><img src="static/imgs/banner2.jpg"></div>
               <div class="swiper-slide"><img src="static/imgs/banner3.jpg"></div> -->
@@ -42,7 +46,7 @@
       </p>
     </section>
     <section class="schoolList">
-      <a href="https://wxdc5079dd9cc75887.h5.xiaoe-tech.com/v1/course/column/p_5f452a7ee4b0118787334afd?type=3">
+      <a href="https://wxdc5079dd9cc75887.h5.xiaoe-tech.com/content_page/eyJ0eXBlIjozLCJyZXNvdXJjZV90eXBlIjoiIiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81ZjYyMWZkNGU0YjBkNTljODdiNjUyYjEiLCJhcHBfaWQiOiJhcHBQVEZGd2toUTIyMDYifQ">
         <dl>
           <dt class="foundIcon"><img src="static/imgs/yunketang.png"></dt>
           <dd>云课堂</dd></dl>
@@ -154,27 +158,22 @@
             <!--图片尺寸310*310-->
             <ul class="col2" id="shufaUl"></ul>
             <div class="btnArea">
-              <a class="linkMore" href="javascript:;">更多作品</a>
+              <a class="linkMore" href="javascript:;" data-type="shufa">更多作品</a>
             </div>
           </div>
           <!-- 绘画 -->
           <div class="zuopin-content">
             <ul class="col2" id="huihuaUl"></ul>
             <div class="btnArea">
-              <a class="linkMore" href="javascript:;">更多作品</a>
+              <a class="linkMore" href="javascript:;" data-type="huihua">更多作品</a>
             </div>
           </div>
           <!-- 摄影 -->
           <div class="zuopin-content">
             <ul class="col2" id="sheyingUl">
-              <!-- <li>
-                <a class="imgLink" href="view/detail.html">
-                  <b class="prizeIco"></b>
-                  <img src="static/imgs/shufa/img1.png"></a>
-              </li> -->
             </ul>
             <div class="btnArea">
-              <a class="linkMore" href="javascript:;">更多作品</a>
+              <a class="linkMore" href="javascript:;" data-type="sheying">更多作品</a>
             </div>
           </div>
         </div>
@@ -247,11 +246,11 @@
       })();
       $(function(){
         var sf_pageIndex = 1
-        var sf_pageLimit = 10
+        var sf_pageLimit = 9
         var hh_pageIndex = 1
-        var hh_pageLimit = 10
+        var hh_pageLimit = 9
         var sy_pageIndex = 1
-        var sy_pageLimit = 10
+        var sy_pageLimit = 9
         $.ajax({
           url: httpUrl+'/proxyApi/index.php?act=total',
           type: 'get',
@@ -262,6 +261,20 @@
             }
           }
         })
+        // 点击更多加载作品
+        $('.linkMore').click(function(){
+          var type = $(this).attr('data-type');
+          if (type == 'shufa') {
+            ++sf_pageIndex
+            getWorksList('shufa', sf_pageIndex, sf_pageLimit, 'shufaUl')
+          } else if (type == 'huihua') {
+            ++hh_pageIndex
+            getWorksList('huihua', hh_pageIndex, hh_pageLimit, 'huihuaUl')
+          } else if(type == 'sheying') {
+            ++sy_pageIndex
+            getWorksList('sheying', sy_pageIndex, sy_pageLimit, 'sheyingUl')
+          }
+        }) 
         getWorksList('shufa', sf_pageIndex, sf_pageLimit, 'shufaUl')
         getWorksList('huihua', hh_pageIndex, hh_pageLimit, 'huihuaUl')
         getWorksList('sheying', sy_pageIndex, sy_pageLimit, 'sheyingUl')
@@ -277,9 +290,9 @@
             success: function(res){
               if (res.code == 200) {
                 var list = res.info.list
+                var total = res.info.total
                 var html = ''
                 list.forEach(element => {
-                  console.log(element)
                   html += `<li>
                   <a class="imgLink" href="view/detail.html?id=${element.id}">
                     <b class="prizeIco"></b>
@@ -287,6 +300,9 @@
                 </li>`
                 });
                 $('#'+ul).append(html)
+                if (list.length === 9 && total > 9) {
+                  $('#'+ul).next('.btnArea').show()
+                }
               }
             }
           })
