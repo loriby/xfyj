@@ -74,12 +74,12 @@ body{
 .schoolList { overflow: hidden; padding:.8rem 0; background:#fff; text-align: center;font-size: 0; }
 .schoolList a{display: inline-block; width: 30%;margin:0 .87.35rem 0 ; text-align: center;}
 .schoolList dt{width: 2.5rem; height: 2.5rem; line-height:2rem;font-size: 1.125rem; border-radius: 50%; color: #999999;margin: 0 auto;}
-.schoolList dd{color: #222222; font-size: .8rem; line-height: 1;padding-top:.5rem;}
+.schoolList dd{color: #222222; font-size: .65rem; line-height: 1;padding-top:.5rem;}
 .graduation .title{padding-top:0rem; padding-bottom: 1rem; font-size: .8rem}
 .graduation .title:after{top:52.5%}
 .graduTabs{}
 .graduTabs .tabTags{ /*overflow: hidden;*/background: #fff;text-align:center;display:inline-block;width:100%;background:#F7F8F8}
-.graduTabs .tabTags li{display:inline-block;font-size: .75rem; width: 23%;position: relative;padding: 1rem 0 0.8rem}
+.graduTabs .tabTags li{display:inline-block;font-size: .6rem; width: 20%;position: relative;padding: .9rem 0 0.6rem}
 .graduTabs .tabCont{ display: none;}
 .col2{ overflow: hidden;}
 .col2 li{ float:left;width: 7.3rem;margin-right: .5rem;}
@@ -137,7 +137,7 @@ body{
 .zuopin-box li{
     display:inline-block;
     padding: 0 8%;
-    font-size: 0.65rem;
+    font-size: 0.5rem;
     position: relative;
 }
 .zuopin-box li::after{
@@ -174,7 +174,7 @@ body{
 .item .item-img{width:35%;height: 3.5rem;float:left;overflow: hidden;display:flex; align-items: center;}
 .item .item-img img{width:100%;}
 .item .item-word{width:62%;float:right; text-align: left;padding-top:4px;}
-.item .item-word p{font-size:0.65rem;color:#222222;margin-bottom:10px;text-align: justify;text-overflow: -o-ellipsis-lastline;
+.item .item-word p{font-size:0.6rem;color:#222222;margin-bottom:10px;text-align: justify;text-overflow: -o-ellipsis-lastline;
     overflow: hidden;
     line-height: 0.8rem;
     text-overflow: ellipsis;
@@ -183,7 +183,7 @@ body{
     -webkit-box-orient: vertical;}
 /* .news-list-box{background: #f5f5f5 !important;} */
 .item .item-word span{
-    font-size:0.6rem;color:#9B9B9B;
+    font-size:0.45rem;color:#9B9B9B;
     /* text-align: justify; */
     text-overflow: -o-ellipsis-lastline;
     line-height: .7rem;
@@ -191,7 +191,7 @@ body{
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    /* letter-spacing:0.05rem; */
+    letter-spacing:0.05rem;
     -webkit-box-orient: vertical;}
 .newsDetail .detail {
     padding: 1rem 5%;
@@ -247,7 +247,7 @@ body{
     /* margin-bottom: 10px; */
 }
 .view-tip p {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
     display: block;
     overflow: hidden;
@@ -295,7 +295,7 @@ body{
 }
 .item .item-word span p.first-view-text{
     display: block;
-    font-size:0.5rem;
+    font-size:0.45rem;
     color:#9B9B9B;
     /* text-align: justify; */
     text-overflow: -o-ellipsis-lastline;
@@ -304,6 +304,7 @@ body{
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    letter-spacing:0.05rem;
     -webkit-box-orient: vertical;
 }
 .doctorlist{
