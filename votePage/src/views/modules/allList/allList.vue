@@ -7,10 +7,10 @@
           <div style="text-align: center;" class="grid-content">
             <el-input
               class="search-box"
-              prefix-icon="el-icon-search"
               v-model="input"
               placeholder="请输入作品名称或者作者姓名"
             ></el-input>
+            <span @click="searchByName()" class="el-icon-search" style="color:#fff;padding-left:5px;cursor: pointer;font-size:20px;margin-top:2px; vertical-align: text-bottom;"></span>
           </div>
         </el-col>
       </el-row>
@@ -43,6 +43,7 @@
           </el-col>
         </el-row>
         <div class="item-content">
+          <div class="list-noData" v-if="worksList.length === 0"><div class="noDataTxt">暂无相关作品~</div></div>
           <el-row :gutter="20" v-loading="dataListLoading">
             <el-col :span="8" v-for="(item, index) in worksList" :key="index">
               <el-card :body-style="{ padding: '0px' }">
@@ -87,6 +88,7 @@
             </el-col>
           </el-row>
           <el-pagination
+            v-if="worksList.length > 0"
             @size-change="sizeChangeHandle"
             @current-change="currentChangeHandle"
             :current-page="pageObj.pageIndex"
@@ -163,6 +165,32 @@ export default {
         } else {
           this.$message.error(data.msg)
         }
+      })
+    },
+    // 条件查询
+    searchByName () {
+      if (!this.input) {
+        this.getWorksList()
+        return
+      }
+      this.dataListLoading = true
+      this.$http({
+        url: this.$http.adornUrl('proxyApi/getList.php?act=search'),
+        method: 'get',
+        params: this.$http.adornParams({
+          'page': this.pageObj.pageIndex,
+          'limit': this.pageObj.pageSize,
+          'key': this.input
+        })
+      }).then(({ data }) => {
+        if (data && data.code === 200) {
+          this.worksList = data.info.list
+          this.pageObj.totalPage = data.info.total
+        } else {
+          this.worksList = []
+          this.pageObj.totalPage = 0
+        }
+        this.dataListLoading = false
       })
     },
     getWorksList () {

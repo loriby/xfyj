@@ -1,15 +1,27 @@
 <template>
   <div>
-    <el-carousel height="480px">
+    <el-carousel height="480px" :autoplay="false">
       <el-carousel-item>
         <img src="~@/assets/img/d_banner1.png" alt />
       </el-carousel-item>
       <el-carousel-item>
+        <div v-if="playFlag">
+          <video
+            controls
+            style="width: 100%;margin-top:-50px"
+            src="~@/assets/media/video.mp4"
+            id="videoPlay"
+            class="video"
+          >您的浏览器不支持 video 视屏播放。</video>
+        </div>
+        <img v-else v-on:click="playVideo()" src="~@/assets/img/d_banner2.png" alt />
+      </el-carousel-item>
+      <!-- <el-carousel-item>
         <img src="~@/assets/img/d_banner2.png" alt />
       </el-carousel-item>
       <el-carousel-item>
         <img src="~@/assets/img/d_banner3.png" alt />
-      </el-carousel-item>
+      </el-carousel-item> -->
       <!-- <el-carousel-item>
         <img src="~@/assets/img/banner1.jpg" alt />
       </el-carousel-item>
@@ -58,6 +70,7 @@
 export default {
   data () {
     return {
+      playFlag: false,
       viewsCount: 100, // 浏览量
       voteCount: 100 // 总票数
     }
@@ -81,6 +94,18 @@ export default {
         } else {
           this.$message.error(data.msg)
         }
+      })
+    },
+    playVideo () {
+      this.playFlag = true
+      this.$nextTick(() => {
+        let vdo = document.getElementById('videoPlay')
+        vdo.play()
+        // vdo.addEventListener('pause', function () { //暂停开始执行的函数
+        // });
+        vdo.addEventListener('ended', function () { // 结束
+          this.playFlag = false
+        }, false)
       })
     },
     // 作品展示及投票

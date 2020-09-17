@@ -25,13 +25,21 @@
             <el-input v-model="dataForm.title"></el-input>
           </el-form-item>
         </el-col>
+      </el-row>
+      <el-row :gutter="20">
+        <el-col :span="12">
+          <el-form-item label="新闻描述" prop="discribe">
+            <el-input type="textarea" v-model="dataForm.discribe"></el-input>
+          </el-form-item>
+        </el-col>
+      </el-row>
+       <el-row :gutter="20">
         <el-col :span="12">
           <el-form-item label="作者姓名" prop="name">
             <el-input v-model="dataForm.name"></el-input>
           </el-form-item>
         </el-col>
       </el-row>
-
       <el-form-item label="新闻图片" prop="imgs">
         <el-upload
           class="avatar-uploader"
@@ -51,7 +59,7 @@
     </script>
 
     <!-- 获取内容 -->
-    <p>
+    <p class="news-save-btn">
       <el-button @click="dataFormSubmit()">保存</el-button>
     </p>
   </div>
@@ -70,6 +78,7 @@ export default {
         id: this.$route.query.id ? Number(this.$route.query.id) : 0,
         title: '',
         name: '',
+        discribe: '',
         imgs: ''
       },
 
@@ -84,6 +93,9 @@ export default {
           message: '请输入作者姓名',
           trigger: 'blur'
         }],
+        discribe: [
+          {required: true, message: '请输入新闻描述', trigger: 'blur'}
+        ],
         imgs: [{
           required: true,
           message: '请上传图片',
@@ -119,6 +131,7 @@ export default {
           let dataHadnle = data && data.list
           this.dataForm.title = dataHadnle.title
           this.dataForm.name = dataHadnle.author_name
+          this.dataForm.discribe = dataHadnle.discribe || ''
           this.dataForm.imgs = dataHadnle.imgs
           this.ueContent = dataHadnle.content
           this.ue.ready(() => {
@@ -158,18 +171,16 @@ export default {
     },
 
     beforeAvatarUpload (file) {
-      const isJPG = file.type === 'image/png'
+      // const isJPG = file.type === 'image/png'
       const isLt2M = file.size / 1024 / 1024 < 2
-
-      if (!isJPG) {
-        this.$message.error('上传头像图片只能是 JPG 格式!')
-      }
+      // if (!isJPG) {
+      //   this.$message.error('上传头像图片只能是 JPG 格式!')
+      // }
       if (!isLt2M) {
         this.$message.error('上传头像图片大小不能超过 2MB!')
       }
-      return isJPG && isLt2M
+      return isLt2M
     },
-
     goBack () {
       history.go(-1)
     }
@@ -218,5 +229,13 @@ export default {
   width: 178px;
   height: 178px;
   display: block;
+}
+.news-save-btn{
+  margin-top: 50px;
+  .el-button--medium{
+    background: #C20E23;
+    color: #fff !important;
+  }
+  // .el-button:focus, .el-button:hover
 }
 </style>

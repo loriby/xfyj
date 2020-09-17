@@ -15,10 +15,10 @@
               @blur="searchByName()"
               @keyup.enter.native="searchByName()"
               class="search-box"
-              prefix-icon="el-icon-search"
               v-model="input"
               placeholder="请输入作品名称或者作者姓名"
             ></el-input>
+            <span @click="searchByName()" class="el-icon-search" style="color:#fff;padding-left:5px;cursor: pointer;font-size:20px;margin-top:2px; vertical-align: text-bottom;"></span>
           </div>
         </el-col>
       </el-row>
@@ -44,7 +44,7 @@
             <el-col :span="20">
               <div @click="newsDetail(item.id)" class="grid-content">
                 <h5>{{item.title}}</h5>
-                <div class="word-content-view" style="height: 50px;overflow: hidden;" v-html="item.content" />
+                <div class="word-content-view" style="height: 50px;overflow: hidden;" v-html="item.discribe" />
               </div>
             </el-col>
           </el-row>
@@ -127,6 +127,7 @@
           </el-col>
         </el-row>
         <div class="item-content" v-loading="dataListLoading">
+          <div class="list-noData" v-if="worksList.length === 0"><div class="noDataTxt">暂无相关作品~</div></div>
           <el-row :gutter="20">
             <el-col :span="8" v-for="(item, index) in worksList" :key="index">
               <el-card :body-style="{ padding: '0px' }">
@@ -151,6 +152,7 @@
             </el-col>
           </el-row>
           <el-pagination
+            v-if="worksList.length > 0"
             @size-change="sizeChangeHandle"
             @current-change="currentChangeHandle"
             :current-page="pageObj.pageIndex"
@@ -397,6 +399,15 @@ export default {
 </script>
 
 <style lang="scss">
+.list-noData{
+  width: 100%;
+  padding: 30px 0;
+  .noDataTxt{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+}
 .mod-home {
   line-height: 1.5;
   width: 980px;
