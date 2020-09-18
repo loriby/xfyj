@@ -174,7 +174,7 @@ body{
 .item .item-img{width:35%;height: 3.5rem;float:left;overflow: hidden;display:flex; align-items: center;}
 .item .item-img img{width:100%;}
 .item .item-word{width:62%;float:right; text-align: left;padding-top:4px;}
-.item .item-word p{font-size:0.6rem;color:#222222;margin-bottom:10px;text-align: justify;text-overflow: -o-ellipsis-lastline;
+.item .item-word p{font-size:0.54rem;color:#222222;margin-bottom:10px;text-align: justify;text-overflow: -o-ellipsis-lastline;
     overflow: hidden;
     line-height: 0.8rem;
     text-overflow: ellipsis;
