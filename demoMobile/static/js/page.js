@@ -8,7 +8,7 @@ function getQueryString(name) {
 /*rem处理*/
 var AfedFn = {};
 var myScroll;
-var httpUrl = 'http://210.16.188.29:8081/'
+var httpUrl = 'http://vote.happyijia.com:8081/'
 AfedFn = {
     fontScale : 20 * innerWidth / 320,
     /*返回顶部*/
