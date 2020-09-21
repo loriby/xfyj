@@ -25,7 +25,7 @@ export default {
       language: (navigator.browserLanguage || navigator.language).toLowerCase()
     }
     if (browser.versions.mobile) {
-      window.location.href = 'http://vote.happyijia.com:8081/demoMobile/index.html'
+      window.location.href = 'http://test.happyijia.com/demoMobile/index.html'
     }
   }
 }

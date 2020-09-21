@@ -5,8 +5,8 @@
   window.SITE_CONFIG = {}
 
   // api接口请求地址
-  window.SITE_CONFIG['baseUrl'] = 'http://210.16.188.29:8081/'
-  window.SITE_CONFIG['imgUrl'] = 'http://210.16.188.29:8081/proxyApi/'
+  window.SITE_CONFIG['baseUrl'] = 'http://test.happyijia.com'
+  window.SITE_CONFIG['imgUrl'] = 'http://test.happyijia.com/proxyApi/'
 
   // cdn地址 = 域名 + 版本号
   window.SITE_CONFIG['domain'] = './' // 域名

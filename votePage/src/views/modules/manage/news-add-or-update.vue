@@ -106,7 +106,7 @@ export default {
   },
   mounted () {
     this.ue = ueditor.getEditor(this.ueId, {
-      serverUrl: 'http://210.16.188.29:8081', // 服务器统一请求接口路径
+      serverUrl: 'http://test.happyijia.com', // 服务器统一请求接口路径
       zIndex: 3000
     })
   },
